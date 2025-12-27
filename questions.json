@@ -1,30 +1,20 @@
 {
-  "APP_ID": "US24354_SAFETY",
-  "VERSION": "2025",
-  "APP_TITLE": "US 24354 – Health & Safety",
-  "APP_SUBTITLE": "PHS - L2 BCATS – Assessment",
-  "DEADLINE": {
-    "day": 27,
-    "month": 12,
-    "label": "Submission deadline"
-  },
+  "APP_ID": "US24354_HS_SAFEWORK",
+  "VERSION": "2025.1",
+  "APP_TITLE": "US 24354 – Health & Safety (BCATS)",
+  "APP_SUBTITLE": "PHS - Level 2 BCATS – Assessment",
+  "DEADLINE": { "day": 27, "month": 12, "label": "Submission deadline" },
   "TEACHERS": [
-    {
-      "id": "RY",
-      "name": "Mr Reynolds",
-      "email": "ry@pukekohehigh.school.nz"
-    },
-    {
-      "id": "RNR",
-      "name": "Mr Ranson",
-      "email": "rnr@pukekohehigh.school.nz"
-    },
-    {
-      "id": "Other",
-      "name": "Other Teacher",
-      "email": "technology@pukekohehigh.school.nz"
-    }
+    { "id": "RY", "name": "Mr Reynolds", "email": "ry@pukekohehigh.school.nz" },
+    { "id": "RNR", "name": "Mr Ranson", "email": "rnr@pukekohehigh.school.nz" },
+    { "id": "Other", "name": "Other Teacher", "email": "technology@pukekohehigh.school.nz" }
   ],
+  "SCORING": {
+    "rubricNotes": [
+      "Multi-answer questions are assessed with one rubric entry per expected point (e.g., 3 responsibilities = 3 rubric rows).",
+      "Duplicates are allowed by regex checks; teachers should visually confirm unique answers where needed."
+    ]
+  },
   "ASSESSMENTS": [
     {
       "id": "24354-sr1",
@@ -37,317 +27,244 @@
       "questions": [
         {
           "id": "sr1_q1",
-          "text": "1.\tWhat legislation covers the safety of people in the workplace?",
+          "text": "1. What legislation covers the safety of people in the workplace?",
           "image": "blank.jpg",
           "hint": "Include health + safety + 2015 (or HSWA + 2015).",
           "type": "short",
+          "responseLabel": "Your answer:",
           "maxPoints": 2,
           "rubric": [
             {
               "points": 1,
-              "check": "(health\\s*&?\\s*safety|HSWA|Health\\s+and\\s+Safety)",
+              "check": "(health\\s*and\\s*safety|health\\s*&\\s*safety|HSWA|Health\\s+and\\s+Safety\\s+at\\s+Work\\s+Act|Health\\s+and\\s+Safety\\s+at\\s+Work)",
               "flags": "i"
             },
-            {
-              "points": 1,
-              "check": "\\b2015\\b",
-              "flags": "i"
-            }
+            { "points": 1, "check": "\\b2015\\b", "flags": "i" }
           ]
         },
         {
           "id": "sr1_q2",
-          "text": "2.\tWhat is the definition of a hazard?",
+          "text": "2. What is the definition of a hazard?",
           "image": "blank.jpg",
           "hint": "A hazard is something that can cause harm or injury.",
           "type": "long",
-          "maxPoints": 2,
+          "responseLabel": "Your answer:",
+          "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "hazard|danger|risk",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "harm|injur|illness|damage|hurt",
-              "flags": "i"
-            }
+            { "points": 1, "check": "hazard|danger|something", "flags": "i" },
+            { "points": 1, "check": "harm|injur|hurt|illness|damage", "flags": "i" },
+            { "points": 1, "check": "could|can|may|possible|potential|likely", "flags": "i" }
           ]
         },
 
         {
-          "id": "sr1_q3_1",
-          "text": "3.\tList 2 methods used to identify hazards in the workplace.\n1.",
+          "id": "sr1_q3",
+          "text": "3. List 2 methods used to identify hazards in the workplace.\n1.\n2.",
           "image": "blank.jpg",
           "hint": "Example methods: visual inspection / hazard register / checklist / toolbox talk.",
-          "type": "short",
-          "maxPoints": 1,
+          "type": "long",
+          "responseLabel": "Your answers (1 and 2):",
+          "maxPoints": 2,
           "rubric": [
             {
               "points": 1,
-              "check": "visual|inspect|walk\\s*through|hazard\\s*register|checklist|toolbox|briefing|JSA|RAMS|SWMS|risk\\s*assessment|SDS|label",
+              "check": "visual|inspect|walk\\s*through|hazard\\s*register|checklist|toolbox|briefing|JSA|RAMS|SWMS|risk\\s*assessment|SDS|MSDS|label|manual|procedure|signage|report",
               "flags": "i"
-            }
-          ]
-        },
-        {
-          "id": "sr1_q3_2",
-          "text": "2.",
-          "image": "blank.jpg",
-          "hint": "Give a different method to Q3(1).",
-          "type": "short",
-          "maxPoints": 1,
-          "rubric": [
+            },
             {
               "points": 1,
-              "check": "visual|inspect|walk\\s*through|hazard\\s*register|checklist|toolbox|briefing|JSA|RAMS|SWMS|risk\\s*assessment|SDS|label",
-              "flags": "i"
+              "check": "visual|inspect|walk\\s*through|hazard\\s*register|checklist|toolbox|briefing|JSA|RAMS|SWMS|risk\\s*assessment|SDS|MSDS|label|manual|procedure|signage|report",
+              "flags": "i",
+              "note": "Second method should be different (teacher verify uniqueness)."
             }
           ]
         },
 
         {
           "id": "sr1_q4",
-          "text": "4.\tOnce a hazard has been identified, what are the employer’s responsibilities?",
+          "text": "4. Once a hazard has been identified, what are the employer’s responsibilities?",
           "image": "blank.jpg",
           "hint": "Think: eliminate/minimise, communicate, controls, training, PPE.",
           "type": "long",
+          "responseLabel": "Your answer:",
+          "maxPoints": 5,
+          "rubric": [
+            { "points": 1, "check": "eliminat|remove|fix|stop|isolate|substitute", "flags": "i" },
+            { "points": 1, "check": "minimis|reduce|control|manage|mitigat", "flags": "i" },
+            { "points": 1, "check": "report|record|hazard\\s*register|notify|communicat|tell|brief", "flags": "i" },
+            { "points": 1, "check": "PPE|training|supervision|instruction|safe\\s*system|procedure|SOP", "flags": "i" },
+            { "points": 1, "check": "sign|barrier|guard|lock\\s*out|tag\\s*out|maintenance|inspection", "flags": "i" }
+          ]
+        },
+
+        {
+          "id": "sr1_q5",
+          "text": "5. List 3 health and safety responsibilities of any worker/student.\n1.\n2.\n3.",
+          "image": "blank.jpg",
+          "hint": "Example: take reasonable care / follow instructions / wear PPE / report hazards.",
+          "type": "long",
+          "responseLabel": "Your answers (1–3):",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "reasonable\\s*care|own\\s*health|own\\s*safety|others|follow\\s*instruction|follow\\s*procedure|PPE|report\\s*hazard|report\\s*incident|near\\s*miss|trained|authori(s|z)ed|tidy|keep\\s*area\\s*clean",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "reasonable\\s*care|own\\s*health|own\\s*safety|others|follow\\s*instruction|follow\\s*procedure|PPE|report\\s*hazard|report\\s*incident|near\\s*miss|trained|authori(s|z)ed|tidy|keep\\s*area\\s*clean",
+              "flags": "i",
+              "note": "Second responsibility should be different (teacher verify uniqueness)."
+            },
+            {
+              "points": 1,
+              "check": "reasonable\\s*care|own\\s*health|own\\s*safety|others|follow\\s*instruction|follow\\s*procedure|PPE|report\\s*hazard|report\\s*incident|near\\s*miss|trained|authori(s|z)ed|tidy|keep\\s*area\\s*clean",
+              "flags": "i",
+              "note": "Third responsibility should be different (teacher verify uniqueness)."
+            }
+          ]
+        },
+
+        {
+          "id": "sr1_q6",
+          "text": "6. Before you enter a workplace your employer is obliged to provide you with specific safety information. List 4 types of information that would ensure they meet this requirement.\n1.\n2.\n3.\n4.",
+          "image": "blank.jpg",
+          "hint": "Examples: hazards, risk level, controls, emergency procedures, PPE location.",
+          "type": "long",
+          "responseLabel": "Your answers (1–4):",
           "maxPoints": 4,
           "rubric": [
             {
               "points": 1,
-              "check": "eliminat|remove|fix|stop|isolate",
+              "check": "hazard|risk|control\\s*measure|emergency|procedure|PPE|safety\\s*clothing|assembly\\s*point|evacuat|first\\s*aid|SDS|training|supervision|hazard\\s*register|site\\s*rules|induction",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "minimis|reduce|control|manage|mitigat",
-              "flags": "i"
+              "check": "hazard|risk|control\\s*measure|emergency|procedure|PPE|safety\\s*clothing|assembly\\s*point|evacuat|first\\s*aid|SDS|training|supervision|hazard\\s*register|site\\s*rules|induction",
+              "flags": "i",
+              "note": "Different information type (teacher verify uniqueness)."
             },
             {
               "points": 1,
-              "check": "report|record|hazard\\s*register|notify|communicat|tell",
-              "flags": "i"
+              "check": "hazard|risk|control\\s*measure|emergency|procedure|PPE|safety\\s*clothing|assembly\\s*point|evacuat|first\\s*aid|SDS|training|supervision|hazard\\s*register|site\\s*rules|induction",
+              "flags": "i",
+              "note": "Different information type (teacher verify uniqueness)."
             },
             {
               "points": 1,
-              "check": "PPE|training|supervision|sign|barrier|guard|safe\\s*system|procedure",
-              "flags": "i"
-            }
-          ]
-        },
-
-        {
-          "id": "sr1_q5_1",
-          "text": "5.\tList 3 health and safety responsibilities of any worker/student.\n1.",
-          "image": "blank.jpg",
-          "hint": "Example: take reasonable care / follow instructions / wear PPE / report hazards.",
-          "type": "short",
-          "maxPoints": 1,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "reasonable\\s*care|own\\s*health|own\\s*safety|others|follow|instruction|procedure|PPE|report|hazard|incident|near\\s*miss|trained|authori(s|z)ed|tidy|clean",
-              "flags": "i"
-            }
-          ]
-        },
-        {
-          "id": "sr1_q5_2",
-          "text": "2.",
-          "image": "blank.jpg",
-          "hint": "Give a different responsibility to Q5(1).",
-          "type": "short",
-          "maxPoints": 1,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "reasonable\\s*care|own\\s*health|own\\s*safety|others|follow|instruction|procedure|PPE|report|hazard|incident|near\\s*miss|trained|authori(s|z)ed|tidy|clean",
-              "flags": "i"
-            }
-          ]
-        },
-        {
-          "id": "sr1_q5_3",
-          "text": "3.",
-          "image": "blank.jpg",
-          "hint": "Give a different responsibility to Q5(1) and Q5(2).",
-          "type": "short",
-          "maxPoints": 1,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "reasonable\\s*care|own\\s*health|own\\s*safety|others|follow|instruction|procedure|PPE|report|hazard|incident|near\\s*miss|trained|authori(s|z)ed|tidy|clean",
-              "flags": "i"
-            }
-          ]
-        },
-
-        {
-          "id": "sr1_q6_1",
-          "text": "6.\tBefore you enter a workplace your employer is obliged to provide you with specific safety information. List 4 types of information that would ensure they meet this requirement.\n1.",
-          "image": "blank.jpg",
-          "hint": "Examples: hazards, risk level, controls, emergency procedures, PPE location.",
-          "type": "short",
-          "maxPoints": 1,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "hazard|risk|control\\s*measure|emergency|procedure|PPE|safety\\s*clothing|assembly\\s*point|evacuat|first\\s*aid|SDS|training|supervision",
-              "flags": "i"
-            }
-          ]
-        },
-        {
-          "id": "sr1_q6_2",
-          "text": "2.",
-          "image": "blank.jpg",
-          "hint": "Give a different type of information to Q6(1).",
-          "type": "short",
-          "maxPoints": 1,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "hazard|risk|control\\s*measure|emergency|procedure|PPE|safety\\s*clothing|assembly\\s*point|evacuat|first\\s*aid|SDS|training|supervision",
-              "flags": "i"
-            }
-          ]
-        },
-        {
-          "id": "sr1_q6_3",
-          "text": "3.",
-          "image": "blank.jpg",
-          "hint": "Give a different type of information to Q6(1–2).",
-          "type": "short",
-          "maxPoints": 1,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "hazard|risk|control\\s*measure|emergency|procedure|PPE|safety\\s*clothing|assembly\\s*point|evacuat|first\\s*aid|SDS|training|supervision",
-              "flags": "i"
-            }
-          ]
-        },
-        {
-          "id": "sr1_q6_4",
-          "text": "4.",
-          "image": "blank.jpg",
-          "hint": "Give a different type of information to Q6(1–3).",
-          "type": "short",
-          "maxPoints": 1,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "hazard|risk|control\\s*measure|emergency|procedure|PPE|safety\\s*clothing|assembly\\s*point|evacuat|first\\s*aid|SDS|training|supervision",
-              "flags": "i"
+              "check": "hazard|risk|control\\s*measure|emergency|procedure|PPE|safety\\s*clothing|assembly\\s*point|evacuat|first\\s*aid|SDS|training|supervision|hazard\\s*register|site\\s*rules|induction",
+              "flags": "i",
+              "note": "Different information type (teacher verify uniqueness)."
             }
           ]
         },
 
         {
           "id": "sr1_q7",
-          "text": "7.\tWhere do you get information on the toxicity of the materials that you are working with?",
+          "text": "7. Where do you get information on the toxicity of the materials that you are working with?",
           "image": "blank.jpg",
           "hint": "SDS/MSDS or product label/packaging.",
           "type": "short",
+          "responseLabel": "Your answer:",
           "maxPoints": 2,
           "rubric": [
-            {
-              "points": 1,
-              "check": "SDS|MSDS|safety\\s*data\\s*sheet|material\\s*safety\\s*data\\s*sheet",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "label|container|packaging|hazard\\s*(symbol|pictogram)|instructions",
-              "flags": "i"
-            }
+            { "points": 1, "check": "SDS|MSDS|safety\\s*data\\s*sheet|material\\s*safety\\s*data\\s*sheet", "flags": "i" },
+            { "points": 1, "check": "label|container|packaging|hazard\\s*(symbol|pictogram)|instructions|manufacturer", "flags": "i" }
           ]
         },
 
         {
           "id": "sr1_q8_i_a",
-          "text": "i)\tYou are preparing to use a portable power planer to skim the side off a door. You have left your safety glasses in the workshop. It will take you half an hour to go back and get them. The job will only take 10 minutes to complete. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\na.\tidentify the potential hazards",
+          "text": "i) You are preparing to use a portable power planer to skim the side off a door. You have left your safety glasses in the workshop. It will take you half an hour to go back and get them. The job will only take 10 minutes to complete.\n\na. identify the potential hazards",
           "image": "blank.jpg",
-          "hint": "Hazard = working without safety glasses / eye protection.",
+          "hint": "Hazard = working without safety glasses / flying chips.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 2,
           "rubric": [
             { "points": 1, "check": "no\\s*(safety\\s*glasses|eye\\s*protection)|without\\s*(safety\\s*glasses|eye\\s*protection)|forgot\\s*(safety\\s*glasses|goggles)", "flags": "i" },
-            { "points": 1, "check": "power\\s*planer|planer|wood\\s*chips|flying\\s*debris", "flags": "i" }
+            { "points": 1, "check": "power\\s*planer|planer|wood\\s*chips|flying\\s*debris|splinter|dust", "flags": "i" }
           ]
         },
         {
           "id": "sr1_q8_i_b",
-          "text": "i)\tYou are preparing to use a portable power planer to skim the side off a door. You have left your safety glasses in the workshop. It will take you half an hour to go back and get them. The job will only take 10 minutes to complete. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nb.\tassess the level or risk and describe any potential consequences or harm",
+          "text": "i) You are preparing to use a portable power planer to skim the side off a door. You have left your safety glasses in the workshop. It will take you half an hour to go back and get them. The job will only take 10 minutes to complete.\n\na. identify the potential hazards\n\nb. assess the level of risk and describe any potential consequences or harm",
           "image": "blank.jpg",
-          "hint": "Harm = eye injury / blindness. Risk level = high/medium/low.",
+          "hint": "Eye injury, high risk, possible permanent damage.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 3,
           "rubric": [
             { "points": 1, "check": "eye\\s*injur|damage\\s*to\\s*eyes|chips\\s*in\\s*eyes|blind|eyesight|vision", "flags": "i" },
             { "points": 1, "check": "high|medium|low|risk\\s*level", "flags": "i" },
-            { "points": 1, "check": "serious|permanent|long\\s*term|hospital|medical", "flags": "i" }
+            { "points": 1, "check": "serious|permanent|long\\s*term|hospital|medical|infection", "flags": "i" }
           ]
         },
         {
           "id": "sr1_q8_i_c",
-          "text": "i)\tYou are preparing to use a portable power planer to skim the side off a door. You have left your safety glasses in the workshop. It will take you half an hour to go back and get them. The job will only take 10 minutes to complete. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nc.\tdescribe the appropriate course of action for managing the risk.",
+          "text": "i) You are preparing to use a portable power planer to skim the side off a door. You have left your safety glasses in the workshop. It will take you half an hour to go back and get them. The job will only take 10 minutes to complete.\n\na. identify the potential hazards\n\nb. assess the level of risk and describe any potential consequences or harm\n\nc. describe the appropriate course of action for managing the risk.",
           "image": "blank.jpg",
-          "hint": "Action = stop, get/borrow/buy safety glasses, then proceed.",
+          "hint": "Stop and get/borrow/replace safety glasses before using the tool.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 2,
           "rubric": [
-            { "points": 2, "check": "stop|do\\s*not\\s*use|go\\s*back|get\\s*(safety\\s*glasses|goggles)|borrow|replace|must\\s*wear", "flags": "i" }
+            { "points": 2, "check": "stop|do\\s*not\\s*use|go\\s*back|get\\s*(safety\\s*glasses|goggles)|borrow|replace|must\\s*wear|eye\\s*protection", "flags": "i" }
           ]
         },
 
         {
           "id": "sr1_q8_ii_a",
-          "text": "ii)\tDuring your first week on the job you have been told to use the circular saw bench to rip some lengths of timber into strips. You have never used a circular saw before or been given any instruction about the correct operating procedures for one. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\na.\tidentify the potential hazards",
+          "text": "ii) During your first week on the job you have been told to use the circular saw bench to rip some lengths of timber into strips. You have never used a circular saw before or been given any instruction about the correct operating procedures for one.\n\na. identify the potential hazards",
           "image": "blank.jpg",
-          "hint": "Hazard = using saw bench without training / lack of competency.",
+          "hint": "Hazard = untrained user / saw bench blade / kickback.",
           "type": "long",
-          "maxPoints": 2,
+          "responseLabel": "Your answer:",
+          "maxPoints": 3,
           "rubric": [
             { "points": 1, "check": "no\\s*training|never\\s*used|untrained|no\\s*instruction|not\\s*competent", "flags": "i" },
-            { "points": 1, "check": "circular\\s*saw|saw\\s*bench|rip\\s*timber|blade|kickback", "flags": "i" }
+            { "points": 1, "check": "circular\\s*saw|saw\\s*bench|rip\\s*timber|blade", "flags": "i" },
+            { "points": 1, "check": "kickback|unguarded|incorrect\\s*setup|wrong\\s*technique|no\\s*push\\s*stick|hands\\s*too\\s*close", "flags": "i" }
           ]
         },
         {
           "id": "sr1_q8_ii_b",
-          "text": "ii)\tDuring your first week on the job you have been told to use the circular saw bench to rip some lengths of timber into strips. You have never used a circular saw before or been given any instruction about the correct operating procedures for one. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nb.\tassess the level or risk and describe any potential consequences or harm",
+          "text": "ii) During your first week on the job you have been told to use the circular saw bench to rip some lengths of timber into strips. You have never used a circular saw before or been given any instruction about the correct operating procedures for one.\n\nb. assess the level of risk and describe any potential consequences or harm",
           "image": "blank.jpg",
-          "hint": "Harm = cuts/amputation/kickback injury. Risk level = high/medium/low.",
+          "hint": "High risk, severe cuts/amputation/kickback injuries.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 3,
           "rubric": [
             { "points": 1, "check": "cut|injur|amputation|finger\\s*loss|hand\\s*injur|kickback", "flags": "i" },
             { "points": 1, "check": "high|medium|low|risk\\s*level", "flags": "i" },
-            { "points": 1, "check": "serious|permanent|hospital|life\\s*changing", "flags": "i" }
+            { "points": 1, "check": "serious|permanent|hospital|life\\s*changing|fatal", "flags": "i" }
           ]
         },
         {
           "id": "sr1_q8_ii_c",
-          "text": "ii)\tDuring your first week on the job you have been told to use the circular saw bench to rip some lengths of timber into strips. You have never used a circular saw before or been given any instruction about the correct operating procedures for one. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nc.\tdescribe the appropriate course of action for managing the risk.",
+          "text": "ii) During your first week on the job you have been told to use the circular saw bench to rip some lengths of timber into strips. You have never used a circular saw before or been given any instruction about the correct operating procedures for one.\n\nc. describe the appropriate course of action for managing the risk.",
           "image": "blank.jpg",
-          "hint": "Action = do not use until trained/supervised; follow procedures; PPE; guards.",
+          "hint": "Do not use until trained/supervised; follow procedures; use PPE and guards.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 3,
           "rubric": [
             { "points": 1, "check": "do\\s*not\\s*use|stop|refuse|wait", "flags": "i" },
-            { "points": 1, "check": "training|instruction|supervision|ask\\s*for\\s*help", "flags": "i" },
-            { "points": 1, "check": "PPE|guards?|fence|push\\s*stick|procedure", "flags": "i" }
+            { "points": 1, "check": "training|instruction|supervision|ask\\s*for\\s*help|teacher|supervisor", "flags": "i" },
+            { "points": 1, "check": "PPE|guard|fence|push\\s*stick|procedure|SOP|safe\\s*operating", "flags": "i" }
           ]
         },
 
         {
           "id": "sr1_q8_iii_a",
-          "text": "iii)\tThe body of the electric drill is cracked. Some of the wires are exposed but none of them appear to be damaged. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\na.\tidentify the potential hazards",
+          "text": "iii) The body of the electric drill is cracked. Some of the wires are exposed but none of them appear to be damaged.\n\na. identify the potential hazards",
           "image": "blank.jpg",
-          "hint": "Hazard = damaged casing/exposed wires/electrical fault.",
+          "hint": "Hazard = cracked casing / exposed wires / damaged tool.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 2,
           "rubric": [
             { "points": 1, "check": "cracked|broken\\s*casing|exposed\\s*wires|damaged\\s*drill|faulty", "flags": "i" },
@@ -356,10 +273,11 @@
         },
         {
           "id": "sr1_q8_iii_b",
-          "text": "iii)\tThe body of the electric drill is cracked. Some of the wires are exposed but none of them appear to be damaged. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nb.\tassess the level or risk and describe any potential consequences or harm",
+          "text": "iii) The body of the electric drill is cracked. Some of the wires are exposed but none of them appear to be damaged.\n\nb. assess the level of risk and describe any potential consequences or harm",
           "image": "blank.jpg",
-          "hint": "Harm = electric shock/electrocution/burn. Risk level = high/medium/low.",
+          "hint": "Electric shock/electrocution; high risk.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 3,
           "rubric": [
             { "points": 1, "check": "electric\\s*shock|electrocution|burn|short\\s*circuit", "flags": "i" },
@@ -369,24 +287,26 @@
         },
         {
           "id": "sr1_q8_iii_c",
-          "text": "iii)\tThe body of the electric drill is cracked. Some of the wires are exposed but none of them appear to be damaged. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nc.\tdescribe the appropriate course of action for managing the risk.",
+          "text": "iii) The body of the electric drill is cracked. Some of the wires are exposed but none of them appear to be damaged.\n\nc. describe the appropriate course of action for managing the risk.",
           "image": "blank.jpg",
-          "hint": "Action = do not use; tag out; report; repair/replace.",
+          "hint": "Do not use; tag out; report; repair/replace.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 3,
           "rubric": [
             { "points": 1, "check": "do\\s*not\\s*use|stop|remove\\s*from\\s*service", "flags": "i" },
             { "points": 1, "check": "tag\\s*out|lock\\s*out|label|isolate", "flags": "i" },
-            { "points": 1, "check": "report|supervisor|teacher|repair|replace", "flags": "i" }
+            { "points": 1, "check": "report|supervisor|teacher|repair|replace|electrician", "flags": "i" }
           ]
         },
 
         {
           "id": "sr1_q8_iv_a",
-          "text": "iv)\tYou are using the spindle moulder to shape some short lengths of timber. The guards are getting in the way. One of your workmates suggests removing them until you complete this job. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\na.\tidentify the potential hazards",
+          "text": "iv) You are using the spindle moulder to shape some short lengths of timber. The guards are getting in the way. One of your workmates suggests removing them until you complete this job.\n\na. identify the potential hazards",
           "image": "blank.jpg",
-          "hint": "Hazard = removing guards/unguarded cutter/blade.",
+          "hint": "Hazard = removing guards / exposed cutter/blade.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 2,
           "rubric": [
             { "points": 1, "check": "remove\\s*guard|no\\s*guard|unguarded|guards\\s*off|exposed\\s*(blade|cutter)", "flags": "i" },
@@ -395,49 +315,53 @@
         },
         {
           "id": "sr1_q8_iv_b",
-          "text": "iv)\tYou are using the spindle moulder to shape some short lengths of timber. The guards are getting in the way. One of your workmates suggests removing them until you complete this job. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nb.\tassess the level or risk and describe any potential consequences or harm",
+          "text": "iv) You are using the spindle moulder to shape some short lengths of timber. The guards are getting in the way. One of your workmates suggests removing them until you complete this job.\n\nb. assess the level of risk and describe any potential consequences or harm",
           "image": "blank.jpg",
-          "hint": "Harm = severe cuts/amputation/finger loss. Risk level = high/medium/low.",
+          "hint": "High risk; severe cuts/amputation; permanent injury.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 3,
           "rubric": [
             { "points": 1, "check": "amputation|finger\\s*loss|severe\\s*cut|loss\\s*of\\s*fingers|injur", "flags": "i" },
             { "points": 1, "check": "high|medium|low|risk\\s*level", "flags": "i" },
-            { "points": 1, "check": "serious|permanent|life\\s*changing|hospital", "flags": "i" }
+            { "points": 1, "check": "serious|permanent|life\\s*changing|hospital|fatal", "flags": "i" }
           ]
         },
         {
           "id": "sr1_q8_iv_c",
-          "text": "iv)\tYou are using the spindle moulder to shape some short lengths of timber. The guards are getting in the way. One of your workmates suggests removing them until you complete this job. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nc.\tdescribe the appropriate course of action for managing the risk.",
+          "text": "iv) You are using the spindle moulder to shape some short lengths of timber. The guards are getting in the way. One of your workmates suggests removing them until you complete this job.\n\nc. describe the appropriate course of action for managing the risk.",
           "image": "blank.jpg",
-          "hint": "Action = never remove guards; use correct jigs/push sticks/alternative method; ask supervisor.",
+          "hint": "Never remove guards; use jigs/push blocks; ask supervisor/teacher.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 3,
           "rubric": [
-            { "points": 1, "check": "never\\s*remove|keep\\s*guards|guards\\s*must\\s*stay", "flags": "i" },
-            { "points": 1, "check": "jig|push\\s*stick|push\\s*block|clamp|alternative", "flags": "i" },
-            { "points": 1, "check": "supervisor|teacher|ask\\s*for\\s*help|safe\\s*procedure", "flags": "i" }
+            { "points": 1, "check": "never\\s*remove|keep\\s*guards|guards\\s*must\\s*stay|do\\s*not\\s*remove\\s*guards", "flags": "i" },
+            { "points": 1, "check": "jig|push\\s*stick|push\\s*block|clamp|alternative|hold\\s*down", "flags": "i" },
+            { "points": 1, "check": "supervisor|teacher|ask\\s*for\\s*help|safe\\s*procedure|SOP", "flags": "i" }
           ]
         },
 
         {
           "id": "sr1_q8_v_a",
-          "text": "v)\tYou are in the process of delivering a finished set of chairs to a customer. As you unload the truck you notice that one of the chair legs is made of cross-grained timber. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\na.\tidentify the potential hazards",
+          "text": "v) You are in the process of delivering a finished set of chairs to a customer. As you unload the truck you notice that one of the chair legs is made of cross-grained timber.\n\na. identify the potential hazards",
           "image": "blank.jpg",
-          "hint": "Hazard = weak/defective timber (cross-grain) could break.",
+          "hint": "Hazard = weak/defective cross-grained chair leg.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 2,
           "rubric": [
-            { "points": 1, "check": "cross\\s*grained|cross\\s*grain|defect|weak\\s*timber|faulty", "flags": "i" },
-            { "points": 1, "check": "chair\\s*leg|break|fail|crack", "flags": "i" }
+            { "points": 1, "check": "cross\\s*grained|cross\\s*grain|defect|weak\\s*timber|faulty|grain\\s*across", "flags": "i" },
+            { "points": 1, "check": "chair\\s*leg|break|fail|crack|collapse", "flags": "i" }
           ]
         },
         {
           "id": "sr1_q8_v_b",
-          "text": "v)\tYou are in the process of delivering a finished set of chairs to a customer. As you unload the truck you notice that one of the chair legs is made of cross-grained timber. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nb.\tassess the level or risk and describe any potential consequences or harm",
+          "text": "v) You are in the process of delivering a finished set of chairs to a customer. As you unload the truck you notice that one of the chair legs is made of cross-grained timber.\n\nb. assess the level of risk and describe any potential consequences or harm",
           "image": "blank.jpg",
-          "hint": "Harm = chair collapses, customer falls, injury. Risk level = high/medium/low.",
+          "hint": "Chair may break; customer could fall and get injured; risk level stated.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 3,
           "rubric": [
             { "points": 1, "check": "break|collapse|fail|snap", "flags": "i" },
@@ -447,13 +371,14 @@
         },
         {
           "id": "sr1_q8_v_c",
-          "text": "v)\tYou are in the process of delivering a finished set of chairs to a customer. As you unload the truck you notice that one of the chair legs is made of cross-grained timber. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nc.\tdescribe the appropriate course of action for managing the risk.",
+          "text": "v) You are in the process of delivering a finished set of chairs to a customer. As you unload the truck you notice that one of the chair legs is made of cross-grained timber.\n\nc. describe the appropriate course of action for managing the risk.",
           "image": "blank.jpg",
-          "hint": "Action = do not deliver; replace/repair; inspect and QA check before delivery.",
+          "hint": "Do not deliver; repair/replace; inspect before delivery.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 3,
           "rubric": [
-            { "points": 1, "check": "do\\s*not\\s*deliver|stop|remove\\s*chair|return", "flags": "i" },
+            { "points": 1, "check": "do\\s*not\\s*deliver|stop|remove\\s*chair|return|hold\\s*back", "flags": "i" },
             { "points": 1, "check": "replace|repair|remake|new\\s*leg|fix", "flags": "i" },
             { "points": 1, "check": "inspect|quality\\s*check|test|check\\s*before\\s*delivery", "flags": "i" }
           ]
@@ -461,10 +386,11 @@
 
         {
           "id": "sr1_q8_vi_a",
-          "text": "vi)\tYou have just spilt some oil on the workshop floor; it is the end of the day and you plan to clean it up tomorrow. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\na.\tidentify the potential hazards",
+          "text": "vi) You have just spilt some oil on the workshop floor; it is the end of the day and you plan to clean it up tomorrow.\n\na. identify the potential hazards",
           "image": "blank.jpg",
-          "hint": "Hazard = oil spill / slippery floor.",
-          "type": "long",
+          "hint": "Hazard = oil spill / slippery floor / slip hazard.",
+          "type": "short",
+          "responseLabel": "Your answer:",
           "maxPoints": 2,
           "rubric": [
             { "points": 2, "check": "oil\\s*spill|spill|slip\\s*hazard|slippery\\s*floor|wet\\s*floor", "flags": "i" }
@@ -472,29 +398,32 @@
         },
         {
           "id": "sr1_q8_vi_b",
-          "text": "vi)\tYou have just spilt some oil on the workshop floor; it is the end of the day and you plan to clean it up tomorrow. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nb.\tassess the level or risk and describe any potential consequences or harm",
+          "text": "vi) You have just spilt some oil on the workshop floor; it is the end of the day and you plan to clean it up tomorrow.\n\nb. assess the level of risk and describe any potential consequences or harm",
           "image": "blank.jpg",
-          "hint": "Harm = slips/falls/injury. Risk level = high/medium/low.",
+          "hint": "Slip/fall; injuries (bruises, broken bones, concussion); include risk level.",
           "type": "long",
-          "maxPoints": 3,
+          "responseLabel": "Your answer:",
+          "maxPoints": 4,
           "rubric": [
             { "points": 1, "check": "slip|fall|trip", "flags": "i" },
-            { "points": 1, "check": "injur|broken\\s*bones|bruise|concussion|hurt", "flags": "i" },
-            { "points": 1, "check": "high|medium|low|risk\\s*level", "flags": "i" }
+            { "points": 1, "check": "injur|broken\\s*bones|bruise|concussion|hurt|sprain|fracture", "flags": "i" },
+            { "points": 1, "check": "high|medium|low|risk\\s*level", "flags": "i" },
+            { "points": 1, "check": "serious|hospital|life\\s*changing|time\\s*off|permanent", "flags": "i" }
           ]
         },
         {
           "id": "sr1_q8_vi_c",
-          "text": "vi)\tYou have just spilt some oil on the workshop floor; it is the end of the day and you plan to clean it up tomorrow. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nc.\tdescribe the appropriate course of action for managing the risk.",
+          "text": "vi) You have just spilt some oil on the workshop floor; it is the end of the day and you plan to clean it up tomorrow.\n\nc. describe the appropriate course of action for managing the risk.",
           "image": "blank.jpg",
-          "hint": "Action = clean immediately; report; isolate area; signage/barriers until dry.",
+          "hint": "Clean immediately, report, use signs/barriers until dry.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 4,
           "rubric": [
-            { "points": 1, "check": "clean\\s*(up|immediately)|wipe\\s*up|absorb|degrease", "flags": "i" },
+            { "points": 1, "check": "clean\\s*(up|immediately)|wipe\\s*up|absorb|degrease|spill\\s*kit", "flags": "i" },
             { "points": 1, "check": "report|tell|inform|supervisor|teacher", "flags": "i" },
-            { "points": 1, "check": "sign|cone|barrier|cordon|isolate", "flags": "i" },
-            { "points": 1, "check": "until\\s*dry|dry\\s*floor|prevent\\s*others", "flags": "i" }
+            { "points": 1, "check": "sign|cone|barrier|cordon|isolate|block\\s*off", "flags": "i" },
+            { "points": 1, "check": "until\\s*dry|dry\\s*floor|prevent\\s*others|safe\\s*to\\s*walk", "flags": "i" }
           ]
         }
       ]
@@ -511,121 +440,112 @@
       "questions": [
         {
           "id": "sr2_q1",
-          "text": "1.\tYou are required to unload 15 x 40kg bags of cement off the back of a truck. The storage area is 75 metres away across a drive littered with construction waste. Describe the safest and most efficient means to get the cement into the storage area.",
+          "text": "1. You are required to unload 15 x 40kg bags of cement off the back of a truck. The storage area is 75 metres away across a drive littered with construction waste. Describe the safest and most efficient means to get the cement into the storage area.",
           "image": "blank.jpg",
-          "hint": "Think: clear pathway, mechanical aids, team lift, reduce carrying.",
+          "hint": "Clear path, use help, use trolley/wheelbarrow/pallet jack, reduce manual handling.",
           "type": "long",
-          "maxPoints": 4,
+          "responseLabel": "Your answer:",
+          "maxPoints": 5,
           "rubric": [
-            { "points": 1, "check": "clear\\s*(path|pathway)|remove\\s*(waste|debris)|tidy\\s*route", "flags": "i" },
-            { "points": 1, "check": "wheel\\s*barrow|wheelbarrow|trolley|dolly|pallet\\s*jack|mechanical\\s*aid", "flags": "i" },
-            { "points": 1, "check": "team\\s*lift|two\\s*people|get\\s*help|buddy|assist", "flags": "i" },
-            { "points": 1, "check": "reduce\\s*(carrying|manual)|one\\s*at\\s*a\\s*time|move\\s*truck\\s*closer", "flags": "i" }
+            { "points": 1, "check": "clear|remove|tidy|pathway|hazard|waste|debris", "flags": "i" },
+            { "points": 1, "check": "wheelbarrow|trolley|hand\\s*truck|dolly|pallet\\s*jack|forklift|lift\\s*assist", "flags": "i" },
+            { "points": 1, "check": "two\\s*people|team\\s*lift|get\\s*help|buddy|ask\\s*for\\s*help", "flags": "i" },
+            { "points": 1, "check": "multiple\\s*trips|one\\s*bag\\s*at\\s*a\\s*time|don'?t\\s*overload|safe\\s*load", "flags": "i" },
+            { "points": 1, "check": "PPE|gloves|boots|hi\\s*vis|steel\\s*cap|safety\\s*footwear", "flags": "i" }
           ]
         },
         {
           "id": "sr2_q2",
-          "text": "2.\tDescribe the correct lifting techniques for a heavy load, such as a bag of cement.",
+          "text": "2. Describe the correct lifting techniques for a heavy load, such as a bag of cement.",
           "image": "blank.jpg",
-          "hint": "Bend knees, straight back, close to body, no twisting.",
+          "hint": "Bend knees, straight back, keep load close, no twisting, lift with legs.",
           "type": "long",
-          "maxPoints": 4,
+          "responseLabel": "Your answer:",
+          "maxPoints": 5,
           "rubric": [
-            { "points": 1, "check": "bend\\s*(knees|legs)|squat", "flags": "i" },
-            { "points": 1, "check": "back\\s*(straight|neutral)|straight\\s*spine", "flags": "i" },
-            { "points": 1, "check": "close\\s*to\\s*(body|chest)|hold\\s*close", "flags": "i" },
-            { "points": 1, "check": "no\\s*twist|turn\\s*feet|avoid\\s*twisting", "flags": "i" }
+            { "points": 1, "check": "bend\\s*(at\\s*)?knees|knees\\s*bent|squat", "flags": "i" },
+            { "points": 1, "check": "straight\\s*back|neutral\\s*spine|back\\s*straight", "flags": "i" },
+            { "points": 1, "check": "close\\s*to\\s*body|keep\\s*load\\s*close", "flags": "i" },
+            { "points": 1, "check": "no\\s*twist|don'?t\\s*twist|turn\\s*with\\s*feet", "flags": "i" },
+            { "points": 1, "check": "lift\\s*with\\s*legs|use\\s*legs|steady|firm\\s*grip", "flags": "i" }
           ]
         },
         {
           "id": "sr2_q3",
-          "text": "3.\tDescribe the correct technique for carrying a sheet of plywood.",
+          "text": "3. Describe the correct technique for carrying a sheet of plywood.",
           "image": "blank.jpg",
-          "hint": "Two people, on edge, communicate, clear visibility.",
+          "hint": "Two-person carry, on edge, communicate, keep vision clear.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 4,
           "rubric": [
-            { "points": 1, "check": "two\\s*people|team|pair", "flags": "i" },
-            { "points": 1, "check": "on\\s*edge|upright|vertical", "flags": "i" },
-            { "points": 1, "check": "communicat|call\\s*out|talk", "flags": "i" },
-            { "points": 1, "check": "clear\\s*(route|path)|visibility|line\\s*of\\s*sight|one\\s*sheet", "flags": "i" }
+            { "points": 1, "check": "two\\s*people|pair|team\\s*carry", "flags": "i" },
+            { "points": 1, "check": "carry\\s*on\\s*edge|hold\\s*edges|grip\\s*ends", "flags": "i" },
+            { "points": 1, "check": "communication|count\\s*in|coordinate|watch\\s*corners", "flags": "i" },
+            { "points": 1, "check": "clear\\s*vision|don'?t\\s*block\\s*view|avoid\\s*others|path\\s*clear", "flags": "i" }
           ]
         },
         {
           "id": "sr2_q4",
-          "text": "4.\tIdentify a risk associated with storing heavy items on shelves.",
+          "text": "4. Identify a risk associated with storing heavy items on shelves.",
           "image": "blank.jpg",
-          "hint": "Falling items or shelf collapse.",
-          "type": "long",
+          "hint": "Falling objects, overloading shelves, crush injuries.",
+          "type": "short",
+          "responseLabel": "Your answer:",
           "maxPoints": 2,
           "rubric": [
-            { "points": 1, "check": "fall|falling\\s*objects|drop", "flags": "i" },
-            { "points": 1, "check": "collapse|overload|break", "flags": "i" }
+            { "points": 1, "check": "fall|drop|slip\\s*off|topple|collapse", "flags": "i" },
+            { "points": 1, "check": "injur|crush|broken\\s*bones|head\\s*injury|hurt", "flags": "i" }
           ]
         },
 
         {
-          "id": "sr2_q5_co2",
-          "text": "5.\tIdentify the type of fire that you would use each of the following extinguishers for \n\nProvide an example of combustible material for each extinguisher.\n\nType of extinguisher:  CO2 Carbon dioxide\n\nFor use on:\n\nE.g. of combustible materials:",
+          "id": "sr2_q5",
+          "text": "5. Identify the type of fire that you would use each of the following extinguishers for \n\nProvide an example of combustible material for each extinguisher.\n\nType of extinguisher:\n\nFor use on:\n\nE.g. of combustible materials:\n\nType of extinguisher:\n\nFor use on:\n\nE.g. of combustible materials:\n\nType of extinguisher:\n\nFor use on:\n\nE.g. of combustible materials:",
           "image": "blank.jpg",
-          "hint": "CO2 is for electrical equipment and flammable liquids (Class B).",
+          "hint": "Include 3 extinguisher types AND for each: what it’s used on + an example fuel/material.",
           "type": "long",
-          "maxPoints": 3,
+          "responseLabel": "Your full answer (all 3 extinguishers):",
+          "maxPoints": 6,
           "rubric": [
-            { "points": 1, "check": "electrical|equipment|live\\s*electrical|class\\s*b|flammable\\s*liquid", "flags": "i" },
-            { "points": 1, "check": "petrol|solvent|paint|oil|computer|electronics|wiring|switchboard", "flags": "i" },
-            { "points": 1, "check": "CO2|carbon\\s*dioxide", "flags": "i" }
-          ]
-        },
-        {
-          "id": "sr2_q5_foam",
-          "text": "Type of extinguisher: FOAM\n\nFor use on:\n\nE.g. of combustible materials:",
-          "image": "blank.jpg",
-          "hint": "Foam is commonly for flammable liquids and can be used on some solids (Class A).",
-          "type": "long",
-          "maxPoints": 3,
-          "rubric": [
-            { "points": 1, "check": "flammable\\s*liquid|class\\s*b|class\\s*a|solids", "flags": "i" },
-            { "points": 1, "check": "petrol|oil|diesel|paint|solvent|wood|paper", "flags": "i" },
-            { "points": 1, "check": "foam", "flags": "i" }
-          ]
-        },
-        {
-          "id": "sr2_q5_water",
-          "text": "Type of extinguisher: Water\n\nFor use on:\n\nE.g. of combustible materials:",
-          "image": "blank.jpg",
-          "hint": "Water is for Class A solids only (wood/paper/fabric).",
-          "type": "long",
-          "maxPoints": 3,
-          "rubric": [
-            { "points": 1, "check": "class\\s*a|solids\\s*only|wood|paper|fabric|cardboard|timber", "flags": "i" },
-            { "points": 1, "check": "wood|paper|cardboard|fabric|textile|timber", "flags": "i" },
-            { "points": 1, "check": "water", "flags": "i" }
-          ]
+            { "points": 1, "check": "CO2|carbon\\s*dioxide", "flags": "i" },
+            { "points": 1, "check": "(electrical|live\\s*electrical|switchboard|wiring|equipment)|class\\s*B|flammable\\s*liquid", "flags": "i", "note": "CO2 use case" },
+            { "points": 1, "check": "petrol|paint\\s*thinner|solvent|oil|fuel|meths|acetone|electrical\\s*equipment", "flags": "i", "note": "CO2 example fuel/material" },
+
+            { "points": 1, "check": "foam", "flags": "i" },
+            { "points": 1, "check": "class\\s*A|wood|paper|fabric|solid|class\\s*B|flammable\\s*liquid|petrol|oil|paint", "flags": "i", "note": "Foam use case" },
+            { "points": 1, "check": "wood|paper|cardboard|fabric|petrol|oil|paint|solvent|diesel", "flags": "i", "note": "Foam example fuel/material" }
+          ],
+          "teacherNote": "This rubric gives 6 points and expects TWO extinguishers minimum (CO2 + Foam). If you require Water as the third extinguisher, add three more rubric rows and raise maxPoints to 9."
         },
 
         {
           "id": "sr2_q6",
-          "text": "6.\tDescribe the potential consequences of using a water type extinguisher on an electrical fire.",
+          "text": "6. Describe the potential consequences of using a water type extinguisher on an electrical fire.",
           "image": "blank.jpg",
-          "hint": "Water conducts electricity – shock/electrocution.",
+          "hint": "Water conducts electricity → shock/electrocution.",
           "type": "long",
-          "maxPoints": 2,
+          "responseLabel": "Your answer:",
+          "maxPoints": 3,
           "rubric": [
-            { "points": 1, "check": "conducts\\s*electricity|conductive", "flags": "i" },
-            { "points": 1, "check": "electric\\s*shock|electrocution|killed|death", "flags": "i" }
+            { "points": 1, "check": "conduct|electricity|conducts\\s*electricity", "flags": "i" },
+            { "points": 1, "check": "electric\\s*shock|electrocution|shock", "flags": "i" },
+            { "points": 1, "check": "death|fatal|burn|serious\\s*injury", "flags": "i" }
           ]
         },
+
         {
           "id": "sr2_q7",
-          "text": "7.\tWhat does the sign to the right represent and when would this area be used?",
+          "text": "7. What does the sign to the right represent and when would this area be used?",
           "image": "blank.jpg",
-          "hint": "Assembly/muster point used during evacuation emergencies.",
+          "hint": "Assembly point / muster point used in an emergency evacuation.",
           "type": "long",
-          "maxPoints": 2,
+          "responseLabel": "Your answer:",
+          "maxPoints": 3,
           "rubric": [
-            { "points": 1, "check": "assembly\\s*point|muster\\s*point", "flags": "i" },
-            { "points": 1, "check": "emergency|evacuat|fire|earthquake", "flags": "i" }
+            { "points": 1, "check": "assembly\\s*point|muster\\s*point|meeting\\s*point", "flags": "i" },
+            { "points": 1, "check": "emergency|evacuat|fire|earthquake", "flags": "i" },
+            { "points": 1, "check": "go\\s*to|gather|meet|account\\s*for|roll\\s*call", "flags": "i" }
           ]
         }
       ]
@@ -642,182 +562,120 @@
       "questions": [
         {
           "id": "sr3_q1",
-          "text": "1.\tYour first job involves working on a roof. You feel uncomfortable at heights. What should you do?",
+          "text": "1. Your first job involves working on a roof. You feel uncomfortable at heights. What should you do?",
           "image": "blank.jpg",
-          "hint": "Tell supervisor, request training/supervision, use fall protection.",
+          "hint": "Tell supervisor/teacher, request training, use correct safety equipment or alternative task.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 4,
           "rubric": [
-            { "points": 1, "check": "tell|inform|supervisor|teacher|boss", "flags": "i" },
-            { "points": 1, "check": "training|instruction|supervision", "flags": "i" },
-            { "points": 1, "check": "harness|fall\\s*protection|fall\\s*arrest|edge\\s*protection", "flags": "i" },
-            { "points": 1, "check": "do\\s*not\\s*proceed|stop|until\\s*safe|unsafe", "flags": "i" }
+            { "points": 1, "check": "tell|inform|report|supervisor|teacher", "flags": "i" },
+            { "points": 1, "check": "training|instruction|competent|supervision", "flags": "i" },
+            { "points": 1, "check": "harness|fall\\s*arrest|PPE|scaffold|edge\\s*protection", "flags": "i" },
+            { "points": 1, "check": "don'?t\\s*do\\s*it|stop|refuse|alternative\\s*task|safe\\s*option", "flags": "i" }
           ]
         },
         {
           "id": "sr3_q2",
-          "text": "2.\tWhat is the recommended angle ratio for a ladder when it is set up?",
+          "text": "2. What is the recommended angle ratio for a ladder when it is set up?",
           "image": "blank.jpg",
-          "hint": "4:1 (1 out for every 4 up) or approx 75 degrees.",
+          "hint": "4:1 ratio or around 75° / 70–75°.",
           "type": "short",
+          "responseLabel": "Your answer:",
           "maxPoints": 2,
           "rubric": [
-            { "points": 2, "check": "4\\s*[:/ ]\\s*1|1\\s*out\\s*(for|to)\\s*every\\s*4\\s*up|75\\s*deg|75\\s*degrees|\\b75°\\b|70\\s*deg|70\\s*degrees|\\b70°\\b", "flags": "i" }
+            { "points": 2, "check": "4\\s*(:|to)\\s*1|four\\s*(to|:)\\s*one|75\\s*degrees|70\\s*degrees|70\\s*\\-\\s*75\\s*degrees|4\\s*m\\s*up\\s*\\w*\\s*1\\s*out|4\\s*up\\s*\\w*\\s*1\\s*out", "flags": "i" }
           ]
         },
         {
           "id": "sr3_q3",
-          "text": "3.\tWhy are power lines an extreme hazard when you are carrying or using an aluminium ladder?",
+          "text": "3. Why are power lines an extreme hazard when you are carrying or using an aluminium ladder?",
           "image": "blank.jpg",
-          "hint": "Aluminium conducts electricity – electrocution risk.",
+          "hint": "Aluminium conducts electricity → electrocution.",
           "type": "long",
-          "maxPoints": 2,
+          "responseLabel": "Your answer:",
+          "maxPoints": 3,
           "rubric": [
-            { "points": 1, "check": "conducts\\s*electricity|conductive", "flags": "i" },
-            { "points": 1, "check": "electrocution|electric\\s*shock", "flags": "i" }
+            { "points": 1, "check": "aluminium|aluminum", "flags": "i" },
+            { "points": 1, "check": "conduct|electricity|conducts\\s*electricity", "flags": "i" },
+            { "points": 1, "check": "electrocution|electric\\s*shock|shock|fatal", "flags": "i" }
           ]
         },
         {
           "id": "sr3_q4",
-          "text": "4.\tWhat is the minimum distance the top of a ladder should extend above a working platform?",
+          "text": "4. What is the minimum distance the top of a ladder should extend above a working platform?",
           "image": "blank.jpg",
-          "hint": "1 metre.",
+          "hint": "1 metre (about 1m).",
           "type": "short",
+          "responseLabel": "Your answer:",
           "maxPoints": 1,
-          "rubric": [
-            { "points": 1, "check": "\\b1\\s*m(et(re|er))?\\b|\\b100\\s*cm\\b|\\bone\\s*met(re|er)\\b", "flags": "i" }
-          ]
+          "rubric": [{ "points": 1, "check": "\\b1\\s*m(et(re)?)?\\b|one\\s*metre|one\\s*meter", "flags": "i" }]
         },
         {
           "id": "sr3_q5",
-          "text": "5.\tIdentify the possible consequences of directing compressed air at another person.",
+          "text": "5. Identify the possible consequences of directing compressed air at another person.",
           "image": "blank.jpg",
-          "hint": "Eye injury, debris, skin penetration, air embolism/bloodstream risk.",
+          "hint": "Eye injury from debris; air embolism; skin injection; serious injury/death.",
           "type": "long",
+          "responseLabel": "Your answer:",
+          "maxPoints": 4,
+          "rubric": [
+            { "points": 1, "check": "eye|eyes|debris|dirt|dust|projectile", "flags": "i" },
+            { "points": 1, "check": "injur|damage|blind|eyesight|vision", "flags": "i" },
+            { "points": 1, "check": "air\\s*embol|embolism|air\\s*bubble|blood\\s*stream", "flags": "i" },
+            { "points": 1, "check": "cardiac\\s*arrest|death|fatal|serious", "flags": "i" }
+          ]
+        },
+
+        {
+          "id": "sr3_q6",
+          "text": "6. Identify 3 sources of information that you can use to identify the hazards and precautions associated with a specific product.\n1.\n2.\n3.",
+          "image": "blank.jpg",
+          "hint": "SDS/MSDS, label, hazard register, manufacturer instructions.",
+          "type": "long",
+          "responseLabel": "Your answers (1–3):",
           "maxPoints": 3,
           "rubric": [
-            { "points": 1, "check": "eye\\s*injur|blind|eyesight|debris|dirt", "flags": "i" },
-            { "points": 1, "check": "skin|penetrat|inject|under\\s*skin", "flags": "i" },
-            { "points": 1, "check": "embolism|bloodstream|air\\s*bubble|cardiac|death|serious", "flags": "i" }
+            { "points": 1, "check": "SDS|MSDS|safety\\s*data\\s*sheet|label|manufacturer|instructions|hazard\\s*register|RAMS|SWMS|JSA|manual", "flags": "i" },
+            { "points": 1, "check": "SDS|MSDS|safety\\s*data\\s*sheet|label|manufacturer|instructions|hazard\\s*register|RAMS|SWMS|JSA|manual", "flags": "i", "note": "Different source (teacher verify uniqueness)." },
+            { "points": 1, "check": "SDS|MSDS|safety\\s*data\\s*sheet|label|manufacturer|instructions|hazard\\s*register|RAMS|SWMS|JSA|manual", "flags": "i", "note": "Different source (teacher verify uniqueness)." }
           ]
         },
 
         {
-          "id": "sr3_q6_1",
-          "text": "6.\tIdentify 3 sources of information that you can use to identify the hazards and precautions associated with a specific product.\n\n1.",
+          "id": "sr3_q7",
+          "text": "7. Identify 3 potential hazards and ongoing consequences that could occur if you decide to use a machine without receiving instructions in its proper use.\nHazard 1:_____________________________________________________________________________\nConsequence:____________________________________________________________________________________________________________________________________________________________________________\nHazard 2:_____________________________________________________________________________\nConsequence:____________________________________________________________________________________________________________________________________________________________________________\nHazard 3:_____________________________________________________________________________\nConsequence:____________________________________________________________________________________________________________________________________________________________________________",
           "image": "blank.jpg",
-          "hint": "Examples: SDS, hazard register, label, instructions, RAMS.",
-          "type": "short",
-          "maxPoints": 1,
+          "hint": "Hazards (e.g., rotating blade/kickback/flying debris). Consequences (e.g., cuts/amputation/eye injury/hearing loss).",
+          "type": "long",
+          "responseLabel": "Your answers (Hazard + Consequence for 1–3):",
+          "maxPoints": 6,
           "rubric": [
-            { "points": 1, "check": "SDS|MSDS|safety\\s*data\\s*sheet|hazard\\s*register|label|instructions|manual|RAMS|JSA|SWMS", "flags": "i" }
-          ]
-        },
-        {
-          "id": "sr3_q6_2",
-          "text": "2.",
-          "image": "blank.jpg",
-          "hint": "Give a different source to Q6(1).",
-          "type": "short",
-          "maxPoints": 1,
-          "rubric": [
-            { "points": 1, "check": "SDS|MSDS|safety\\s*data\\s*sheet|hazard\\s*register|label|instructions|manual|RAMS|JSA|SWMS", "flags": "i" }
-          ]
-        },
-        {
-          "id": "sr3_q6_3",
-          "text": "3.",
-          "image": "blank.jpg",
-          "hint": "Give a different source to Q6(1–2).",
-          "type": "short",
-          "maxPoints": 1,
-          "rubric": [
-            { "points": 1, "check": "SDS|MSDS|safety\\s*data\\s*sheet|hazard\\s*register|label|instructions|manual|RAMS|JSA|SWMS", "flags": "i" }
-          ]
-        },
-
-        {
-          "id": "sr3_q7_h1",
-          "text": "7.\tIdentify 3 potential hazards and ongoing consequences that could occur if you decide to use a machine without receiving instructions in its proper use.\nHazard 1:_____________________________________________________________________________",
-          "image": "blank.jpg",
-          "hint": "Examples: rotating blade, kickback, projectiles, noise, entanglement.",
-          "type": "short",
-          "maxPoints": 1,
-          "rubric": [
-            { "points": 1, "check": "rotat|blade|moving\\s*parts|kickback|projectile|chips|noise|entangle|unguarded|pinch\\s*point", "flags": "i" }
-          ]
-        },
-        {
-          "id": "sr3_q7_c1",
-          "text": "Consequence:____________________________________________________________________________________________________________________________________________________________________________",
-          "image": "blank.jpg",
-          "hint": "Examples: cuts, amputation, eye injury, hearing loss.",
-          "type": "short",
-          "maxPoints": 1,
-          "rubric": [
-            { "points": 1, "check": "cut|injur|amputation|finger\\s*loss|eye\\s*injur|blind|hearing\\s*loss|tinnitus|bruise|fracture", "flags": "i" }
-          ]
-        },
-        {
-          "id": "sr3_q7_h2",
-          "text": "Hazard 2:_____________________________________________________________________________",
-          "image": "blank.jpg",
-          "hint": "Give a different hazard.",
-          "type": "short",
-          "maxPoints": 1,
-          "rubric": [
-            { "points": 1, "check": "rotat|blade|moving\\s*parts|kickback|projectile|chips|noise|entangle|unguarded|pinch\\s*point", "flags": "i" }
-          ]
-        },
-        {
-          "id": "sr3_q7_c2",
-          "text": "Consequence:____________________________________________________________________________________________________________________________________________________________________________",
-          "image": "blank.jpg",
-          "hint": "Give a matching consequence.",
-          "type": "short",
-          "maxPoints": 1,
-          "rubric": [
-            { "points": 1, "check": "cut|injur|amputation|finger\\s*loss|eye\\s*injur|blind|hearing\\s*loss|tinnitus|bruise|fracture", "flags": "i" }
-          ]
-        },
-        {
-          "id": "sr3_q7_h3",
-          "text": "Hazard 3:_____________________________________________________________________________",
-          "image": "blank.jpg",
-          "hint": "Give a third hazard.",
-          "type": "short",
-          "maxPoints": 1,
-          "rubric": [
-            { "points": 1, "check": "rotat|blade|moving\\s*parts|kickback|projectile|chips|noise|entangle|unguarded|pinch\\s*point", "flags": "i" }
-          ]
-        },
-        {
-          "id": "sr3_q7_c3",
-          "text": "Consequence:____________________________________________________________________________________________________________________________________________________________________________",
-          "image": "blank.jpg",
-          "hint": "Give a matching consequence.",
-          "type": "short",
-          "maxPoints": 1,
-          "rubric": [
-            { "points": 1, "check": "cut|injur|amputation|finger\\s*loss|eye\\s*injur|blind|hearing\\s*loss|tinnitus|bruise|fracture", "flags": "i" }
+            { "points": 1, "check": "blade|rotat|kickback|pinch|crush|flying\\s*debris|projectile|noise|electric|unguarded|jam", "flags": "i", "note": "Hazard 1" },
+            { "points": 1, "check": "cut|injur|amputation|bruise|eye\\s*injur|blind|hearing\\s*loss|burn|shock|death|long\\s*term", "flags": "i", "note": "Consequence 1" },
+            { "points": 1, "check": "blade|rotat|kickback|pinch|crush|flying\\s*debris|projectile|noise|electric|unguarded|jam", "flags": "i", "note": "Hazard 2" },
+            { "points": 1, "check": "cut|injur|amputation|bruise|eye\\s*injur|blind|hearing\\s*loss|burn|shock|death|long\\s*term", "flags": "i", "note": "Consequence 2" },
+            { "points": 1, "check": "blade|rotat|kickback|pinch|crush|flying\\s*debris|projectile|noise|electric|unguarded|jam", "flags": "i", "note": "Hazard 3" },
+            { "points": 1, "check": "cut|injur|amputation|bruise|eye\\s*injur|blind|hearing\\s*loss|burn|shock|death|long\\s*term", "flags": "i", "note": "Consequence 3" }
           ]
         },
 
         {
           "id": "sr3_q8",
-          "text": "8.\tIdentify hazards associated with each of the following safety issues.\n\nLoose clothing:\n\n\n\nLong hair:\n\n\n\nNon-safety footwear:\n\n\n\nWearing jewellery:\n\n\n\nPoor lifting technique:\n\n\n\nHandling or moving of heavy objects:\t \n\n\n\nHeights:",
+          "text": "8. Identify hazards associated with each of the following safety issues.\n\nLoose clothing:\n\nLong hair:\n\nNon-safety footwear:\n\nWearing jewellery:\n\nPoor lifting technique:\n\nHandling or moving of heavy objects:\t \n\nHeights:",
           "image": "blank.jpg",
-          "hint": "Link each safety issue to a hazard (entanglement, crush, slips, back injury, falls).",
+          "hint": "Give a hazard for each item (caught/entanglement; slips/crush; back injury; falls from height).",
           "type": "long",
+          "responseLabel": "Your answers (one hazard per issue):",
           "maxPoints": 7,
           "rubric": [
-            { "points": 1, "check": "loose\\s*clothing.*(caught|entangle|rotate|machin)|caught.*loose\\s*clothing", "flags": "i" },
-            { "points": 1, "check": "long\\s*hair.*(caught|entangle|rotate|machin)|caught.*hair", "flags": "i" },
-            { "points": 1, "check": "non\\s*safety\\s*footwear.*(slip|trip|crush|toe|electrocution|shock)|steel\\s*cap|safety\\s*boots", "flags": "i" },
-            { "points": 1, "check": "jewell?ery.*(caught|entangle|rotate|deglov)|ring.*caught", "flags": "i" },
-            { "points": 1, "check": "poor\\s*lifting.*(back|strain|injur)|lift.*(knees|back)", "flags": "i" },
-            { "points": 1, "check": "heavy\\s*objects.*(back|strain|crush|toes|fingers)|handling.*heavy", "flags": "i" },
-            { "points": 1, "check": "heights.*(fall|serious|death|injur)|fall\\s*from\\s*height", "flags": "i" }
+            { "points": 1, "check": "loose\\s*clothing|clothing|caught|entangle|snag|pull\\s*in|rotat|machin", "flags": "i", "note": "Loose clothing hazard" },
+            { "points": 1, "check": "long\\s*hair|hair|caught|entangle|pull\\s*in|rotat|machin", "flags": "i", "note": "Long hair hazard" },
+            { "points": 1, "check": "non\\-?safety\\s*footwear|shoes|boots|slip|trip|crush|toe|puncture", "flags": "i", "note": "Non-safety footwear hazard" },
+            { "points": 1, "check": "jewellery|jewelry|ring|caught|entangle|snag|deglov|pull\\s*in", "flags": "i", "note": "Jewellery hazard" },
+            { "points": 1, "check": "poor\\s*lifting|lifting|back\\s*injury|strain|sprain|muscle", "flags": "i", "note": "Poor lifting technique hazard" },
+            { "points": 1, "check": "heavy\\s*objects|manual\\s*handling|crush|drop|back\\s*injury|strain|trip", "flags": "i", "note": "Heavy objects hazard" },
+            { "points": 1, "check": "heights|fall|falls|ladder|scaffold|edge|broken\\s*bones|head\\s*injury|fatal|death", "flags": "i", "note": "Heights hazard" }
           ]
         }
       ]
@@ -825,7 +683,7 @@
 
     {
       "id": "24354-knowledge",
-      "title": "Knowledge Assessment - 24354 (v3)",
+      "title": "Knowledge Assessment – 24354 (v3)",
       "subtitle": "Demonstrate knowledge of health and safety legislation and apply safe working practices in a BCATS environment",
       "usNumber": "24354",
       "usVersion": "v3",
@@ -834,238 +692,57 @@
       "questions": [
         {
           "id": "ka_q2",
-          "text": "2.\tWhat is the main purpose of the Health and Safety at Work Act 2015 (‘the Act’)?",
+          "text": "2. What is the main purpose of the Health and Safety at Work Act 2015 (‘the Act’)?",
           "image": "blank.jpg",
-          "hint": "Protect workers and others; ensure health & safety; reasonably practicable; go home safe.",
+          "hint": "Secure health and safety of workers and workplaces; everyone goes home safely.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 4,
           "rubric": [
-            { "points": 1, "check": "health\\s*&?\\s*safety|HSWA|Health\\s+and\\s+Safety", "flags": "i" },
-            { "points": 1, "check": "workers?|workplace|PCBUs?|everyone", "flags": "i" },
-            { "points": 1, "check": "reasonably\\s*practicable|so\\s*far\\s*as\\s*reasonably\\s*practicable", "flags": "i" },
-            { "points": 1, "check": "go\\s*home\\s*safely|prevent\\s*harm|secure|protect", "flags": "i" }
+            { "points": 1, "check": "secure|ensure|protect", "flags": "i" },
+            { "points": 1, "check": "health\\s*and\\s*safety|health\\s*&\\s*safety|HSWA", "flags": "i" },
+            { "points": 1, "check": "workers?|workplace|people", "flags": "i" },
+            { "points": 1, "check": "go\\s*home\\s*safely|end\\s*of\\s*each\\s*day|safe\\s*return", "flags": "i" }
           ]
         },
         {
           "id": "ka_q3",
-          "text": "3.\tWhat are your responsibilities as a “worker” under the Act?",
+          "text": "3. What are your responsibilities as a “worker” under the Act?",
           "image": "blank.jpg",
-          "hint": "Reasonable care, follow instructions, PPE, report hazards, protect others.",
+          "hint": "Take reasonable care, follow procedures, PPE, report hazards/incidents, help eliminate/minimise risks.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 5,
           "rubric": [
             { "points": 1, "check": "reasonable\\s*care|take\\s*care", "flags": "i" },
-            { "points": 1, "check": "others|do\\s*not\\s*harm|others\\s*safety", "flags": "i" },
-            { "points": 1, "check": "follow|instructions?|procedure|rules", "flags": "i" },
-            { "points": 1, "check": "PPE|protective\\s*equipment|safety\\s*glasses|earmuffs|gloves", "flags": "i" },
-            { "points": 1, "check": "report|hazard|incident|near\\s*miss|injur", "flags": "i" }
+            { "points": 1, "check": "follow\\s*(rules|procedures|instructions)|comply", "flags": "i" },
+            { "points": 1, "check": "PPE|protective\\s*equipment|safety\\s*gear", "flags": "i" },
+            { "points": 1, "check": "report\\s*(hazard|risk|incident|injury|near\\s*miss)", "flags": "i" },
+            { "points": 1, "check": "eliminat|minimis|reduce\\s*risk|control", "flags": "i" }
           ]
         },
         {
           "id": "ka_q4",
-          "text": "4.\tWhat is a person conducting a business or undertaking’s (PCBUs) main responsibility under the Act?",
+          "text": "4. What is a person conducting a business or undertaking’s (PCBUs) main responsibility under the Act?",
           "image": "blank.jpg",
-          "hint": "Ensure health and safety so far as reasonably practicable; workers and others affected.",
+          "hint": "Ensure, so far as reasonably practicable, the health and safety of workers influenced or directed by the PCBU.",
           "type": "long",
+          "responseLabel": "Your answer:",
           "maxPoints": 4,
           "rubric": [
-            { "points": 1, "check": "PCBU|person\\s*conducting\\s*a\\s*business\\s*or\\s*undertaking", "flags": "i" },
+            { "points": 1, "check": "PCBU|business\\s*or\\s*undertaking", "flags": "i" },
             { "points": 1, "check": "ensure|provide|maintain", "flags": "i" },
-            { "points": 1, "check": "reasonably\\s*practicable|so\\s*far\\s*as\\s*reasonably\\s*practicable", "flags": "i" },
-            { "points": 1, "check": "workers?|others|affected|workplace", "flags": "i" }
-          ]
-        },
-
-        {
-          "id": "ka_q5_electrical",
-          "text": "Electrical",
-          "image": "blank.jpg",
-          "hint": "Harm: electric shock/electrocution. Control: check tools, tag out, RCD.",
-          "type": "long",
-          "maxPoints": 2,
-          "rubric": [
-            { "points": 1, "check": "shock|electrocution|burn", "flags": "i" },
-            { "points": 1, "check": "RCD|tag\\s*out|test|check\\s*(cord|lead|tool)|do\\s*not\\s*use\\s*damaged", "flags": "i" }
-          ]
-        },
-        {
-          "id": "ka_q5_chemical",
-          "text": "Chemical",
-          "image": "blank.jpg",
-          "hint": "Harm: burns/poisoning. Control: SDS, PPE, ventilation.",
-          "type": "long",
-          "maxPoints": 2,
-          "rubric": [
-            { "points": 1, "check": "burn|poison|irritat|harm|skin|eye", "flags": "i" },
-            { "points": 1, "check": "SDS|MSDS|PPE|gloves|goggles|ventilat|mask|respirator", "flags": "i" }
-          ]
-        },
-        {
-          "id": "ka_q5_fire",
-          "text": "Fire",
-          "image": "blank.jpg",
-          "hint": "Harm: burns/smoke inhalation. Control: extinguishers, evacuation, keep exits clear.",
-          "type": "long",
-          "maxPoints": 2,
-          "rubric": [
-            { "points": 1, "check": "burn|smoke|inhalation|injur|death", "flags": "i" },
-            { "points": 1, "check": "extinguisher|alarm|evacuat|exits\\s*clear|fire\\s*blanket|training", "flags": "i" }
-          ]
-        },
-        {
-          "id": "ka_q5_fumes",
-          "text": "Fumes",
-          "image": "blank.jpg",
-          "hint": "Harm: breathing/lung irritation. Control: ventilation, mask/respirator.",
-          "type": "long",
-          "maxPoints": 2,
-          "rubric": [
-            { "points": 1, "check": "breath|lung|respir|irritat|sick|dizzy", "flags": "i" },
-            { "points": 1, "check": "ventilat|mask|respirator|fume\\s*extract|open\\s*doors", "flags": "i" }
-          ]
-        },
-        {
-          "id": "ka_q5_gas",
-          "text": "Gas",
-          "image": "blank.jpg",
-          "hint": "Harm: explosion/asphyxiation. Control: isolate, ventilate, secure cylinders.",
-          "type": "long",
-          "maxPoints": 2,
-          "rubric": [
-            { "points": 1, "check": "explos|asphyx|suffocat|fire|injur", "flags": "i" },
-            { "points": 1, "check": "shut\\s*off|isolate|ventilat|secure\\s*cylinder|store\\s*safely", "flags": "i" }
-          ]
-        },
-        {
-          "id": "ka_q5_compressedair",
-          "text": "Compressed air",
-          "image": "blank.jpg",
-          "hint": "Harm: eye injury/embolism. Control: PPE, never aim at people.",
-          "type": "long",
-          "maxPoints": 2,
-          "rubric": [
-            { "points": 1, "check": "eye\\s*injur|embolism|bloodstream|skin|injur", "flags": "i" },
-            { "points": 1, "check": "PPE|goggles|never\\s*aim|no\\s*horseplay|safe\\s*use", "flags": "i" }
-          ]
-        },
-        {
-          "id": "ka_q5_noise",
-          "text": "Noise",
-          "image": "blank.jpg",
-          "hint": "Harm: hearing loss/tinnitus. Control: earmuffs/plugs.",
-          "type": "long",
-          "maxPoints": 2,
-          "rubric": [
-            { "points": 1, "check": "hearing\\s*loss|tinnitus|deaf", "flags": "i" },
-            { "points": 1, "check": "earmuffs|ear\\s*plugs|hearing\\s*protection", "flags": "i" }
-          ]
-        },
-        {
-          "id": "ka_q5_material",
-          "text": "Material",
-          "image": "blank.jpg",
-          "hint": "Harm: cuts/splinters/crush. Control: gloves, safe handling, correct storage.",
-          "type": "long",
-          "maxPoints": 2,
-          "rubric": [
-            { "points": 1, "check": "cut|splinter|crush|injur", "flags": "i" },
-            { "points": 1, "check": "gloves|safe\\s*handling|store\\s*safely|PPE|lift\\s*correctly", "flags": "i" }
-          ]
-        },
-        {
-          "id": "ka_q5_falling",
-          "text": "Falling",
-          "image": "blank.jpg",
-          "hint": "Harm: falls/injury. Control: keep walkways clear, barriers, ladder safety.",
-          "type": "long",
-          "maxPoints": 2,
-          "rubric": [
-            { "points": 1, "check": "fall|trip|slip|broken\\s*bones|injur", "flags": "i" },
-            { "points": 1, "check": "clear\\s*walkway|barrier|sign|housekeeping|ladder\\s*safety|guardrail", "flags": "i" }
-          ]
-        },
-        {
-          "id": "ka_q5_lifting",
-          "text": "Lifting",
-          "image": "blank.jpg",
-          "hint": "Harm: back strain. Control: bend knees, team lift, trolley.",
-          "type": "long",
-          "maxPoints": 2,
-          "rubric": [
-            { "points": 1, "check": "back\\s*strain|sprain|injur", "flags": "i" },
-            { "points": 1, "check": "bend\\s*knees|straight\\s*back|team\\s*lift|trolley|wheelbarrow|mechanical\\s*aid", "flags": "i" }
-          ]
-        },
-
-        {
-          "id": "ka_q6",
-          "text": "6.\tIdentify the meanings of the following signs:",
-          "image": "blank.jpg",
-          "hint": "Forklifts, keep aisles clear, keep hands clear/guards, fire action chart.",
-          "type": "long",
-          "maxPoints": 4,
-          "rubric": [
-            { "points": 1, "check": "forklift", "flags": "i" },
-            { "points": 1, "check": "clear\\s*(walkways|aisles|aisle)|keep\\s*clear", "flags": "i" },
-            { "points": 1, "check": "hands\\s*clear|moving\\s*machinery|guards", "flags": "i" },
-            { "points": 1, "check": "fire\\s*action|fire\\s*chart|what\\s*to\\s*do\\s*in\\s*a\\s*fire", "flags": "i" }
-          ]
-        },
-
-        {
-          "id": "ka_q11_fire",
-          "text": "a) Fire",
-          "image": "blank.jpg",
-          "hint": "Alarm, 111, evacuate, assembly point.",
-          "type": "long",
-          "maxPoints": 3,
-          "rubric": [
-            { "points": 1, "check": "alarm|raise\\s*alarm|sound\\s*alarm", "flags": "i" },
-            { "points": 1, "check": "\\b111\\b|call\\s*(fire|emergency)|dial", "flags": "i" },
-            { "points": 1, "check": "evacuat|assembly\\s*point|muster\\s*point", "flags": "i" }
-          ]
-        },
-        {
-          "id": "ka_q11_earthquake",
-          "text": "b) Earthquake",
-          "image": "blank.jpg",
-          "hint": "Drop cover hold, then assemble and account for people.",
-          "type": "long",
-          "maxPoints": 3,
-          "rubric": [
-            { "points": 1, "check": "drop\\s*cover\\s*hold|cover|hold", "flags": "i" },
-            { "points": 1, "check": "after\\s*(shaking|earthquake)|when\\s*it\\s*stops", "flags": "i" },
-            { "points": 1, "check": "assembly\\s*point|muster\\s*point|account\\s*for|roll\\s*check|count", "flags": "i" }
-          ]
-        },
-        {
-          "id": "ka_q11_accident",
-          "text": "c) Accident:",
-          "image": "blank.jpg",
-          "hint": "First aid, report, call ambulance/111 if serious.",
-          "type": "long",
-          "maxPoints": 3,
-          "rubric": [
-            { "points": 1, "check": "first\\s*aid", "flags": "i" },
-            { "points": 1, "check": "report|supervisor|teacher|record", "flags": "i" },
-            { "points": 1, "check": "\\b111\\b|ambulance|serious\\s*injur", "flags": "i" }
-          ]
-        },
-        {
-          "id": "ka_q11_chemicalspill",
-          "text": "d) Chemical spill:",
-          "image": "blank.jpg",
-          "hint": "Tell supervisor, isolate/evacuate if needed, SDS/PPE, clean only if safe.",
-          "type": "long",
-          "maxPoints": 4,
-          "rubric": [
-            { "points": 1, "check": "supervisor|teacher|inform|report", "flags": "i" },
-            { "points": 1, "check": "evacuat|isolate|cordon|barrier", "flags": "i" },
-            { "points": 1, "check": "SDS|MSDS|PPE|gloves|goggles|mask|respirator", "flags": "i" },
-            { "points": 1, "check": "safe\\s*to\\s*clean|trained|qualified|procedure", "flags": "i" }
+            { "points": 1, "check": "reasonably\\s*practicable|so\\s*far\\s*as\\s*reasonably\\s*practicable|SFAIRP", "flags": "i" },
+            { "points": 1, "check": "health\\s*and\\s*safety|workers?|workplace", "flags": "i" }
           ]
         }
       ]
     }
+  ],
+  "CHANGELOG": [
+    "Converted multi-line list questions into single questions with one rubric row per required point (sr1_q3, sr1_q5, sr1_q6, sr3_q6, sr3_q7, sr3_q8).",
+    "Kept scenario question 8 split into a/b/c for each scenario because it requires distinct responses and reduces student confusion.",
+    "Left long scenario questions split because they are genuinely multi-skill responses.",
+    "Merged SR2 Q5 into a single question with rubric points per responsibility; note included because the original template shows 3 extinguisher blocks but the rubric currently verifies CO2+Foam strongly."
   ]
 }
