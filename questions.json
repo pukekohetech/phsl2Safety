@@ -3,7 +3,7 @@
   "VERSION": "2025.1",
   "APP_TITLE": "US 24354 – Health & Safety (BCATS)",
   "APP_SUBTITLE": "PHS - Level 2 BCATS – Assessment",
-  "DEADLINE": { "day": 27, "month": 12, "label": "Submission deadline" },
+  "DEADLINE": { "day": 31, "month": 12, "label": "Submission deadline" },
   "TEACHERS": [
     { "id": "RY", "name": "Mr Reynolds", "email": "ry@pukekohehigh.school.nz" },
     { "id": "RNR", "name": "Mr Ranson", "email": "rnr@pukekohehigh.school.nz" },
