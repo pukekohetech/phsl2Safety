@@ -36,15 +36,6 @@
       "standardType": "Unit Standard",
       "questions": [
         {
-          "id": "sr1_studentname",
-          "text": "Student name:",
-          "image": "blank.jpg",
-          "hint": "",
-          "type": "short",
-          "maxPoints": 0,
-          "rubric": []
-        },
-        {
           "id": "sr1_q1",
           "text": "1.\tWhat legislation covers the safety of people in the workplace?",
           "image": "blank.jpg",
@@ -276,204 +267,235 @@
         },
 
         {
-          "id": "sr1_q8_intro",
-          "text": "8.\tHazard identification and management \n\nFor each of the following scenarios, you are to:\na.\tidentify the potential hazards \nb.\tassess the level or risk and describe any potential consequences or harm\nc.\tdescribe the appropriate course of action for managing the risk.\n\nPut your answers on the Hazard Identification and Risk Assessment Table on the following page.\n\nExample: (This one has been answered for you on the following page).\nThe nearest power point to your workbench is on the opposite side of the workshop. Whenever you wish to use a power tool you have to run an extension lead across the floor. People walking past your bench either step over the lead or on it. Identify the hazards, level of risk and how they would be managed.",
+          "id": "sr1_q8_i_a",
+          "text": "i)\tYou are preparing to use a portable power planer to skim the side off a door. You have left your safety glasses in the workshop. It will take you half an hour to go back and get them. The job will only take 10 minutes to complete. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\na.\tidentify the potential hazards",
           "image": "blank.jpg",
-          "hint": "Complete each scenario below. For each one: Hazard + Harm/Risk + Action (eliminate/minimise).",
+          "hint": "Hazard = working without safety glasses / eye protection.",
           "type": "long",
-          "maxPoints": 0,
-          "rubric": []
-        },
-
-        {
-          "id": "sr1_q8_i",
-          "text": "i)\tYou are preparing to use a portable power planer to skim the side off a door. You have left your safety glasses in the workshop. It will take you half an hour to go back and get them. The job will only take 10 minutes to complete. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.",
-          "image": "blank.jpg",
-          "hint": "Mention no eye PPE + eye injury risk + stop and get safety glasses.",
-          "type": "long",
-          "maxPoints": 4,
+          "maxPoints": 2,
           "rubric": [
-            {
-              "points": 1,
-              "check": "safety\\s*glasses|eye\\s*protection|goggles|no\\s*PPE|without\\s*PPE",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "eye\\s*injur|chips|splinter|debris|blind|eyesight|vision",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "\\b(high|medium|low)\\b|risk\\s*level|severity",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "stop|go\\s*back|get\\s*(them|glasses)|borrow|do\\s*not\\s*use|must\\s*wear",
-              "flags": "i"
-            }
+            { "points": 1, "check": "no\\s*(safety\\s*glasses|eye\\s*protection)|without\\s*(safety\\s*glasses|eye\\s*protection)|forgot\\s*(safety\\s*glasses|goggles)", "flags": "i" },
+            { "points": 1, "check": "power\\s*planer|planer|wood\\s*chips|flying\\s*debris", "flags": "i" }
           ]
         },
         {
-          "id": "sr1_q8_ii",
-          "text": "ii)\tDuring your first week on the job you have been told to use the circular saw bench to rip some lengths of timber into strips. You have never used a circular saw before or been given any instruction about the correct operating procedures for one. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.",
+          "id": "sr1_q8_i_b",
+          "text": "i)\tYou are preparing to use a portable power planer to skim the side off a door. You have left your safety glasses in the workshop. It will take you half an hour to go back and get them. The job will only take 10 minutes to complete. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nb.\tassess the level or risk and describe any potential consequences or harm",
           "image": "blank.jpg",
-          "hint": "Mention no training + serious harm risk + do not use until trained/supervised with guards and PPE.",
+          "hint": "Harm = eye injury / blindness. Risk level = high/medium/low.",
           "type": "long",
-          "maxPoints": 4,
+          "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "no\\s*training|never\\s*used|no\\s*instruction|untrained|inexperience",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "serious\\s*harm|cuts|amputation|kickback|injur|fingers|hands",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "\\b(high|medium|low)\\b|risk\\s*level|severity",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "do\\s*not\\s*use|stop|training|supervision|guard|PPE|ask\\s*for\\s*help",
-              "flags": "i"
-            }
+            { "points": 1, "check": "eye\\s*injur|damage\\s*to\\s*eyes|chips\\s*in\\s*eyes|blind|eyesight|vision", "flags": "i" },
+            { "points": 1, "check": "high|medium|low|risk\\s*level", "flags": "i" },
+            { "points": 1, "check": "serious|permanent|long\\s*term|hospital|medical", "flags": "i" }
           ]
         },
         {
-          "id": "sr1_q8_iii",
-          "text": "iii)\tThe body of the electric drill is cracked. Some of the wires are exposed but none of them appear to be damaged. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.",
+          "id": "sr1_q8_i_c",
+          "text": "i)\tYou are preparing to use a portable power planer to skim the side off a door. You have left your safety glasses in the workshop. It will take you half an hour to go back and get them. The job will only take 10 minutes to complete. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nc.\tdescribe the appropriate course of action for managing the risk.",
           "image": "blank.jpg",
-          "hint": "Mention exposed wires + electric shock/electrocution + tag out/report and do not use.",
+          "hint": "Action = stop, get/borrow/buy safety glasses, then proceed.",
           "type": "long",
-          "maxPoints": 4,
+          "maxPoints": 2,
           "rubric": [
-            {
-              "points": 1,
-              "check": "cracked|exposed\\s*wires|damaged\\s*(tool|drill)|faulty|broken\\s*casing",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "electric\\s*shock|electrocution|burn|short\\s*circuit",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "\\b(high|medium|low)\\b|risk\\s*level|severity",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "do\\s*not\\s*use|tag\\s*out|report|repair|replace|remove\\s*from\\s*service",
-              "flags": "i"
-            }
-          ]
-        },
-        {
-          "id": "sr1_q8_iv",
-          "text": "iv)\tYou are using the spindle moulder to shape some short lengths of timber. The guards are getting in the way. One of your workmates suggests removing them until you complete this job. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.",
-          "image": "blank.jpg",
-          "hint": "Mention guards removed = exposed cutter + amputation/cuts + never remove guards; use jigs/push sticks/alternative method.",
-          "type": "long",
-          "maxPoints": 4,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "remove\\s*guard|no\\s*guard|unguarded|exposed\\s*(blade|cutter)|spindle\\s*moulder",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "amputation|finger\\s*loss|loss\\s*of\\s*fingers|severe\\s*cuts|injur",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "\\b(high|medium|low)\\b|risk\\s*level|severity",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "never\\s*remove|keep\\s*guards|use\\s*jig|push\\s*stick|alternative\\s*method|supervision",
-              "flags": "i"
-            }
-          ]
-        },
-        {
-          "id": "sr1_q8_v",
-          "text": "v)\tYou are in the process of delivering a finished set of chairs to a customer. As you unload the truck you notice that one of the chair legs is made of cross-grained timber. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.",
-          "image": "blank.jpg",
-          "hint": "Mention defect/weak timber + chair failure + customer injury + replace and inspect before delivery.",
-          "type": "long",
-          "maxPoints": 4,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "cross\\s*grained|defect|weak|faulty|bad\\s*grain|grain\\s*direction",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "break|fail|collapse|customer\\s*injur|fall|concussion|broken\\s*bones",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "\\b(high|medium|low)\\b|risk\\s*level|severity",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "replace|do\\s*not\\s*deliver|inspect|quality\\s*check|repair|remake",
-              "flags": "i"
-            }
-          ]
-        },
-        {
-          "id": "sr1_q8_vi",
-          "text": "vi)\tYou have just spilt some oil on the workshop floor; it is the end of the day and you plan to clean it up tomorrow. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.",
-          "image": "blank.jpg",
-          "hint": "Mention slip hazard + injury risk + clean immediately and put up signage/barriers.",
-          "type": "long",
-          "maxPoints": 4,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "oil\\s*spill|spill|slip\\s*hazard|wet\\s*floor",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "slip|fall|broken\\s*bones|bruise|concussion|injur",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "\\b(high|medium|low)\\b|risk\\s*level|severity",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "clean\\s*(up|immediately)|report|sign|cone|barrier|cordon|isolate\\s*area|dry",
-              "flags": "i"
-            }
+            { "points": 2, "check": "stop|do\\s*not\\s*use|go\\s*back|get\\s*(safety\\s*glasses|goggles)|borrow|replace|must\\s*wear", "flags": "i" }
           ]
         },
 
         {
-          "id": "sr1_table_note",
-          "text": "Hazard Identification and Risk Assessment Table\tRisk control measures\nA.\tDescribe the Hazard\tB.\tPotential harm and risk level\tC.\tAction proposed (to Eliminate or Minimise).\nExample\nTripping over leads\tSprains - high risk, bruising -  moderate, electrocution - moderate\tEither fit a new power point closer to your bench or run extension leads overhead.\n1\n\n\n2\n\n\n3\n\n\n4\n\n\n5\n\n\n6",
+          "id": "sr1_q8_ii_a",
+          "text": "ii)\tDuring your first week on the job you have been told to use the circular saw bench to rip some lengths of timber into strips. You have never used a circular saw before or been given any instruction about the correct operating procedures for one. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\na.\tidentify the potential hazards",
           "image": "blank.jpg",
-          "hint": "Use your answers from i–vi to complete the table (if required by your teacher).",
+          "hint": "Hazard = using saw bench without training / lack of competency.",
           "type": "long",
-          "maxPoints": 0,
-          "rubric": []
+          "maxPoints": 2,
+          "rubric": [
+            { "points": 1, "check": "no\\s*training|never\\s*used|untrained|no\\s*instruction|not\\s*competent", "flags": "i" },
+            { "points": 1, "check": "circular\\s*saw|saw\\s*bench|rip\\s*timber|blade|kickback", "flags": "i" }
+          ]
+        },
+        {
+          "id": "sr1_q8_ii_b",
+          "text": "ii)\tDuring your first week on the job you have been told to use the circular saw bench to rip some lengths of timber into strips. You have never used a circular saw before or been given any instruction about the correct operating procedures for one. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nb.\tassess the level or risk and describe any potential consequences or harm",
+          "image": "blank.jpg",
+          "hint": "Harm = cuts/amputation/kickback injury. Risk level = high/medium/low.",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            { "points": 1, "check": "cut|injur|amputation|finger\\s*loss|hand\\s*injur|kickback", "flags": "i" },
+            { "points": 1, "check": "high|medium|low|risk\\s*level", "flags": "i" },
+            { "points": 1, "check": "serious|permanent|hospital|life\\s*changing", "flags": "i" }
+          ]
+        },
+        {
+          "id": "sr1_q8_ii_c",
+          "text": "ii)\tDuring your first week on the job you have been told to use the circular saw bench to rip some lengths of timber into strips. You have never used a circular saw before or been given any instruction about the correct operating procedures for one. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nc.\tdescribe the appropriate course of action for managing the risk.",
+          "image": "blank.jpg",
+          "hint": "Action = do not use until trained/supervised; follow procedures; PPE; guards.",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            { "points": 1, "check": "do\\s*not\\s*use|stop|refuse|wait", "flags": "i" },
+            { "points": 1, "check": "training|instruction|supervision|ask\\s*for\\s*help", "flags": "i" },
+            { "points": 1, "check": "PPE|guards?|fence|push\\s*stick|procedure", "flags": "i" }
+          ]
+        },
+
+        {
+          "id": "sr1_q8_iii_a",
+          "text": "iii)\tThe body of the electric drill is cracked. Some of the wires are exposed but none of them appear to be damaged. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\na.\tidentify the potential hazards",
+          "image": "blank.jpg",
+          "hint": "Hazard = damaged casing/exposed wires/electrical fault.",
+          "type": "long",
+          "maxPoints": 2,
+          "rubric": [
+            { "points": 1, "check": "cracked|broken\\s*casing|exposed\\s*wires|damaged\\s*drill|faulty", "flags": "i" },
+            { "points": 1, "check": "electric|electrical|live\\s*wires|inner\\s*wiring", "flags": "i" }
+          ]
+        },
+        {
+          "id": "sr1_q8_iii_b",
+          "text": "iii)\tThe body of the electric drill is cracked. Some of the wires are exposed but none of them appear to be damaged. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nb.\tassess the level or risk and describe any potential consequences or harm",
+          "image": "blank.jpg",
+          "hint": "Harm = electric shock/electrocution/burn. Risk level = high/medium/low.",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            { "points": 1, "check": "electric\\s*shock|electrocution|burn|short\\s*circuit", "flags": "i" },
+            { "points": 1, "check": "high|medium|low|risk\\s*level", "flags": "i" },
+            { "points": 1, "check": "serious|death|fatal|hospital", "flags": "i" }
+          ]
+        },
+        {
+          "id": "sr1_q8_iii_c",
+          "text": "iii)\tThe body of the electric drill is cracked. Some of the wires are exposed but none of them appear to be damaged. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nc.\tdescribe the appropriate course of action for managing the risk.",
+          "image": "blank.jpg",
+          "hint": "Action = do not use; tag out; report; repair/replace.",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            { "points": 1, "check": "do\\s*not\\s*use|stop|remove\\s*from\\s*service", "flags": "i" },
+            { "points": 1, "check": "tag\\s*out|lock\\s*out|label|isolate", "flags": "i" },
+            { "points": 1, "check": "report|supervisor|teacher|repair|replace", "flags": "i" }
+          ]
+        },
+
+        {
+          "id": "sr1_q8_iv_a",
+          "text": "iv)\tYou are using the spindle moulder to shape some short lengths of timber. The guards are getting in the way. One of your workmates suggests removing them until you complete this job. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\na.\tidentify the potential hazards",
+          "image": "blank.jpg",
+          "hint": "Hazard = removing guards/unguarded cutter/blade.",
+          "type": "long",
+          "maxPoints": 2,
+          "rubric": [
+            { "points": 1, "check": "remove\\s*guard|no\\s*guard|unguarded|guards\\s*off|exposed\\s*(blade|cutter)", "flags": "i" },
+            { "points": 1, "check": "spindle\\s*moulder|moulder|cutter|rotat", "flags": "i" }
+          ]
+        },
+        {
+          "id": "sr1_q8_iv_b",
+          "text": "iv)\tYou are using the spindle moulder to shape some short lengths of timber. The guards are getting in the way. One of your workmates suggests removing them until you complete this job. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nb.\tassess the level or risk and describe any potential consequences or harm",
+          "image": "blank.jpg",
+          "hint": "Harm = severe cuts/amputation/finger loss. Risk level = high/medium/low.",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            { "points": 1, "check": "amputation|finger\\s*loss|severe\\s*cut|loss\\s*of\\s*fingers|injur", "flags": "i" },
+            { "points": 1, "check": "high|medium|low|risk\\s*level", "flags": "i" },
+            { "points": 1, "check": "serious|permanent|life\\s*changing|hospital", "flags": "i" }
+          ]
+        },
+        {
+          "id": "sr1_q8_iv_c",
+          "text": "iv)\tYou are using the spindle moulder to shape some short lengths of timber. The guards are getting in the way. One of your workmates suggests removing them until you complete this job. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nc.\tdescribe the appropriate course of action for managing the risk.",
+          "image": "blank.jpg",
+          "hint": "Action = never remove guards; use correct jigs/push sticks/alternative method; ask supervisor.",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            { "points": 1, "check": "never\\s*remove|keep\\s*guards|guards\\s*must\\s*stay", "flags": "i" },
+            { "points": 1, "check": "jig|push\\s*stick|push\\s*block|clamp|alternative", "flags": "i" },
+            { "points": 1, "check": "supervisor|teacher|ask\\s*for\\s*help|safe\\s*procedure", "flags": "i" }
+          ]
+        },
+
+        {
+          "id": "sr1_q8_v_a",
+          "text": "v)\tYou are in the process of delivering a finished set of chairs to a customer. As you unload the truck you notice that one of the chair legs is made of cross-grained timber. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\na.\tidentify the potential hazards",
+          "image": "blank.jpg",
+          "hint": "Hazard = weak/defective timber (cross-grain) could break.",
+          "type": "long",
+          "maxPoints": 2,
+          "rubric": [
+            { "points": 1, "check": "cross\\s*grained|cross\\s*grain|defect|weak\\s*timber|faulty", "flags": "i" },
+            { "points": 1, "check": "chair\\s*leg|break|fail|crack", "flags": "i" }
+          ]
+        },
+        {
+          "id": "sr1_q8_v_b",
+          "text": "v)\tYou are in the process of delivering a finished set of chairs to a customer. As you unload the truck you notice that one of the chair legs is made of cross-grained timber. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nb.\tassess the level or risk and describe any potential consequences or harm",
+          "image": "blank.jpg",
+          "hint": "Harm = chair collapses, customer falls, injury. Risk level = high/medium/low.",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            { "points": 1, "check": "break|collapse|fail|snap", "flags": "i" },
+            { "points": 1, "check": "injur|bruise|concussion|broken\\s*bones|fall|hurt", "flags": "i" },
+            { "points": 1, "check": "high|medium|low|risk\\s*level", "flags": "i" }
+          ]
+        },
+        {
+          "id": "sr1_q8_v_c",
+          "text": "v)\tYou are in the process of delivering a finished set of chairs to a customer. As you unload the truck you notice that one of the chair legs is made of cross-grained timber. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nc.\tdescribe the appropriate course of action for managing the risk.",
+          "image": "blank.jpg",
+          "hint": "Action = do not deliver; replace/repair; inspect and QA check before delivery.",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            { "points": 1, "check": "do\\s*not\\s*deliver|stop|remove\\s*chair|return", "flags": "i" },
+            { "points": 1, "check": "replace|repair|remake|new\\s*leg|fix", "flags": "i" },
+            { "points": 1, "check": "inspect|quality\\s*check|test|check\\s*before\\s*delivery", "flags": "i" }
+          ]
+        },
+
+        {
+          "id": "sr1_q8_vi_a",
+          "text": "vi)\tYou have just spilt some oil on the workshop floor; it is the end of the day and you plan to clean it up tomorrow. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\na.\tidentify the potential hazards",
+          "image": "blank.jpg",
+          "hint": "Hazard = oil spill / slippery floor.",
+          "type": "long",
+          "maxPoints": 2,
+          "rubric": [
+            { "points": 2, "check": "oil\\s*spill|spill|slip\\s*hazard|slippery\\s*floor|wet\\s*floor", "flags": "i" }
+          ]
+        },
+        {
+          "id": "sr1_q8_vi_b",
+          "text": "vi)\tYou have just spilt some oil on the workshop floor; it is the end of the day and you plan to clean it up tomorrow. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nb.\tassess the level or risk and describe any potential consequences or harm",
+          "image": "blank.jpg",
+          "hint": "Harm = slips/falls/injury. Risk level = high/medium/low.",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            { "points": 1, "check": "slip|fall|trip", "flags": "i" },
+            { "points": 1, "check": "injur|broken\\s*bones|bruise|concussion|hurt", "flags": "i" },
+            { "points": 1, "check": "high|medium|low|risk\\s*level", "flags": "i" }
+          ]
+        },
+        {
+          "id": "sr1_q8_vi_c",
+          "text": "vi)\tYou have just spilt some oil on the workshop floor; it is the end of the day and you plan to clean it up tomorrow. Describe the hazard, describe the potential harm and level of risk and describe the actions required to manage this.\n\nc.\tdescribe the appropriate course of action for managing the risk.",
+          "image": "blank.jpg",
+          "hint": "Action = clean immediately; report; isolate area; signage/barriers until dry.",
+          "type": "long",
+          "maxPoints": 4,
+          "rubric": [
+            { "points": 1, "check": "clean\\s*(up|immediately)|wipe\\s*up|absorb|degrease", "flags": "i" },
+            { "points": 1, "check": "report|tell|inform|supervisor|teacher", "flags": "i" },
+            { "points": 1, "check": "sign|cone|barrier|cordon|isolate", "flags": "i" },
+            { "points": 1, "check": "until\\s*dry|dry\\s*floor|prevent\\s*others", "flags": "i" }
+          ]
         }
       ]
     },
@@ -487,15 +509,6 @@
       "credits": 4,
       "standardType": "Unit Standard",
       "questions": [
-        {
-          "id": "sr2_studentname",
-          "text": "Student name:",
-          "image": "blank.jpg",
-          "hint": "",
-          "type": "short",
-          "maxPoints": 0,
-          "rubric": []
-        },
         {
           "id": "sr2_q1",
           "text": "1.\tYou are required to unload 15 x 40kg bags of cement off the back of a truck. The storage area is 75 metres away across a drive littered with construction waste. Describe the safest and most efficient means to get the cement into the storage area.",
@@ -559,9 +572,9 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            { "points": 1, "check": "CO2|carbon\\s*dioxide", "flags": "i" },
-            { "points": 1, "check": "electrical|live\\s*electrical|equipment|switchboard|wiring|class\\s*b|flammable\\s*liquid", "flags": "i" },
-            { "points": 1, "check": "computer|electronics|petrol|solvent|paint|oil", "flags": "i" }
+            { "points": 1, "check": "electrical|equipment|live\\s*electrical|class\\s*b|flammable\\s*liquid", "flags": "i" },
+            { "points": 1, "check": "petrol|solvent|paint|oil|computer|electronics|wiring|switchboard", "flags": "i" },
+            { "points": 1, "check": "CO2|carbon\\s*dioxide", "flags": "i" }
           ]
         },
         {
@@ -572,9 +585,9 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            { "points": 1, "check": "foam", "flags": "i" },
-            { "points": 1, "check": "flammable\\s*liquid|class\\s*b|petrol|oil|paint|solvent|class\\s*a|solids", "flags": "i" },
-            { "points": 1, "check": "petrol|oil|paint|diesel|solvent|wood|paper", "flags": "i" }
+            { "points": 1, "check": "flammable\\s*liquid|class\\s*b|class\\s*a|solids", "flags": "i" },
+            { "points": 1, "check": "petrol|oil|diesel|paint|solvent|wood|paper", "flags": "i" },
+            { "points": 1, "check": "foam", "flags": "i" }
           ]
         },
         {
@@ -585,9 +598,9 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            { "points": 1, "check": "water", "flags": "i" },
-            { "points": 1, "check": "class\\s*a|solids\\s*only|wood|paper|fabric|plastic", "flags": "i" },
-            { "points": 1, "check": "wood|paper|cardboard|fabric|textile|timber", "flags": "i" }
+            { "points": 1, "check": "class\\s*a|solids\\s*only|wood|paper|fabric|cardboard|timber", "flags": "i" },
+            { "points": 1, "check": "wood|paper|cardboard|fabric|textile|timber", "flags": "i" },
+            { "points": 1, "check": "water", "flags": "i" }
           ]
         },
 
@@ -628,15 +641,6 @@
       "standardType": "Unit Standard",
       "questions": [
         {
-          "id": "sr3_studentname",
-          "text": "Student name:",
-          "image": "blank.jpg",
-          "hint": "",
-          "type": "short",
-          "maxPoints": 0,
-          "rubric": []
-        },
-        {
           "id": "sr3_q1",
           "text": "1.\tYour first job involves working on a roof. You feel uncomfortable at heights. What should you do?",
           "image": "blank.jpg",
@@ -658,7 +662,7 @@
           "type": "short",
           "maxPoints": 2,
           "rubric": [
-            { "points": 2, "check": "4\\s*[:/ ]\\s*1|1\\s*out\\s*(for|to)\\s*every\\s*4\\s*up|75\\s*deg|75\\s*degrees|\\b75°\\b", "flags": "i" }
+            { "points": 2, "check": "4\\s*[:/ ]\\s*1|1\\s*out\\s*(for|to)\\s*every\\s*4\\s*up|75\\s*deg|75\\s*degrees|\\b75°\\b|70\\s*deg|70\\s*degrees|\\b70°\\b", "flags": "i" }
           ]
         },
         {
@@ -829,15 +833,6 @@
       "standardType": "Unit Standard",
       "questions": [
         {
-          "id": "ka_studentname",
-          "text": "Student name:",
-          "image": "blank.jpg",
-          "hint": "",
-          "type": "short",
-          "maxPoints": 0,
-          "rubric": []
-        },
-        {
           "id": "ka_q2",
           "text": "2.\tWhat is the main purpose of the Health and Safety at Work Act 2015 (‘the Act’)?",
           "image": "blank.jpg",
@@ -879,16 +874,6 @@
             { "points": 1, "check": "reasonably\\s*practicable|so\\s*far\\s*as\\s*reasonably\\s*practicable", "flags": "i" },
             { "points": 1, "check": "workers?|others|affected|workplace", "flags": "i" }
           ]
-        },
-
-        {
-          "id": "ka_q5_intro",
-          "text": "5.\tComplete the following table.\n\nA. Potential hazard\tB. Possible harm from the hazard\tC. Possible control measure\nElectrical\t\t\nChemical\t\t\nFire\t\t\nFumes\t\t\nGas\t\t\nCompressed air\t\t\nNoise\t\t\nMaterial\t\t\nFalling\t\t\nLifting",
-          "image": "blank.jpg",
-          "hint": "You will answer each row below with a harm + a control measure.",
-          "type": "long",
-          "maxPoints": 0,
-          "rubric": []
         },
 
         {
@@ -1025,16 +1010,6 @@
             { "points": 1, "check": "hands\\s*clear|moving\\s*machinery|guards", "flags": "i" },
             { "points": 1, "check": "fire\\s*action|fire\\s*chart|what\\s*to\\s*do\\s*in\\s*a\\s*fire", "flags": "i" }
           ]
-        },
-
-        {
-          "id": "ka_q11_intro",
-          "text": "11.\tDescribe the steps you should follow in your workplace in the event of:\na) Fire \n\n\n\n\n\nb) Earthquake \n\n\n\n\nc) Accident:\n\n\n\nd) Chemical spill:",
-          "image": "blank.jpg",
-          "hint": "You will answer each event below separately.",
-          "type": "long",
-          "maxPoints": 0,
-          "rubric": []
         },
 
         {
