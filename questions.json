@@ -45,7 +45,7 @@
           "rubric": [
             {
               "points": 1,
-              "check": "health\\s*and\\s*safety\\s*at\\s*work\\s*act\\s*2015|hswa\\s*2015",
+              "check": "(?:health(?=.*safety)(?=.*2015)|safety(?=.*health)(?=.*2015)|hswa(?=.*2015))",
               "flags": "i"
             }
           ]
@@ -59,13 +59,8 @@
           "maxPoints": 2,
           "rubric": [
             {
-              "points": 1,
-              "check": "hazard.*(anything|something|source|situation|activity|item|process)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "(cause|causing|potential).*harm|injury|illness",
+              "points": 2,
+              "check": "(?:hazard|risk)(?=.*(harm|injur|illness|danger|hurt|damage))",
               "flags": "i"
             }
           ]
@@ -80,12 +75,12 @@
           "rubric": [
             {
               "points": 1,
-              "check": "inspect|visual|check.*area|walk.?through|look for hazards",
+              "check": "inspect|inspection|visual|check\\s*the\\s*area|walk\\s*through|look\\s*for\\s*hazards|site\\s*check|pre\\s*start\\s*check",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "hazard register|register|hazard list|checklist|JSA|toolbox talk",
+              "check": "hazard\\s*register|register|hazard\\s*list|checklist|toolbox\\s*talk|JSA|job\\s*safety\\s*analysis|SWMS|RAMS|risk\\s*assessment",
               "flags": "i"
             }
           ]
@@ -100,22 +95,22 @@
           "rubric": [
             {
               "points": 1,
-              "check": "eliminate|minimi(s|z)e|control|isolate|manage",
+              "check": "eliminat|minimi(s|z)e|control|manage|reduce\\s*risk|isolate",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "report|notify|inform|communicat|hazard register|record",
+              "check": "report|notify|inform|communicat|record|log|hazard\\s*register",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "sign|barrier|cordon|warning|PPE",
+              "check": "sign|barrier|cordon|warning|lock\\s*out|tag\\s*out|PPE|protective\\s*equipment",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "training|supervision|safe system|ensure.*safe|monitor",
+              "check": "training|supervision|safe\\s*system|procedure|monitor|ensure\\s*safe",
               "flags": "i"
             }
           ]
@@ -130,17 +125,17 @@
           "rubric": [
             {
               "points": 1,
-              "check": "reasonable care|take care|own health and safety",
+              "check": "reasonable\\s*care|take\\s*care|own\\s*(health|safety)|look\\s*after\\s*(yourself|myself)",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "others?.*(health|safety)|not endanger|do not adversely affect",
+              "check": "others?.*(health|safety)|not\\s*endanger|do\\s*not\\s*harm|adversely\\s*affect",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "follow.*instruction|procedures|rules|PPE|report hazards|report incidents",
+              "check": "follow|instruction|procedure|rules|PPE|wear|report|hazard|incident|accident|near\\s*miss",
               "flags": "i"
             }
           ]
@@ -155,22 +150,22 @@
           "rubric": [
             {
               "points": 1,
-              "check": "hazards?.*(encounter|face|will encounter)|risks?.*(assigned|level)|hazard register",
+              "check": "hazard|risk|danger|what\\s*you\\s*will\\s*(face|encounter)|site\\s*hazards",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "hazards?.*(create|may create)|risks?.*(assigned|level)",
+              "check": "hazard.*(create|cause|make)|risk\\s*you\\s*may\\s*(create|cause)",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "control measures|controls|PPE|required PPE|minimi(s|z)e|eliminate",
+              "check": "control|minimi(s|z)e|eliminate|PPE|safe\\s*work\\s*method|procedure|how\\s*to\\s*stay\\s*safe",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "emergency|evacuation|assembly point|what to do in an emergency|fire|earthquake",
+              "check": "emergency|evacuat|assembly|muster|fire|earthquake|first\\s*aid|what\\s*to\\s*do",
               "flags": "i"
             }
           ]
@@ -185,12 +180,12 @@
           "rubric": [
             {
               "points": 1,
-              "check": "SDS|MSDS|safety data sheet|material safety data sheet|RAMS|rams",
+              "check": "SDS|MSDS|safety\\s*data\\s*sheet|material\\s*safety\\s*data\\s*sheet|data\\s*sheet",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "label|container label|packaging",
+              "check": "label|container|packaging|instructions|manufacturer",
               "flags": "i"
             }
           ]
@@ -205,32 +200,32 @@
           "rubric": [
             {
               "points": 1,
-              "check": "safety glasses|eye protection|PPE|eye",
+              "check": "safety\\s*glasses|eye\\s*protection|goggles|PPE|eye",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "training|instruction|supervision|circular saw|never used",
+              "check": "training|instruction|supervision|never\\s*used|no\\s*experience|circular\\s*saw|saw\\s*bench",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "cracked|exposed wires|damaged|tag out|do not use|electrocution",
+              "check": "cracked|exposed\\s*wires|damaged|faulty|do\\s*not\\s*use|tag\\s*out|lock\\s*out|electrocution|electric\\s*shock",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "guards|spindle moulder|do not remove|keep guards|safe alternative",
+              "check": "guard|guards|spindle\\s*moulder|do\\s*not\\s*remove|keep\\s*guards|safeguard",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "cross.?grained|defect|chair leg|replace|inspect",
+              "check": "cross\\s*grained|defect|fault|chair\\s*leg|replace|inspect|quality\\s*check",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "spill|oil|slip|clean immediately|sign|barrier",
+              "check": "spill|oil|slip|clean\\s*up|clean\\s*immediately|sign|barrier|cone|wet\\s*floor",
               "flags": "i"
             }
           ]
@@ -256,22 +251,22 @@
           "rubric": [
             {
               "points": 1,
-              "check": "clear.*path|remove.*waste|tidy|hazard.*(remove|clear)",
+              "check": "clear|tidy|remove\\s*waste|safe\\s*path|clean\\s*up|make\\s*space",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "wheelbarrow|trolley|hand truck|pallet jack|mechanical aid",
+              "check": "wheelbarrow|trolley|hand\\s*truck|pallet\\s*jack|forklift|mechanical\\s*aid|lift\\s*assist",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "two people|team|get help|buddy",
+              "check": "two\\s*people|team|help|buddy|ask\\s*someone",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "avoid.*carry|minimi(s|z)e.*lifting|one at a time|safe lifting",
+              "check": "one\\s*at\\s*a\\s*time|reduce\\s*lifting|avoid\\s*carrying|safe\\s*lifting|share\\s*the\\s*load",
               "flags": "i"
             }
           ]
@@ -286,22 +281,22 @@
           "rubric": [
             {
               "points": 1,
-              "check": "bend.*knees|use.*legs|squat",
+              "check": "bend\\s*knees|knees\\s*bent|squat|use\\s*legs",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "back.*straight|neutral spine|keep.*back straight",
+              "check": "back\\s*straight|neutral\\s*spine|straight\\s*back",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "keep.*close|close to body|tight to body",
+              "check": "close\\s*to\\s*body|keep\\s*close|hold\\s*close",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "avoid.*twist|turn.*feet|no twisting|lift smoothly",
+              "check": "no\\s*twist|avoid\\s*twist|turn\\s*feet|lift\\s*smoothly|don'?t\\s*jerk",
               "flags": "i"
             }
           ]
@@ -316,17 +311,17 @@
           "rubric": [
             {
               "points": 1,
-              "check": "two people|team lift|buddy",
+              "check": "two\\s*people|team|buddy|help",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "carry.*edge|on edge|vertical|side",
+              "check": "on\\s*edge|carry\\s*edge|vertical|side\\s*on",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "clear.*vision|watch.*corners|communicat|one sheet at a time",
+              "check": "clear\\s*vision|see\\s*where\\s*going|communicat|watch\\s*corners|one\\s*sheet\\s*at\\s*a\\s*time",
               "flags": "i"
             }
           ]
@@ -341,12 +336,12 @@
           "rubric": [
             {
               "points": 1,
-              "check": "fall|falling objects|drop|hit someone",
+              "check": "fall|drop|falling\\s*objects|hit\\s*someone|injure",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "overload|collapse|break|shelf.*fail",
+              "check": "overload|collapse|break|fail|shelf\\s*collapse|shelf\\s*break",
               "flags": "i"
             }
           ]
@@ -360,33 +355,18 @@
           "maxPoints": 6,
           "rubric": [
             {
-              "points": 1,
-              "check": "CO2|carbon dioxide",
+              "points": 2,
+              "check": "(?:CO2|carbon\\s*dioxide)(?=.*(electrical|power|wiring|equipment|computer|switchboard|flammable\\s*liquid|petrol|diesel|paint|solvent|class\\s*b))",
               "flags": "i"
             },
             {
-              "points": 1,
-              "check": "electrical|live|equipment|class\\s*e|B\\b|flammable liquid",
+              "points": 2,
+              "check": "(?:foam)(?=.*(flammable\\s*liquid|petrol|diesel|oil|paint|solvent|class\\s*b|wood|paper|cardboard|rubbish|class\\s*a))",
               "flags": "i"
             },
             {
-              "points": 1,
-              "check": "foam",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "petrol|diesel|oil|paint|solvent|flammable liquid|class\\s*b",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "water|class\\s*a",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "wood|paper|cardboard|fabric|plastic|rubbish",
+              "points": 2,
+              "check": "(?:water)(?=.*(wood|paper|cardboard|fabric|plastic|rubbish|class\\s*a))",
               "flags": "i"
             }
           ]
@@ -401,7 +381,7 @@
           "rubric": [
             {
               "points": 2,
-              "check": "electrocute|electrocution|electric shock|conducts electricity",
+              "check": "electrocute|electrocution|electric\\s*shock|water\\s*conducts\\s*electricity|conducts\\s*electricity",
               "flags": "i"
             }
           ]
@@ -415,13 +395,8 @@
           "maxPoints": 2,
           "rubric": [
             {
-              "points": 1,
-              "check": "assembly point|muster point|evacuation point",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "fire|emergency|evacuat|earthquake",
+              "points": 2,
+              "check": "(?:assembly\\s*point|muster\\s*point|evacuation\\s*point)(?=.*(fire|emergency|evacuat|earthquake))",
               "flags": "i"
             }
           ]
@@ -447,17 +422,17 @@
           "rubric": [
             {
               "points": 1,
-              "check": "tell|inform|report|supervisor|teacher|foreman",
+              "check": "tell|inform|report|supervisor|teacher|foreman|boss",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "training|instruction|competent|supervision",
+              "check": "training|instruction|supervision|competent|not\\s*comfortable|unsafe",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "harness|fall arrest|PPE|edge protection|scaffold",
+              "check": "harness|fall\\s*arrest|PPE|edge\\s*protection|scaffold|safety\\s*gear",
               "flags": "i"
             }
           ]
@@ -472,7 +447,7 @@
           "rubric": [
             {
               "points": 2,
-              "check": "1\\s*out\\s*to\\s*4\\s*up|4\\s*up\\s*1\\s*out|4:1|75\\s*deg|75°|70\\s*deg|70°",
+              "check": "1\\s*out\\s*(for|to)\\s*4\\s*up|4\\s*up\\s*(for|to)\\s*1\\s*out|4:1|75\\s*deg|75°|70\\s*deg|70°",
               "flags": "i"
             }
           ]
@@ -487,7 +462,7 @@
           "rubric": [
             {
               "points": 2,
-              "check": "aluminium.*conduct|conducts electricity|electrocute|electric shock",
+              "check": "aluminium.*conduct|conducts\\s*electricity|electric\\s*shock|electrocute|electrocution|power\\s*line",
               "flags": "i"
             }
           ]
@@ -502,7 +477,7 @@
           "rubric": [
             {
               "points": 1,
-              "check": "\\b1\\s*(m|metre|meter)\\b|\\bone\\s*metre\\b",
+              "check": "\\b1\\s*(m|metre|meter)\\b|\\bone\\s*metre\\b|\\b100\\s*cm\\b",
               "flags": "i"
             }
           ]
@@ -517,17 +492,17 @@
           "rubric": [
             {
               "points": 1,
-              "check": "eye|eyes|debris|dirt|projectile",
+              "check": "eye|eyes|debris|dirt|projectile|blind|loss\\s*of\\s*eye",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "skin|penetrate|inject|under the skin|wound",
+              "check": "skin|penetrate|inject|under\\s*the\\s*skin|puncture|wound",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "air embolism|blood stream|cardiac arrest|death|fatal",
+              "check": "air\\s*embolism|blood\\s*stream|cardiac\\s*arrest|death|fatal|serious\\s*injury",
               "flags": "i"
             }
           ]
@@ -542,17 +517,17 @@
           "rubric": [
             {
               "points": 1,
-              "check": "SDS|MSDS|safety data sheet|material safety data sheet",
+              "check": "SDS|MSDS|safety\\s*data\\s*sheet|material\\s*safety\\s*data\\s*sheet|data\\s*sheet",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "hazard register|register|hazard list",
+              "check": "hazard\\s*register|register|hazard\\s*list",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "label|instructions|manufacturer|RAMS|JSA|manual",
+              "check": "label|instructions|manual|manufacturer|RAMS|JSA|risk\\s*assessment",
               "flags": "i"
             }
           ]
@@ -567,17 +542,17 @@
           "rubric": [
             {
               "points": 2,
-              "check": "blade|rotating|moving parts|kickback|caught",
+              "check": "blade|rotating|moving\\s*parts|kickback|caught|entangle|pull\\s*in",
               "flags": "i"
             },
             {
               "points": 2,
-              "check": "projectile|flying|splinter|chips|eye injury|loss of eyesight",
+              "check": "projectile|flying|splinter|chips|eye\\s*injury|blind|loss\\s*of\\s*eyesight",
               "flags": "i"
             },
             {
               "points": 2,
-              "check": "noise|hearing|deaf|ear damage|tinnitus",
+              "check": "noise|hearing|tinnitus|ear\\s*damage|deaf|hearing\\s*loss",
               "flags": "i"
             }
           ]
@@ -592,37 +567,37 @@
           "rubric": [
             {
               "points": 1,
-              "check": "loose clothing.*caught|entangle|caught.*machinery",
+              "check": "loose\\s*clothing|baggy|caught|entangle|machinery|rotating",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "long hair.*caught|entangle|caught.*machinery",
+              "check": "long\\s*hair|hair|caught|entangle|machinery|rotating",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "footwear|toes|crush|slip|trip|electrocution",
+              "check": "footwear|no\\s*safety\\s*boots|steel\\s*cap|slip|trip|toe|crush|electrocution",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "jewell?ry.*caught|ring.*caught|entangle",
+              "check": "jewell?ry|ring|bracelet|chain|caught|entangle|machinery",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "lifting.*back|strain|injury|sprain",
+              "check": "lifting|back|strain|sprain|injury|incorrect\\s*lifting|poor\\s*technique",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "heavy.*object|drop|falling object|crush|toes|hands",
+              "check": "heavy\\s*object|drop|falling\\s*object|crush|toe|hand|injury",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "heights|fall|serious injury|death",
+              "check": "heights|fall|falling|serious\\s*injury|death|broken\\s*bones",
               "flags": "i"
             }
           ]
@@ -647,13 +622,8 @@
           "maxPoints": 2,
           "rubric": [
             {
-              "points": 1,
-              "check": "secure|ensure|protect|improve",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "health.*and.*safety|workers?|workplace|others?",
+              "points": 2,
+              "check": "(?:protect|ensure|secure|keep)(?=.*health)(?=.*safety)|reasonably\\s*practicable|everyone\\s*goes\\s*home\\s*safely",
               "flags": "i"
             }
           ]
@@ -668,22 +638,22 @@
           "rubric": [
             {
               "points": 1,
-              "check": "reasonable care|take care",
+              "check": "reasonable\\s*care|take\\s*care|own\\s*(health|safety)",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "follow.*(rules|procedures|instruction)|comply",
+              "check": "follow|comply|instruction|procedure|rules",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "report|notify|hazards?|incidents?|injur",
+              "check": "report|notify|hazard|risk|incident|accident|injury|near\\s*miss",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "others?.*(health|safety)|not endanger|adversely affect",
+              "check": "others?.*(health|safety)|not\\s*endanger|adversely\\s*affect",
               "flags": "i"
             }
           ]
@@ -698,17 +668,17 @@
           "rubric": [
             {
               "points": 1,
-              "check": "PCBU|person conducting|business or undertaking",
+              "check": "PCBU|person\\s*conducting|business\\s*or\\s*undertaking",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "ensure|provide|maintain",
+              "check": "ensure|provide|maintain|manage",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "reasonably practicable|health.*and.*safety|workers?|others?",
+              "check": "reasonably\\s*practicable|health|safety|workers?|others?",
               "flags": "i"
             }
           ]
@@ -738,22 +708,22 @@
           "rubric": [
             {
               "points": 1,
-              "check": "forklift|beware of forklifts|forklifts in use",
+              "check": "forklift|forklifts|vehicles\\s*operating|beware",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "clear walkways|keep aisles clear|maintain clear walkways",
+              "check": "clear\\s*walkway|keep\\s*aisles\\s*clear|keep\\s*walkways\\s*clear|no\\s*obstruction",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "keep hands clear|moving machinery|guards in place",
+              "check": "keep\\s*hands\\s*clear|moving\\s*machinery|guards|danger\\s*hands",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "fire action chart|fire.*action|what to do.*fire",
+              "check": "fire\\s*action|fire\\s*procedure|fire\\s*chart|what\\s*to\\s*do\\s*in\\s*a\\s*fire",
               "flags": "i"
             }
           ]
@@ -768,22 +738,22 @@
           "rubric": [
             {
               "points": 2,
-              "check": "fire.*(alarm|evacuat|assembly|111)",
+              "check": "fire(?=.*(alarm|evacuat|assembly|muster|111|dial))",
               "flags": "i"
             },
             {
               "points": 2,
-              "check": "earthquake.*(drop|cover|hold|shelter|assembly)",
+              "check": "earthquake(?=.*(drop|cover|hold|shelter|assembly|evacuat))",
               "flags": "i"
             },
             {
               "points": 2,
-              "check": "accident.*(first aid|ambulance|111|report)",
+              "check": "accident(?=.*(first\\s*aid|ambulance|111|report|supervisor))",
               "flags": "i"
             },
             {
               "points": 2,
-              "check": "chemical spill|spill.*(supervisor|evacuat|isolate|clean|qualified|PPE)",
+              "check": "chemical\\s*spill|spill(?=.*(supervisor|evacuat|isolate|clean|PPE|qualified))",
               "flags": "i"
             }
           ]
@@ -809,7 +779,7 @@
           "rubric": [
             {
               "points": 1,
-              "check": "completed|yes|done|observed|signed",
+              "check": "completed|yes|done|observed|signed|checked",
               "flags": "i"
             }
           ]
