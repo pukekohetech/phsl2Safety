@@ -1,0 +1,820 @@
+{
+  "APP_ID": "US24354_HEALTH_SAFETY",
+  "VERSION": "2025",
+  "APP_TITLE": "US 24354 – Health & Safety (BCATS)",
+  "APP_SUBTITLE": "PHS - BCATS – Assessment",
+  "DEADLINE": {
+    "day": 27,
+    "month": 12,
+    "label": "Submission deadline"
+  },
+  "TEACHERS": [
+    {
+      "id": "RY",
+      "name": "Mr Reynolds",
+      "email": "ry@pukekohehigh.school.nz"
+    },
+    {
+      "id": "RNR",
+      "name": "Mr Ranson",
+      "email": "rnr@pukekohehigh.school.nz"
+    },
+    {
+      "id": "Other",
+      "name": "Other Teacher",
+      "email": "technology@pukekohehigh.school.nz"
+    }
+  ],
+  "ASSESSMENTS": [
+    {
+      "id": "24354-selfreflection-1",
+      "title": "Learner Self-Reflection 1 – 24354 (v3)",
+      "subtitle": "Demonstrate knowledge of health and safety legislation and apply safe working practices in a BCATS environment",
+      "usNumber": "24354",
+      "usVersion": "v3",
+      "credits": 4,
+      "standardType": "Unit Standard",
+      "questions": [
+        {
+          "id": "sr1_q1",
+          "text": "What legislation covers the safety of people in the workplace?",
+          "image": "blank.jpg",
+          "hint": "Name the NZ workplace health and safety legislation (year included).",
+          "type": "short",
+          "maxPoints": 1,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "health\\s*and\\s*safety\\s*at\\s*work\\s*act\\s*2015|hswa\\s*2015",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr1_q2",
+          "text": "What is the definition of a hazard?",
+          "image": "blank.jpg",
+          "hint": "A hazard is something that can cause harm.",
+          "type": "long",
+          "maxPoints": 2,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "hazard.*(anything|something|source|situation|activity|item|process)",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "(cause|causing|potential).*harm|injury|illness",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr1_q3",
+          "text": "List 2 methods used to identify hazards in the workplace.",
+          "image": "blank.jpg",
+          "hint": "Examples include inspection, hazard register, toolbox talk, checklists, job safety analysis.",
+          "type": "long",
+          "maxPoints": 2,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "inspect|visual|check.*area|walk.?through|look for hazards",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "hazard register|register|hazard list|checklist|JSA|toolbox talk",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr1_q4",
+          "text": "Once a hazard has been identified, what are the employer’s responsibilities?",
+          "image": "blank.jpg",
+          "hint": "Think: eliminate or minimise risk, communicate hazards, provide controls/PPE, supervision/training, and keep people safe.",
+          "type": "long",
+          "maxPoints": 4,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "eliminate|minimi(s|z)e|control|isolate|manage",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "report|notify|inform|communicat|hazard register|record",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "sign|barrier|cordon|warning|PPE",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "training|supervision|safe system|ensure.*safe|monitor",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr1_q5",
+          "text": "List 3 health and safety responsibilities of any worker/student.",
+          "image": "blank.jpg",
+          "hint": "Think: take reasonable care, follow instructions, use PPE, report hazards, don't endanger others.",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "reasonable care|take care|own health and safety",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "others?.*(health|safety)|not endanger|do not adversely affect",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "follow.*instruction|procedures|rules|PPE|report hazards|report incidents",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr1_q6",
+          "text": "Before you enter a workplace your employer is obliged to provide you with specific safety information. List 4 types of information that would ensure they meet this requirement.",
+          "image": "blank.jpg",
+          "hint": "Hazards you may face, hazards you may create, controls, emergency procedures, where PPE is stored, when PPE must be worn.",
+          "type": "long",
+          "maxPoints": 4,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "hazards?.*(encounter|face|will encounter)|risks?.*(assigned|level)|hazard register",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "hazards?.*(create|may create)|risks?.*(assigned|level)",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "control measures|controls|PPE|required PPE|minimi(s|z)e|eliminate",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "emergency|evacuation|assembly point|what to do in an emergency|fire|earthquake",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr1_q7",
+          "text": "Where do you get information on the toxicity of the materials that you are working with?",
+          "image": "blank.jpg",
+          "hint": "Think SDS / safety data sheet, or container labels.",
+          "type": "short",
+          "maxPoints": 2,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "SDS|MSDS|safety data sheet|material safety data sheet|RAMS|rams",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "label|container label|packaging",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr1_q8",
+          "text": "Hazard identification and management – Complete the Hazard Identification and Risk Assessment Table for scenarios (i) to (vi).",
+          "image": "blank.jpg",
+          "hint": "For each scenario: identify hazards, describe harm and risk level, and actions to eliminate or minimise.",
+          "type": "long",
+          "maxPoints": 6,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "safety glasses|eye protection|PPE|eye",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "training|instruction|supervision|circular saw|never used",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "cracked|exposed wires|damaged|tag out|do not use|electrocution",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "guards|spindle moulder|do not remove|keep guards|safe alternative",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "cross.?grained|defect|chair leg|replace|inspect",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "spill|oil|slip|clean immediately|sign|barrier",
+              "flags": "i"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24354-selfreflection-2",
+      "title": "Learner Self-Reflection 2 – 24354 (v3)",
+      "subtitle": "Manual handling, storage, and fire safety",
+      "usNumber": "24354",
+      "usVersion": "v3",
+      "credits": 4,
+      "standardType": "Unit Standard",
+      "questions": [
+        {
+          "id": "sr2_q1",
+          "text": "You are required to unload 15 x 40kg bags of cement off the back of a truck. The storage area is 75 metres away across a drive littered with construction waste. Describe the safest and most efficient means to get the cement into the storage area.",
+          "image": "blank.jpg",
+          "hint": "Consider clearing the path, using mechanical aids (wheelbarrow/trolley/pallet jack), teamwork, and safe handling.",
+          "type": "long",
+          "maxPoints": 4,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "clear.*path|remove.*waste|tidy|hazard.*(remove|clear)",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "wheelbarrow|trolley|hand truck|pallet jack|mechanical aid",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "two people|team|get help|buddy",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "avoid.*carry|minimi(s|z)e.*lifting|one at a time|safe lifting",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr2_q2",
+          "text": "Describe the correct lifting techniques for a heavy load, such as a bag of cement.",
+          "image": "blank.jpg",
+          "hint": "Back straight, bend knees, keep load close, avoid twisting, lift smoothly.",
+          "type": "long",
+          "maxPoints": 4,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "bend.*knees|use.*legs|squat",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "back.*straight|neutral spine|keep.*back straight",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "keep.*close|close to body|tight to body",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "avoid.*twist|turn.*feet|no twisting|lift smoothly",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr2_q3",
+          "text": "Describe the correct technique for carrying a sheet of plywood.",
+          "image": "blank.jpg",
+          "hint": "Use two people when needed, carry on edge, keep vision clear, avoid wind hazards, use gloves if needed.",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "two people|team lift|buddy",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "carry.*edge|on edge|vertical|side",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "clear.*vision|watch.*corners|communicat|one sheet at a time",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr2_q4",
+          "text": "Identify a risk associated with storing heavy items on shelves.",
+          "image": "blank.jpg",
+          "hint": "Think falling objects or shelf collapse.",
+          "type": "short",
+          "maxPoints": 2,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "fall|falling objects|drop|hit someone",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "overload|collapse|break|shelf.*fail",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr2_q5",
+          "text": "Identify the type of fire that you would use each of the following extinguishers for. Provide an example of combustible material for each extinguisher: CO2, Foam, Water.",
+          "image": "blank.jpg",
+          "hint": "CO2 = electrical / flammable liquids (B); Foam = flammable liquids and solids; Water = Class A solids only.",
+          "type": "long",
+          "maxPoints": 6,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "CO2|carbon dioxide",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "electrical|live|equipment|class\\s*e|B\\b|flammable liquid",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "foam",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "petrol|diesel|oil|paint|solvent|flammable liquid|class\\s*b",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "water|class\\s*a",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "wood|paper|cardboard|fabric|plastic|rubbish",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr2_q6",
+          "text": "Describe the potential consequences of using a water type extinguisher on an electrical fire.",
+          "image": "blank.jpg",
+          "hint": "Water conducts electricity -> electrocution risk.",
+          "type": "short",
+          "maxPoints": 2,
+          "rubric": [
+            {
+              "points": 2,
+              "check": "electrocute|electrocution|electric shock|conducts electricity",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr2_q7",
+          "text": "What does the sign represent and when would this area be used?",
+          "image": "blank.jpg",
+          "hint": "Assembly point / muster point used during an evacuation.",
+          "type": "short",
+          "maxPoints": 2,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "assembly point|muster point|evacuation point",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "fire|emergency|evacuat|earthquake",
+              "flags": "i"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24354-selfreflection-3",
+      "title": "Learner Self-Reflection 3 – 24354 (v3)",
+      "subtitle": "Working at heights, ladders, and compressed air safety",
+      "usNumber": "24354",
+      "usVersion": "v3",
+      "credits": 4,
+      "standardType": "Unit Standard",
+      "questions": [
+        {
+          "id": "sr3_q1",
+          "text": "Your first job involves working on a roof. You feel uncomfortable at heights. What should you do?",
+          "image": "blank.jpg",
+          "hint": "You should inform your supervisor and request training/safe equipment rather than proceed unsafely.",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "tell|inform|report|supervisor|teacher|foreman",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "training|instruction|competent|supervision",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "harness|fall arrest|PPE|edge protection|scaffold",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr3_q2",
+          "text": "What is the recommended angle ratio for a ladder when it is set up?",
+          "image": "blank.jpg",
+          "hint": "1 out for every 4 up (approximately 75°).",
+          "type": "short",
+          "maxPoints": 2,
+          "rubric": [
+            {
+              "points": 2,
+              "check": "1\\s*out\\s*to\\s*4\\s*up|4\\s*up\\s*1\\s*out|4:1|75\\s*deg|75°|70\\s*deg|70°",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr3_q3",
+          "text": "Why are power lines an extreme hazard when you are carrying or using an aluminium ladder?",
+          "image": "blank.jpg",
+          "hint": "Aluminium conducts electricity; contact can cause electrocution.",
+          "type": "short",
+          "maxPoints": 2,
+          "rubric": [
+            {
+              "points": 2,
+              "check": "aluminium.*conduct|conducts electricity|electrocute|electric shock",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr3_q4",
+          "text": "What is the minimum distance the top of a ladder should extend above a working platform?",
+          "image": "blank.jpg",
+          "hint": "Common guideline: at least 1 metre.",
+          "type": "short",
+          "maxPoints": 1,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "\\b1\\s*(m|metre|meter)\\b|\\bone\\s*metre\\b",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr3_q5",
+          "text": "Identify the possible consequences of directing compressed air at another person.",
+          "image": "blank.jpg",
+          "hint": "Eye injuries from debris, skin penetration, air embolism, serious injury or death.",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "eye|eyes|debris|dirt|projectile",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "skin|penetrate|inject|under the skin|wound",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "air embolism|blood stream|cardiac arrest|death|fatal",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr3_q6",
+          "text": "Identify 3 sources of information that you can use to identify the hazards and precautions associated with a specific product.",
+          "image": "blank.jpg",
+          "hint": "SDS/MSDS, hazard register, labels, instructions, RAMS/JSA.",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "SDS|MSDS|safety data sheet|material safety data sheet",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "hazard register|register|hazard list",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "label|instructions|manufacturer|RAMS|JSA|manual",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr3_q7",
+          "text": "Identify 3 potential hazards and ongoing consequences that could occur if you decide to use a machine without receiving instructions in its proper use.",
+          "image": "blank.jpg",
+          "hint": "Examples: moving blades, projectiles, noise/hearing damage, crush injuries, kickback.",
+          "type": "long",
+          "maxPoints": 6,
+          "rubric": [
+            {
+              "points": 2,
+              "check": "blade|rotating|moving parts|kickback|caught",
+              "flags": "i"
+            },
+            {
+              "points": 2,
+              "check": "projectile|flying|splinter|chips|eye injury|loss of eyesight",
+              "flags": "i"
+            },
+            {
+              "points": 2,
+              "check": "noise|hearing|deaf|ear damage|tinnitus",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "sr3_q8",
+          "text": "Identify hazards associated with each of the following safety issues: Loose clothing, Long hair, Non-safety footwear, Wearing jewellery, Poor lifting technique, Handling or moving heavy objects, Heights.",
+          "image": "blank.jpg",
+          "hint": "Link each issue to a realistic workshop hazard (entanglement, crush injury, slips/trips, falls, back injury).",
+          "type": "long",
+          "maxPoints": 7,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "loose clothing.*caught|entangle|caught.*machinery",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "long hair.*caught|entangle|caught.*machinery",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "footwear|toes|crush|slip|trip|electrocution",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "jewell?ry.*caught|ring.*caught|entangle",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "lifting.*back|strain|injury|sprain",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "heavy.*object|drop|falling object|crush|toes|hands",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "heights|fall|serious injury|death",
+              "flags": "i"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24354-knowledge-assessment",
+      "title": "Knowledge Assessment – 24354 (v3)",
+      "subtitle": "Demonstrate knowledge of health and safety legislation and apply safe working practices in a BCATS environment",
+      "usNumber": "24354",
+      "usVersion": "v3",
+      "credits": 4,
+      "standardType": "Unit Standard",
+      "questions": [
+        {
+          "id": "ka_q1",
+          "text": "What is the main purpose of the Health and Safety at Work Act 2015 (‘the Act’)?",
+          "image": "blank.jpg",
+          "hint": "Focus on protecting the health and safety of workers and others, as far as reasonably practicable.",
+          "type": "long",
+          "maxPoints": 2,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "secure|ensure|protect|improve",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "health.*and.*safety|workers?|workplace|others?",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q2",
+          "text": "What are your responsibilities as a “worker” under the Act?",
+          "image": "blank.jpg",
+          "hint": "Reasonable care, comply with instructions, report hazards/incidents, don't put others at risk.",
+          "type": "long",
+          "maxPoints": 4,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "reasonable care|take care",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "follow.*(rules|procedures|instruction)|comply",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "report|notify|hazards?|incidents?|injur",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "others?.*(health|safety)|not endanger|adversely affect",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q3",
+          "text": "What is a person conducting a business or undertaking’s (PCBU’s) main responsibility under the Act?",
+          "image": "blank.jpg",
+          "hint": "Ensure health and safety, so far as reasonably practicable, for workers and others affected.",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "PCBU|person conducting|business or undertaking",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "ensure|provide|maintain",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "reasonably practicable|health.*and.*safety|workers?|others?",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q4",
+          "text": "Complete the following table.",
+          "image": "blank.jpg",
+          "hint": "Complete as directed on the assessment sheet (teacher will verify).",
+          "type": "long",
+          "maxPoints": 1,
+          "rubric": [
+            {
+              "points": 1,
+              "check": ".+",
+              "flags": "s"
+            }
+          ]
+        },
+        {
+          "id": "ka_q5",
+          "text": "Identify the meanings of the following signs.",
+          "image": "blank.jpg",
+          "hint": "Describe what each sign is instructing/warning.",
+          "type": "long",
+          "maxPoints": 4,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "forklift|beware of forklifts|forklifts in use",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "clear walkways|keep aisles clear|maintain clear walkways",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "keep hands clear|moving machinery|guards in place",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "fire action chart|fire.*action|what to do.*fire",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q6",
+          "text": "Describe the steps you should follow in your workplace in the event of: (a) Fire, (b) Earthquake, (c) Accident, (d) Chemical spill.",
+          "image": "blank.jpg",
+          "hint": "Include alarm/111, evacuate/assembly point, first aid, report to supervisor, isolate area, follow procedures.",
+          "type": "long",
+          "maxPoints": 8,
+          "rubric": [
+            {
+              "points": 2,
+              "check": "fire.*(alarm|evacuat|assembly|111)",
+              "flags": "i"
+            },
+            {
+              "points": 2,
+              "check": "earthquake.*(drop|cover|hold|shelter|assembly)",
+              "flags": "i"
+            },
+            {
+              "points": 2,
+              "check": "accident.*(first aid|ambulance|111|report)",
+              "flags": "i"
+            },
+            {
+              "points": 2,
+              "check": "chemical spill|spill.*(supervisor|evacuat|isolate|clean|qualified|PPE)",
+              "flags": "i"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "24354-observation-sheet",
+      "title": "Assessor Observation Sheet – Safe working practices (Level 2)",
+      "subtitle": "US 24354 (v3) – Assessor observation checklist",
+      "usNumber": "24354",
+      "usVersion": "v3",
+      "credits": 4,
+      "standardType": "Unit Standard",
+      "questions": [
+        {
+          "id": "obs_q1",
+          "text": "Assessor observation checklist completed (PPE, barriers/signage, trained for equipment, safe tool use, guards/fences, clean work areas, emergency drills, knowledge sheet completed).",
+          "image": "blank.jpg",
+          "hint": "Teacher/assessor completes this section.",
+          "type": "short",
+          "maxPoints": 1,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "completed|yes|done|observed|signed",
+              "flags": "i"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
