@@ -45,7 +45,7 @@
           "id": "sr1_q1",
           "text": "1. What legislation covers the safety of people in the workplace?",
           "image": "blank.jpg",
-          "hint": "Use the section titled “The Health and Safety at Work Act 2015” and take the legislation name from the heading/intro. (See pp. 9–10)",
+          "hint": "take the legislation name from the heading/intro. (See p. 9–10)",
           "type": "short",
           "maxPoints": 2,
           "rubric": [
@@ -90,7 +90,7 @@
           "id": "sr1_q3",
           "text": "3. List 2 methods used to identify hazards in the workplace.\n",
           "image": "blank.jpg",
-          "hint": "Use the “Identifying hazards” section and list two methods mentioned there. (See pp. 13–14)",
+          "hint": "Use the “Identifying hazards” section and list two methods mentioned there. (See p. 13–14)",
           "type": "long",
           "maxPoints": 2,
           "rubric": [
@@ -110,7 +110,7 @@
           "id": "sr1_q4",
           "text": "4. Once a hazard has been identified, what are the employer’s responsibilities?",
           "image": "blank.jpg",
-          "hint": "Use the PCBU/employer responsibilities in the Act overview and the hazard management section (controls, information, training, emergency procedures). (See pp. 9–11 and p. 13)",
+          "hint": "Use the PCBU/employer responsibilities in the Act overview and the hazard management section (controls, information, training, emergency procedures). (See p. 9–11 and p. 13)",
           "type": "long",
           "maxPoints": 5,
           "rubric": [
@@ -185,7 +185,7 @@
           "id": "sr1_q6",
           "text": "6. Before you enter a workplace your employer is obliged to provide you with specific safety information. List 4 types of information that would ensure they meet this requirement.\n",
           "image": "blank.jpg",
-          "hint": "Use the section describing what a PCBU must provide before you enter/work in a workplace (hazards, controls, emergency info, PPE, first aid, supervision/training). (See p. 10)",
+          "hint": "Use the section describing what a PCBU must provide before you enter/work in a workplace. (See p. 10)",
           "type": "long",
           "maxPoints": 4,
           "rubric": [
@@ -245,7 +245,7 @@
           "id": "sr1_q8_i_a",
           "text": "i) You are preparing to use a portable power planer to skim the side off a door. You have left your safety glasses in the workshop. It will take you half an hour to go back and get them. The job will only take 10 minutes to complete.\n\na. identify the potential hazards",
           "image": "blank.jpg",
-          "hint": "Use the PPE section for eye protection and the hazards section for flying debris. (See pp. 17–19)",
+          "hint": "Use the PPE section and the hazards section for flying debris. (See p. 17–19)",
           "type": "long",
           "maxPoints": 2,
           "rubric": [
@@ -265,7 +265,7 @@
           "id": "sr1_q8_i_b",
           "text": "i) You are preparing to use a portable power planer to skim the side off a door. You have left your safety glasses in the workshop. It will take you half an hour to go back and get them. The job will only take 10 minutes to complete.\n\nb. assess the level of risk and describe any potential consequences or harm",
           "image": "blank.jpg",
-          "hint": "Use the “Assessing risk” section to describe likelihood + severity and explain possible harm. (See p. 15, plus PPE consequences pp. 17–19)",
+          "hint": "Use the “Assessing risk” section to describe likelihood + severity and explain possible harm. (See p. 15, plus PPE consequences p. 17–19)",
           "type": "long",
           "maxPoints": 3,
           "rubric": [
@@ -290,7 +290,7 @@
           "id": "sr1_q8_i_c",
           "text": "i) You are preparing to use a portable power planer to skim the side off a door. You have left your safety glasses in the workshop. It will take you half an hour to go back and get them. The job will only take 10 minutes to complete.\n\nc. describe the appropriate course of action for managing the risk.",
           "image": "blank.jpg",
-          "hint": "Use the hierarchy of controls / managing risk section and the PPE requirements for eye protection. (See pp. 15–16 and pp. 17–19)",
+          "hint": "Use the hierarchy of controls / managing risk section and the PPE requirements for eye protection. (See p. 15–16 and p. 17–19)",
           "type": "long",
           "maxPoints": 2,
           "rubric": [
@@ -305,7 +305,7 @@
           "id": "sr1_q8_ii_a",
           "text": "ii) During your first week on the job you have been told to use the circular saw bench to rip some lengths of timber into strips. You have never used a circular saw before or been given any instruction about the correct operating procedures for one.\n\na. identify the potential hazards",
           "image": "blank.jpg",
-          "hint": "Use the tools/equipment/machinery section about training/competence and hazards of machinery (including guarding). (See pp. 28–29, and worker/PCBU responsibilities pp. 10–12)",
+          "hint": "Use the tools/equipment/machinery section about training/competence and hazards of machinery (including guarding). (See p. 28–29, and worker/PCBU responsibilities p. 10–12)",
           "type": "long",
           "maxPoints": 3,
           "rubric": [
@@ -330,7 +330,7 @@
           "id": "sr1_q8_ii_b",
           "text": "ii) During your first week on the job you have been told to use the circular saw bench to rip some lengths of timber into strips. You have never used a circular saw before or been given any instruction about the correct operating procedures for one.\n\nb. assess the level of risk and describe any potential consequences or harm",
           "image": "blank.jpg",
-          "hint": "Use the “Assessing risk” section (likelihood + severity) and relate it to machinery injury consequences. (See pp. 15–16 and pp. 28–29)",
+          "hint": "Use the “Assessing risk” section (likelihood + severity) and relate it to machinery injury consequences. (See p. 15–16 and p. 28–29)",
           "type": "long",
           "maxPoints": 3,
           "rubric": [
@@ -355,7 +355,7 @@
           "id": "sr1_q8_ii_c",
           "text": "ii) During your first week on the job you have been told to use the circular saw bench to rip some lengths of timber into strips. You have never used a circular saw before or been given any instruction about the correct operating procedures for one.\n\nc. describe the appropriate course of action for managing the risk.",
           "image": "blank.jpg",
-          "hint": "Use the section about what to do if you’re not trained/competent and the machine safety rules (guards, procedures, supervision). (See pp. 12 and 28–29)",
+          "hint": "Use the section about what to do if you’re not trained/competent and the machine safety rules (guards, procedures, supervision). (See p. 12 and p. 28–29)",
           "type": "long",
           "maxPoints": 3,
           "rubric": [
@@ -425,7 +425,7 @@
           "id": "sr1_q8_iii_c",
           "text": "iii) The body of the electric drill is cracked. Some of the wires are exposed but none of them appear to be damaged.\n\nc. describe the appropriate course of action for managing the risk.",
           "image": "blank.jpg",
-          "hint": "Use the damaged/faulty equipment guidance (do not use; report; isolate) and electrical safety rules. (See pp. 28–29 and p. 34)",
+          "hint": "Use the damaged/faulty equipment guidance (do not use; report; isolate) and electrical safety rules. (See p. 28–29 and p. 34)",
           "type": "long",
           "maxPoints": 3,
           "rubric": [
@@ -450,7 +450,7 @@
           "id": "sr1_q8_iv_a",
           "text": "iv) You are using the spindle moulder to shape some short lengths of timber. The guards are getting in the way. One of your workmates suggests removing them until you complete this job.\n\na. identify the potential hazards",
           "image": "blank.jpg",
-          "hint": "Use the tools/equipment/machinery section on guarding and hazards of unguarded machinery. (See pp. 28–29)",
+          "hint": "Use the tools/equipment/machinery section on guarding and hazards of unguarded machinery. (See p. 28–29)",
           "type": "long",
           "maxPoints": 2,
           "rubric": [
@@ -470,7 +470,7 @@
           "id": "sr1_q8_iv_b",
           "text": "iv) You are using the spindle moulder to shape some short lengths of timber. The guards are getting in the way. One of your workmates suggests removing them until you complete this job.\n\nb. assess the level of risk and describe any potential consequences or harm",
           "image": "blank.jpg",
-          "hint": "Use the “Assessing risk” section (likelihood + severity) and connect it to machinery consequences. (See pp. 15–16 and pp. 28–29)",
+          "hint": "Use the “Assessing risk” section (likelihood + severity) and connect it to machinery consequences. (See p. 15–16 and p. 28–29)",
           "type": "long",
           "maxPoints": 3,
           "rubric": [
@@ -495,7 +495,7 @@
           "id": "sr1_q8_iv_c",
           "text": "iv) You are using the spindle moulder to shape some short lengths of timber. The guards are getting in the way. One of your workmates suggests removing them until you complete this job.\n\nc. describe the appropriate course of action for managing the risk.",
           "image": "blank.jpg",
-          "hint": "Use the machine safety rules about guarding and safe systems of work (including getting help/supervision). (See pp. 11 and 28–29)",
+          "hint": "Use the machine safety rules about guarding and safe systems of work (including getting help/supervision). (See p. 11 and p. 28–29)",
           "type": "long",
           "maxPoints": 3,
           "rubric": [
@@ -565,7 +565,7 @@
           "id": "sr1_q8_v_c",
           "text": "v) You are in the process of delivering a finished set of chairs to a customer. As you unload the truck you notice that one of the chair legs is made of cross-grained timber.\n\nc. describe the appropriate course of action for managing the risk.",
           "image": "blank.jpg",
-          "hint": "Use the “Managing risk” section (controls) and the idea of preventing harm before it happens. (See pp. 15–16)",
+          "hint": "Use the “Managing risk” section (controls) and the idea of preventing harm before it happens. (See p. 15–16)",
           "type": "long",
           "maxPoints": 3,
           "rubric": [
@@ -676,7 +676,7 @@
           "id": "sr2_q1",
           "text": "1. You are required to unload 15 x 40kg bags of cement off the back of a truck. The storage area is 75 metres away across a drive littered with construction waste. Describe the safest and most efficient means to get the cement into the storage area.",
           "image": "blank.jpg",
-          "hint": "Use the “Safe lifting” section and apply it to this situation (route hazards, mechanical aids, team lifting, smaller loads). (See pp. 30–31)",
+          "hint": "Use the “Safe lifting” section and apply it to this situation (route hazards, mechanical aids, team lifting, smaller loads). (See p. 30–31)",
           "type": "long",
           "maxPoints": 4,
           "rubric": [
@@ -851,7 +851,7 @@
           "id": "sr2_q7",
           "text": "7. What does the sign to the right represent and when would this area be used?",
           "image": "blank.jpg",
-          "hint": "Use the emergency section explaining where people go during evacuations and what that location is used for. (See pp. 39–40)",
+          "hint": "Use the emergency section explaining where people go during evacuations and what that location is used for. (See p. 39–40)",
           "type": "long",
           "maxPoints": 2,
           "rubric": [
@@ -917,7 +917,7 @@
           "id": "sr3_q2",
           "text": "2. What is the recommended angle ratio for a ladder when it is set up?",
           "image": "blank.jpg",
-          "hint": "Use the ladder setup diagram/ladder safety section and state the recommended setup ratio/angle. (See pp. 32–33)",
+          "hint": "Use the ladder setup diagram/ladder safety section and state the recommended setup ratio/angle. (See p. 32–33)",
           "type": "short",
           "maxPoints": 2,
           "rubric": [
@@ -932,7 +932,7 @@
           "id": "sr3_q3",
           "text": "3. Why are power lines an extreme hazard when you are carrying or using an aluminium ladder?",
           "image": "blank.jpg",
-          "hint": "Use the ladder safety section about overhead wires and the electrical safety section about electrical hazards. (See pp. 33–34)",
+          "hint": "Use the ladder safety section about overhead wires and the electrical safety section about electrical hazards. (See p. 33–34)",
           "type": "long",
           "maxPoints": 3,
           "rubric": [
@@ -972,7 +972,7 @@
           "id": "sr3_q5",
           "text": "5. Identify the possible consequences of directing compressed air at another person.",
           "image": "blank.jpg",
-          "hint": "Use the “Compressed air” section and list the consequences described there. (See pp. 34–35)",
+          "hint": "Use the “Compressed air” section and list the consequences described there. (See p. 34–35)",
           "type": "long",
           "maxPoints": 4,
           "rubric": [
@@ -1027,7 +1027,7 @@
           "id": "sr3_q7_1",
           "text": "7. Identify 3 potential hazards and ongoing consequences that could occur if you decide to use a machine without receiving instructions in its proper use.",
           "image": "blank.jpg",
-          "hint": "Use the tools/equipment/machinery section describing unsafe conditions (e.g., missing guards/faulty wiring/defective switches) and what happens if machines are misused. (See pp. 28–29)",
+          "hint": "Use the tools/equipment/machinery section describing unsafe conditions (e.g., missing guards/faulty wiring/defective switches) and what happens if machines are misused. (See p. 28–29)",
           "type": "long",
           "maxPoints": 3,
           "rubric": [
@@ -1052,7 +1052,7 @@
           "id": "sr3_q7_2",
           "text": "7. Identify 3 potential hazards and ongoing consequences that could occur if you decide to use a machine without receiving instructions in its proper use.",
           "image": "blank.jpg",
-          "hint": "Use the tools/equipment/machinery section describing unsafe conditions (e.g., missing guards/faulty wiring/defective switches) and what happens if machines are misused. (See pp. 28–29)",
+          "hint": "Use the tools/equipment/machinery section describing unsafe conditions (e.g., missing guards/faulty wiring/defective switches) and what happens if machines are misused. (See p. 28–29)",
           "type": "long",
           "maxPoints": 3,
           "rubric": [
@@ -1077,7 +1077,7 @@
           "id": "sr3_q7_3",
           "text": "7. Identify 3 potential hazards and ongoing consequences that could occur if you decide to use a machine without receiving instructions in its proper use.",
           "image": "blank.jpg",
-          "hint": "Use the tools/equipment/machinery section describing unsafe conditions (e.g., missing guards/faulty wiring/defective switches) and what happens if machines are misused. (See pp. 28–29)",
+          "hint": "Use the tools/equipment/machinery section describing unsafe conditions (e.g., missing guards/faulty wiring/defective switches) and what happens if machines are misused. (See p. 28–29)",
           "type": "long",
           "maxPoints": 3,
           "rubric": [
@@ -1102,7 +1102,7 @@
           "id": "sr3_q8",
           "text": "8. Identify hazards associated with each of the following safety issues.\n\nLoose clothing:\n\nLong hair:\n\nNon-safety footwear:\n\nWearing jewellery:\n\nPoor lifting technique:\n\nHandling or moving of heavy objects:\t \n\nHeights:",
           "image": "blank.jpg",
-          "hint": "Use “Managing common hazards” for clothing/hair/jewellery and lifting/heights; use the footwear section for safety footwear hazards. (See pp. 28–34 and p. 27)",
+          "hint": "Use “Managing common hazards” for clothing/hair/jewellery and lifting/heights; use the footwear section for safety footwear hazards. (See p. 28–34 and p. 27)",
           "type": "long",
           "maxPoints": 7,
           "rubric": [
@@ -1223,7 +1223,7 @@
           "id": "ka_q4",
           "text": "4. What is a person conducting a business or undertaking’s (PCBUs) main responsibility under the Act?",
           "image": "blank.jpg",
-          "hint": "Use the PCBU responsibility section and include the phrase about “so far as reasonably practicable”. (See pp. 9–10)",
+          "hint": "Use the PCBU responsibility section and include the phrase about “so far as reasonably practicable”. (See p. 9–10)",
           "type": "long",
           "maxPoints": 4,
           "rubric": [
