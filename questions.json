@@ -798,10 +798,11 @@
   "maxPoints": 1,
   "rubric": [
     {
-      "points": 1,
-      "check": "(water(\\s*type)?\\s*extinguisher.*(class\\s*a|class\\s*1|solid|wood|paper|cardboard|cloth|plastic).*?(wood|paper|cardboard|cloth|fabric|rubbish|trash|plastic))|((dry\\s*(chemical)?\\s*powder|dry\\s*powder|abe).*?(class\\s*a|class\\s*b|class\\s*e|electrical|flammable\\s*liquid|petrol|diesel|oil|paint).*?(wood|paper|cardboard|petrol|diesel|paint|solvent|wiring|switchboard|electrical\\s*equipment))|(co2|carbon\\s*dioxide).*?(class\\s*b|class\\s*e|electrical|flammable\\s*liquid).*?(petrol|diesel|oil|paint|solvent|switchboard|wiring|electrical\\s*equipment)|(foam|aqueous\\s*film\\-forming\\s*foam|afff).*?(class\\s*a|class\\s*b|flammable\\s*liquid|petrol|diesel|oil|paint).*?(wood|paper|cardboard|petrol|diesel|oil|paint|solvent)|(wet\\s*chemical).*?(class\\s*f|cooking\\s*oil|grease|fat).*?(cooking\\s*oil|deep\\s*fryer|grease|fat)",
-      "flags": "i"
-    }
+  "points": 1,
+  "check": "((water)[\\s\\S]*(class\\s*a)[\\s\\S]*(wood|paper|cardboard|cloth|fabric|plastic)|(class\\s*a)[\\s\\S]*(water)[\\s\\S]*(wood|paper|cardboard|cloth|fabric|plastic)|(wood|paper|cardboard|cloth|fabric|plastic)[\\s\\S]*(water)[\\s\\S]*(class\\s*a)|(co2|carbon\\s*dioxide)[\\s\\S]*(class\\s*(b|e))[\\s\\S]*(petrol|diesel|oil|paint|solvent|thinner|wiring|switchboard|electrical|equipment)|(foam|afff)[\\s\\S]*(class\\s*(a|b))[\\s\\S]*(wood|paper|cardboard|petrol|diesel|oil|paint|solvent|thinner)|(powder|dry\\s*chemical|dry\\s*powder|dcp)[\\s\\S]*(class\\s*(a|b|e))[\\s\\S]*(wood|paper|cardboard|petrol|diesel|oil|paint|solvent|thinner|wiring|switchboard|electrical|equipment)|(wet\\s*chemical)[\\s\\S]*(class\\s*f)[\\s\\S]*(cooking\\s*oil|oil|fat|grease))",
+  "flags": "i"
+}
+
   ]
 }
 ,
