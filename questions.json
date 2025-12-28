@@ -975,60 +975,75 @@
         },
         {
   "id": "sr3_q7_1",
-  "text": "7. Identify 3 potential hazards and ongoing consequences that could occur if you decide to use a machine without receiving instructions in its proper use.\nHazard 1:_____________________________________________________________________________\nConsequence:____________________________________________________________________________________________________________________________________________________________________________",
+ "text": "7. Identify 3 potential hazards and ongoing consequences that could occur if you decide to use a machine without receiving instructions in its proper use.",
   "image": "blank.jpg",
-  "hint": "Hazards (e.g., rotating blade/kickback/flying debris). Consequences (e.g., cuts/amputation/eye injury/hearing loss).",
+  "hint": "Use the guide language: lack of training can cause serious harm to you/others, and damage equipment creating further hazards (missing guards, faulty wiring, defective switch).",
   "type": "long",
-  "maxPoints": 2,
+  "maxPoints": 3,
   "rubric": [
     {
       "points": 1,
-      "check": "blade|cutter|saw|rotat|moving\\s*parts?|kickback|jam|binding|pinch\\s*point|crush|trap|caught\\s*in|entangle|snag|pull\\s*in|flying\\s*(debris|chips|splinters|dust)|projectile|sharp\\s*edge|unguarded|guard\\s*off|unsafe\\s*setup|incorrect\\s*use|wrong\\s*procedure|electric(al)?|exposed\\s*wires?|overheat|sparks?",
+      "check": "(no\\s*(instruction|training)|not\\s*(trained|shown|instructed)|without\\s*(instruction|training|supervision))|unsafe\\s*(use|operation|setup)|incorrect\\s*(use|operation|procedure|setup)|missing\\s*guard|guard\\s*(missing|off|not\\s*used)|unprotected\\s*wiring|exposed\\s*wires?|defective\\s*(switch|machine)|faulty\\s*(switch|machine)|kickback|flying\\s*(debris|chips|splinters|dust)|moving\\s*parts?|rotating\\s*(blade|bit|cutter)|jam(med)?|binding|pinch\\s*point|caught\\s*in|entangle|snag|pull\\s*in|sparks?|overheat",
       "flags": "i"
     },
     {
       "points": 1,
-      "check": "cut|injur|amputation|sever|lacerat|slice|bruise|crush\\s*injury|fracture|broken\\s*bones?|eye\\s*injur|blind|eyesight|vision|hearing\\s*loss|deaf|burn|shock|electrocution|death|fatal|serious|hospital|infection|permanent|long\\s*term|disability|back\\s*injury|strain|sprain",
+      "check": "serious\\s*harm|injur(y|ies)|cut(s)?|lacerat(e|ion)|amputation|crush\\s*injury|fracture|broken\\s*(bone|bones)|eye\\s*injury|blind(ness)?|hearing\\s*loss|burn(s)?|shock|electrocution|hospital|death|fatal|permanent|long\\s*term|disability|rehab|time\\s*off",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "injur(e|y)\\s*(others|classmates|people)|harm\\s*(others|classmates|people)|damage\\s*(the\\s*)?(machine|equipment)|create\\s*(another\\s*)?hazard|unsafe\\s*(for\\s*)?(others|classmates)|cost(s)?\\s*(to\\s*)?(repair|fix|replace)|repair\\s*(cost|bill)|replace(ment)?\\s*(cost|bill)|downtime|out\\s*of\\s*service|machine\\s*(unusable|unsafe)",
       "flags": "i"
     }
   ]
 },
 {
   "id": "sr3_q7_2",
-  "text": "7. Identify 3 potential hazards and ongoing consequences that could occur if you decide to use a machine without receiving instructions in its proper use.\nHazard 2:_____________________________________________________________________________\nConsequence:____________________________________________________________________________________________________________________________________________________________________________",
+ "text": "7. Identify 3 potential hazards and ongoing consequences that could occur if you decide to use a machine without receiving instructions in its proper use.",
   "image": "blank.jpg",
-  "hint": "Hazards (e.g., rotating blade/kickback/flying debris). Consequences (e.g., cuts/amputation/eye injury/hearing loss).",
+  "hint": "Use the guide language: lack of training can cause serious harm to you/others, and damage equipment creating further hazards (missing guards, faulty wiring, defective switch).",
   "type": "long",
-  "maxPoints": 2,
+  "maxPoints": 3,
   "rubric": [
     {
       "points": 1,
-      "check": "blade|cutter|saw|rotat|moving\\s*parts?|kickback|jam|binding|pinch\\s*point|crush|trap|caught\\s*in|entangle|snag|pull\\s*in|flying\\s*(debris|chips|splinters|dust)|projectile|sharp\\s*edge|unguarded|guard\\s*off|unsafe\\s*setup|incorrect\\s*use|wrong\\s*procedure|electric(al)?|exposed\\s*wires?|overheat|sparks?",
+      "check": "(no\\s*(instruction|training)|not\\s*(trained|shown|instructed)|without\\s*(instruction|training|supervision))|unsafe\\s*(use|operation|setup)|incorrect\\s*(use|operation|procedure|setup)|missing\\s*guard|guard\\s*(missing|off|not\\s*used)|unprotected\\s*wiring|exposed\\s*wires?|defective\\s*(switch|machine)|faulty\\s*(switch|machine)|kickback|flying\\s*(debris|chips|splinters|dust)|moving\\s*parts?|rotating\\s*(blade|bit|cutter)|jam(med)?|binding|pinch\\s*point|caught\\s*in|entangle|snag|pull\\s*in|sparks?|overheat",
       "flags": "i"
     },
     {
       "points": 1,
-      "check": "cut|injur|amputation|sever|lacerat|slice|bruise|crush\\s*injury|fracture|broken\\s*bones?|eye\\s*injur|blind|eyesight|vision|hearing\\s*loss|deaf|burn|shock|electrocution|death|fatal|serious|hospital|infection|permanent|long\\s*term|disability|back\\s*injury|strain|sprain",
+      "check": "serious\\s*harm|injur(y|ies)|cut(s)?|lacerat(e|ion)|amputation|crush\\s*injury|fracture|broken\\s*(bone|bones)|eye\\s*injury|blind(ness)?|hearing\\s*loss|burn(s)?|shock|electrocution|hospital|death|fatal|permanent|long\\s*term|disability|rehab|time\\s*off",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "injur(e|y)\\s*(others|classmates|people)|harm\\s*(others|classmates|people)|damage\\s*(the\\s*)?(machine|equipment)|create\\s*(another\\s*)?hazard|unsafe\\s*(for\\s*)?(others|classmates)|cost(s)?\\s*(to\\s*)?(repair|fix|replace)|repair\\s*(cost|bill)|replace(ment)?\\s*(cost|bill)|downtime|out\\s*of\\s*service|machine\\s*(unusable|unsafe)",
       "flags": "i"
     }
   ]
 },
 {
   "id": "sr3_q7_3",
-  "text": "7. Identify 3 potential hazards and ongoing consequences that could occur if you decide to use a machine without receiving instructions in its proper use.\nHazard 3:_____________________________________________________________________________\nConsequence:____________________________________________________________________________________________________________________________________________________________________________",
+  "text": "7. Identify 3 potential hazards and ongoing consequences that could occur if you decide to use a machine without receiving instructions in its proper use.",
   "image": "blank.jpg",
-  "hint": "Hazards (e.g., rotating blade/kickback/flying debris). Consequences (e.g., cuts/amputation/eye injury/hearing loss).",
+  "hint": "Use the guide language: lack of training can cause serious harm to you/others, and damage equipment creating further hazards (missing guards, faulty wiring, defective switch).",
   "type": "long",
-  "maxPoints": 2,
+  "maxPoints": 3,
   "rubric": [
     {
       "points": 1,
-      "check": "blade|cutter|saw|rotat|moving\\s*parts?|kickback|jam|binding|pinch\\s*point|crush|trap|caught\\s*in|entangle|snag|pull\\s*in|flying\\s*(debris|chips|splinters|dust)|projectile|sharp\\s*edge|unguarded|guard\\s*off|unsafe\\s*setup|incorrect\\s*use|wrong\\s*procedure|electric(al)?|exposed\\s*wires?|overheat|sparks?",
+      "check": "(no\\s*(instruction|training)|not\\s*(trained|shown|instructed)|without\\s*(instruction|training|supervision))|unsafe\\s*(use|operation|setup)|incorrect\\s*(use|operation|procedure|setup)|missing\\s*guard|guard\\s*(missing|off|not\\s*used)|unprotected\\s*wiring|exposed\\s*wires?|defective\\s*(switch|machine)|faulty\\s*(switch|machine)|kickback|flying\\s*(debris|chips|splinters|dust)|moving\\s*parts?|rotating\\s*(blade|bit|cutter)|jam(med)?|binding|pinch\\s*point|caught\\s*in|entangle|snag|pull\\s*in|sparks?|overheat",
       "flags": "i"
     },
     {
       "points": 1,
-      "check": "cut|injur|amputation|sever|lacerat|slice|bruise|crush\\s*injury|fracture|broken\\s*bones?|eye\\s*injur|blind|eyesight|vision|hearing\\s*loss|deaf|burn|shock|electrocution|death|fatal|serious|hospital|infection|permanent|long\\s*term|disability|back\\s*injury|strain|sprain",
+      "check": "serious\\s*harm|injur(y|ies)|cut(s)?|lacerat(e|ion)|amputation|crush\\s*injury|fracture|broken\\s*(bone|bones)|eye\\s*injury|blind(ness)?|hearing\\s*loss|burn(s)?|shock|electrocution|hospital|death|fatal|permanent|long\\s*term|disability|rehab|time\\s*off",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "injur(e|y)\\s*(others|classmates|people)|harm\\s*(others|classmates|people)|damage\\s*(the\\s*)?(machine|equipment)|create\\s*(another\\s*)?hazard|unsafe\\s*(for\\s*)?(others|classmates)|cost(s)?\\s*(to\\s*)?(repair|fix|replace)|repair\\s*(cost|bill)|replace(ment)?\\s*(cost|bill)|downtime|out\\s*of\\s*service|machine\\s*(unusable|unsafe)",
       "flags": "i"
     }
   ]
