@@ -983,17 +983,17 @@
   "rubric": [
     {
       "points": 1,
-      "check": "(no\\s*(instruction|training)|not\\s*(trained|shown|instructed)|without\\s*(instruction|training|supervision))|unsafe\\s*(use|operation|setup)|incorrect\\s*(use|operation|procedure|setup)|missing\\s*guard|guard\\s*(missing|off|not\\s*used)|unprotected\\s*wiring|exposed\\s*wires?|defective\\s*(switch|machine)|faulty\\s*(switch|machine)|kickback|flying\\s*(debris|chips|splinters|dust)|moving\\s*parts?|rotating\\s*(blade|bit|cutter)|jam(med)?|binding|pinch\\s*point|caught\\s*in|entangle|snag|pull\\s*in|sparks?|overheat",
+      "check": "(no\\s*(instruction|instructions|training)|not\\s*(trained|shown|instructed|taught)|without\\s*(instruction|training|supervision)|untrained|inexperience(d)?|don'?t\\s*know\\s*how\\s*to\\s*use|not\\s*sure\\s*how\\s*to\\s*use|haven'?t\\s*been\\s*shown|unsafe\\s*(use|operation|setup)|incorrect\\s*(use|operation|procedure|setup)|use\\s*(it|the\\s*(tool|machine))\\s*wrong|misuse(d)?|wrong\\s*way)|missing\\s*guard|guard\\s*(missing|off|not\\s*used)|unguarded|unprotected\\s*wiring|exposed\\s*wires?|defective\\s*(switch|machine)|faulty\\s*(switch|machine)|kickback|flying\\s*(debris|chips|splinters|dust)|projectile(s)?|moving\\s*parts?|rotating\\s*(blade|bit|cutter)|jam(med)?|binding|pinch\\s*point|caught\\s*in|entangle|snag|pull\\s*in|sparks?|overheat",
       "flags": "i"
     },
     {
       "points": 1,
-      "check": "serious\\s*harm|injur(y|ies)|cut(s)?|lacerat(e|ion)|amputation|crush\\s*injury|fracture|broken\\s*(bone|bones)|eye\\s*injury|blind(ness)?|hearing\\s*loss|burn(s)?|shock|electrocution|hospital|death|fatal|permanent|long\\s*term|disability|rehab|time\\s*off",
+      "check": "serious\\s*harm|injur(y|ies)|injured|get\\s*(hurt|injured)|hurt\\s*(myself|someone|others)?|accident|cut(s)?|lacerat(e|ion)|amputation|lose\\s*(a\\s*)?(finger|hand)|sever(ed)?|slice(d)?|crush\\s*injury|fracture|broken\\s*(bone|bones)|eye\\s*injur(y|ies)|blind(ness)?|lose\\s*(your|my)\\s*eyesight|vision|hearing\\s*loss|deaf|burn(s)?|shock|electrocution|death|fatal|hospital|infection|permanent|long\\s*term|disability|rehab|time\\s*off",
       "flags": "i"
     },
     {
       "points": 1,
-      "check": "injur(e|y)\\s*(others|classmates|people)|harm\\s*(others|classmates|people)|damage\\s*(the\\s*)?(machine|equipment)|create\\s*(another\\s*)?hazard|unsafe\\s*(for\\s*)?(others|classmates)|cost(s)?\\s*(to\\s*)?(repair|fix|replace)|repair\\s*(cost|bill)|replace(ment)?\\s*(cost|bill)|downtime|out\\s*of\\s*service|machine\\s*(unusable|unsafe)",
+      "check": "hurt|injur(e|y)\\s*(others|someone\\s*else|classmates|people)|harm\\s*(others|someone\\s*else|classmates|people)|danger(ous)?\\s*(to|for)\\s*(others|people|classmates)|damage\\s*(the\\s*)?(machine|equipment|tool)|damage\\s*to\\s*(the\\s*)?(machine|equipment|tool)|break|broken\\s*(machine|equipment|tool)|wreck(ed)?\\s*(the\\s*)?(machine|equipment|tool)|create\\s*(another\\s*)?hazard|unsafe\\s*(for\\s*)?(others|classmates)|cost(s)?\\s*(to\\s*)?(repair|fix|replace)|repair\\s*(cost|bill)|replace(ment)?\\s*(cost|bill)|downtime|out\\s*of\\s*service|machine\\s*(unusable|unsafe)",
       "flags": "i"
     }
   ]
@@ -1008,17 +1008,17 @@
   "rubric": [
     {
       "points": 1,
-      "check": "(no\\s*(instruction|training)|not\\s*(trained|shown|instructed)|without\\s*(instruction|training|supervision))|unsafe\\s*(use|operation|setup)|incorrect\\s*(use|operation|procedure|setup)|missing\\s*guard|guard\\s*(missing|off|not\\s*used)|unprotected\\s*wiring|exposed\\s*wires?|defective\\s*(switch|machine)|faulty\\s*(switch|machine)|kickback|flying\\s*(debris|chips|splinters|dust)|moving\\s*parts?|rotating\\s*(blade|bit|cutter)|jam(med)?|binding|pinch\\s*point|caught\\s*in|entangle|snag|pull\\s*in|sparks?|overheat",
+      "check": "(no\\s*(instruction|instructions|training)|not\\s*(trained|shown|instructed|taught)|without\\s*(instruction|training|supervision)|untrained|inexperience(d)?|don'?t\\s*know\\s*how\\s*to\\s*use|not\\s*sure\\s*how\\s*to\\s*use|haven'?t\\s*been\\s*shown|unsafe\\s*(use|operation|setup)|incorrect\\s*(use|operation|procedure|setup)|use\\s*(it|the\\s*(tool|machine))\\s*wrong|misuse(d)?|wrong\\s*way)|missing\\s*guard|guard\\s*(missing|off|not\\s*used)|unguarded|unprotected\\s*wiring|exposed\\s*wires?|defective\\s*(switch|machine)|faulty\\s*(switch|machine)|kickback|flying\\s*(debris|chips|splinters|dust)|projectile(s)?|moving\\s*parts?|rotating\\s*(blade|bit|cutter)|jam(med)?|binding|pinch\\s*point|caught\\s*in|entangle|snag|pull\\s*in|sparks?|overheat",
       "flags": "i"
     },
     {
       "points": 1,
-      "check": "serious\\s*harm|injur(y|ies)|cut(s)?|lacerat(e|ion)|amputation|crush\\s*injury|fracture|broken\\s*(bone|bones)|eye\\s*injury|blind(ness)?|hearing\\s*loss|burn(s)?|shock|electrocution|hospital|death|fatal|permanent|long\\s*term|disability|rehab|time\\s*off",
+      "check": "serious\\s*harm|injur(y|ies)|injured|get\\s*(hurt|injured)|hurt\\s*(myself|someone|others)?|accident|cut(s)?|lacerat(e|ion)|amputation|lose\\s*(a\\s*)?(finger|hand)|sever(ed)?|slice(d)?|crush\\s*injury|fracture|broken\\s*(bone|bones)|eye\\s*injur(y|ies)|blind(ness)?|lose\\s*(your|my)\\s*eyesight|vision|hearing\\s*loss|deaf|burn(s)?|shock|electrocution|death|fatal|hospital|infection|permanent|long\\s*term|disability|rehab|time\\s*off",
       "flags": "i"
     },
     {
       "points": 1,
-      "check": "injur(e|y)\\s*(others|classmates|people)|harm\\s*(others|classmates|people)|damage\\s*(the\\s*)?(machine|equipment)|create\\s*(another\\s*)?hazard|unsafe\\s*(for\\s*)?(others|classmates)|cost(s)?\\s*(to\\s*)?(repair|fix|replace)|repair\\s*(cost|bill)|replace(ment)?\\s*(cost|bill)|downtime|out\\s*of\\s*service|machine\\s*(unusable|unsafe)",
+      "check": "hurt|injur(e|y)\\s*(others|someone\\s*else|classmates|people)|harm\\s*(others|someone\\s*else|classmates|people)|danger(ous)?\\s*(to|for)\\s*(others|people|classmates)|damage\\s*(the\\s*)?(machine|equipment|tool)|damage\\s*to\\s*(the\\s*)?(machine|equipment|tool)|break|broken\\s*(machine|equipment|tool)|wreck(ed)?\\s*(the\\s*)?(machine|equipment|tool)|create\\s*(another\\s*)?hazard|unsafe\\s*(for\\s*)?(others|classmates)|cost(s)?\\s*(to\\s*)?(repair|fix|replace)|repair\\s*(cost|bill)|replace(ment)?\\s*(cost|bill)|downtime|out\\s*of\\s*service|machine\\s*(unusable|unsafe)",
       "flags": "i"
     }
   ]
@@ -1033,17 +1033,17 @@
   "rubric": [
     {
       "points": 1,
-      "check": "(no\\s*(instruction|training)|not\\s*(trained|shown|instructed)|without\\s*(instruction|training|supervision))|unsafe\\s*(use|operation|setup)|incorrect\\s*(use|operation|procedure|setup)|missing\\s*guard|guard\\s*(missing|off|not\\s*used)|unprotected\\s*wiring|exposed\\s*wires?|defective\\s*(switch|machine)|faulty\\s*(switch|machine)|kickback|flying\\s*(debris|chips|splinters|dust)|moving\\s*parts?|rotating\\s*(blade|bit|cutter)|jam(med)?|binding|pinch\\s*point|caught\\s*in|entangle|snag|pull\\s*in|sparks?|overheat",
+      "check": "(no\\s*(instruction|instructions|training)|not\\s*(trained|shown|instructed|taught)|without\\s*(instruction|training|supervision)|untrained|inexperience(d)?|don'?t\\s*know\\s*how\\s*to\\s*use|not\\s*sure\\s*how\\s*to\\s*use|haven'?t\\s*been\\s*shown|unsafe\\s*(use|operation|setup)|incorrect\\s*(use|operation|procedure|setup)|use\\s*(it|the\\s*(tool|machine))\\s*wrong|misuse(d)?|wrong\\s*way)|missing\\s*guard|guard\\s*(missing|off|not\\s*used)|unguarded|unprotected\\s*wiring|exposed\\s*wires?|defective\\s*(switch|machine)|faulty\\s*(switch|machine)|kickback|flying\\s*(debris|chips|splinters|dust)|projectile(s)?|moving\\s*parts?|rotating\\s*(blade|bit|cutter)|jam(med)?|binding|pinch\\s*point|caught\\s*in|entangle|snag|pull\\s*in|sparks?|overheat",
       "flags": "i"
     },
     {
       "points": 1,
-      "check": "serious\\s*harm|injur(y|ies)|cut(s)?|lacerat(e|ion)|amputation|crush\\s*injury|fracture|broken\\s*(bone|bones)|eye\\s*injury|blind(ness)?|hearing\\s*loss|burn(s)?|shock|electrocution|hospital|death|fatal|permanent|long\\s*term|disability|rehab|time\\s*off",
+      "check": "serious\\s*harm|injur(y|ies)|injured|get\\s*(hurt|injured)|hurt\\s*(myself|someone|others)?|accident|cut(s)?|lacerat(e|ion)|amputation|lose\\s*(a\\s*)?(finger|hand)|sever(ed)?|slice(d)?|crush\\s*injury|fracture|broken\\s*(bone|bones)|eye\\s*injur(y|ies)|blind(ness)?|lose\\s*(your|my)\\s*eyesight|vision|hearing\\s*loss|deaf|burn(s)?|shock|electrocution|death|fatal|hospital|infection|permanent|long\\s*term|disability|rehab|time\\s*off",
       "flags": "i"
     },
     {
       "points": 1,
-      "check": "injur(e|y)\\s*(others|classmates|people)|harm\\s*(others|classmates|people)|damage\\s*(the\\s*)?(machine|equipment)|create\\s*(another\\s*)?hazard|unsafe\\s*(for\\s*)?(others|classmates)|cost(s)?\\s*(to\\s*)?(repair|fix|replace)|repair\\s*(cost|bill)|replace(ment)?\\s*(cost|bill)|downtime|out\\s*of\\s*service|machine\\s*(unusable|unsafe)",
+      "check": "hurt|injur(e|y)\\s*(others|someone\\s*else|classmates|people)|harm\\s*(others|someone\\s*else|classmates|people)|danger(ous)?\\s*(to|for)\\s*(others|people|classmates)|damage\\s*(the\\s*)?(machine|equipment|tool)|damage\\s*to\\s*(the\\s*)?(machine|equipment|tool)|break|broken\\s*(machine|equipment|tool)|wreck(ed)?\\s*(the\\s*)?(machine|equipment|tool)|create\\s*(another\\s*)?hazard|unsafe\\s*(for\\s*)?(others|classmates)|cost(s)?\\s*(to\\s*)?(repair|fix|replace)|repair\\s*(cost|bill)|replace(ment)?\\s*(cost|bill)|downtime|out\\s*of\\s*service|machine\\s*(unusable|unsafe)",
       "flags": "i"
     }
   ]
