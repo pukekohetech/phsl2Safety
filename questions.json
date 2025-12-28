@@ -1158,7 +1158,7 @@
           "id": "ka_q2",
           "text": "2. What is the main purpose of the Health and Safety at Work Act 2015 (‘the Act’)?",
           "image": "blank.jpg",
-          "hint": "Use the section titled “The Health and Safety at Work Act 2015” and summarise the stated purpose of the Act. (See p. 9)",
+          "hint": "Use the section titled “The Health and Safety at Work Act 2015” and summarise the purpose statement. (See p. 9 in the Safety L2 Student 24354 booklet)",
           "type": "long",
           "maxPoints": 4,
           "rubric": [
@@ -1188,7 +1188,7 @@
           "id": "ka_q3",
           "text": "3. What are your responsibilities as a “worker” under the Act?",
           "image": "blank.jpg",
-          "hint": "Use the responsibilities listed under “What it means for you” and select points that apply to workers/students. (See p. 11)",
+          "hint": "Use the list under “What it means for you” and choose responsibilities that apply to workers/students. (See p. 11 in the Safety L2 Student 24354 booklet)",
           "type": "long",
           "maxPoints": 5,
           "rubric": [
@@ -1223,7 +1223,7 @@
           "id": "ka_q4",
           "text": "4. What is a person conducting a business or undertaking’s (PCBUs) main responsibility under the Act?",
           "image": "blank.jpg",
-          "hint": "Use the PCBU responsibility section and include the phrase about “so far as reasonably practicable”. (See p. 9–10)",
+          "hint": "Use the PCBU responsibility section and include the phrase about “so far as reasonably practicable”. (See pp. 9–10 in the Safety L2 Student 24354 booklet)",
           "type": "long",
           "maxPoints": 4,
           "rubric": [
@@ -1245,6 +1245,441 @@
             {
               "points": 1,
               "check": "health\\s*and\\s*safety|workers?|workplace",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q5a_electrical",
+          "text": "5a. Electrical: Identify (A) a hazard, (B) possible harm, and (C) a suitable control measure.",
+          "image": "blank.jpg",
+          "hint": "Use the Electrical safety section and the risk/control section. (See p. 34 and pp. 15–16 in the Safety L2 Student 24354 booklet)",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "exposed\\s*wires?|damaged\\s*(cord|lead|tool|plug)|cracked\\s*(casing|drill)|faulty|broken\\s*(tool|lead)|frayed|electric(al)?\\s*hazard",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "electric\\s*shock|electrocution|burn|short\\s*circuit|fire|injur|fatal|death",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "do\\s*not\\s*use|tag\\s*out|lock\\s*out|isolate|unplug|remove\\s*from\\s*service|report|repair|electrician|test\\s*&\\s*tag",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q5b_chemical",
+          "text": "5b. Chemical: Identify (A) a hazard, (B) possible harm, and (C) a suitable control measure.",
+          "image": "blank.jpg",
+          "hint": "Use the Chemicals section and the risk/control section. (See p. 37 and pp. 15–16 in the Safety L2 Student 24354 booklet)",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "chemical|solvent|adhesive|paint|thinner|toxic|corrosive|fume|vapou?r|spill|skin\\s*contact|inhal",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "burn|irritat|poison|headache|dizzy|nausea|respirat|asthma|lung|injur|harm",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "SDS|MSDS|ventilat|PPE|gloves|goggles|mask|respirat(or|ory)|label|store\\s*safely|spill\\s*kit|wash|report",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q5c_fire",
+          "text": "5c. Fire: Identify (A) a hazard, (B) possible harm, and (C) a suitable control measure.",
+          "image": "blank.jpg",
+          "hint": "Use the fire safety/emergency section and the risk/control section. (See pp. 39–41 and pp. 15–16 in the Safety L2 Student 24354 booklet)",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "fire\\s*hazard|flammable|ignit|sparks?|hot\\s*work|overheat|electrical\\s*fire|fuel|gas",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "burn|smoke\\s*inhal|death|fatal|injur|property\\s*damage|spread",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "alarm|evacuat|call\\s*111|extinguisher|correct\\s*extinguisher|keep\\s*exits\\s*clear|remove\\s*ignition\\s*sources|store\\s*flammables\\s*safely|assembly\\s*point",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q5d_fumes",
+          "text": "5d. Fumes: Identify (A) a hazard, (B) possible harm, and (C) a suitable control measure.",
+          "image": "blank.jpg",
+          "hint": "Use hazard identification + PPE/controls guidance. (See pp. 13–16 and pp. 17–19 in the Safety L2 Student 24354 booklet)",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "fumes?|vapou?r|smoke|dust|airborne|inhal",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "breath|lungs?|respirat|headache|dizzy|nausea|asthma|irritat|harm",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "ventilat|extract(or|ion)|mask|respirat(or|ory)|PPE|open\\s*doors|fans?|work\\s*outdoors|limit\\s*exposure",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q5e_gas",
+          "text": "5e. Gas: Identify (A) a hazard, (B) possible harm, and (C) a suitable control measure.",
+          "image": "blank.jpg",
+          "hint": "Use hazard identification + emergency/fire guidance + control measures. (See pp. 13–16 and pp. 39–41 in the Safety L2 Student 24354 booklet)",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "gas|leak|cylinder|LPG|propane|flammable\\s*gas|asphyx",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "explos|fire|burn|poison|suffocat|unconscious|death|fatal|injur",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "turn\\s*off|isolate|ventilat|remove\\s*ignition\\s*sources|report|evacuat|store\\s*cylinders\\s*safely|check\\s*for\\s*leaks",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q5f_compressed_air",
+          "text": "5f. Compressed air: Identify (A) a hazard, (B) possible harm, and (C) a suitable control measure.",
+          "image": "blank.jpg",
+          "hint": "Use the Compressed air section and apply the risk/control principles. (See pp. 34–35 and pp. 15–16 in the Safety L2 Student 24354 booklet)",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "compressed\\s*air|air\\s*gun|blow\\s*gun|high\\s*pressure",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "eye\\s*injur|debris|embol|air\\s*bubble|inject|skin|serious|fatal|death",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "never\\s*(aim|direct)\\s*at\\s*(people|person)|PPE|safety\\s*glasses|training|safe\\s*procedure|use\\s*proper\\s*nozzle|supervision",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q5g_noise",
+          "text": "5g. Noise: Identify (A) a hazard, (B) possible harm, and (C) a suitable control measure.",
+          "image": "blank.jpg",
+          "hint": "Use the PPE/hearing protection guidance and hazard/control sections. (See pp. 17–19 and pp. 13–16 in the Safety L2 Student 24354 booklet)",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "noise|loud|machin(e|ery)|grind|saw|hammer",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "hearing\\s*loss|deaf|tinnitus|ring(ing)?\\s*in\\s*(ears?|ear)|damage\\s*hearing",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "earmuffs|ear\\s*plugs|hearing\\s*protection|PPE|limit\\s*time|turn\\s*off|maintain\\s*equipment",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q5h_material",
+          "text": "5h. Material: Identify (A) a hazard, (B) possible harm, and (C) a suitable control measure.",
+          "image": "blank.jpg",
+          "hint": "Use managing common hazards (materials/housekeeping/storage) and control measures. (See pp. 28–31 and pp. 15–16 in the Safety L2 Student 24354 booklet)",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "materials?|timber|offcuts?|debris|obstacles?|stored\\s*unsafely|stack(ed)?\\s*(wrong|high)|mess|untidy",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "trip|slip|fall|crush|cut|splinter|injur|hurt|harm",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "tidy|clean\\s*up|store\\s*safely|stack\\s*(properly|low)|keep\\s*walkways\\s*clear|housekeeping|dispose",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q5i_falling",
+          "text": "5i. Falling: Identify (A) a hazard, (B) possible harm, and (C) a suitable control measure.",
+          "image": "blank.jpg",
+          "hint": "Use heights/ladder safety and the risk/control section. (See pp. 32–33 and pp. 15–16 in the Safety L2 Student 24354 booklet)",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "fall(ing)?|heights?|ladder|scaffold|edge|unstable|slip",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "broken\\s*bones?|fracture|head\\s*injur|concussion|death|fatal|injur|hurt",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "correct\\s*ladder\\s*angle|4\\s*(:|to)\\s*1|secure|tie\\s*off|three\\s*points\\s*of\\s*contact|don'?t\\s*overreach|use\\s*scaffold|harness|supervision",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q5j_lifting",
+          "text": "5j. Lifting: Identify (A) a hazard, (B) possible harm, and (C) a suitable control measure.",
+          "image": "blank.jpg",
+          "hint": "Use Safe lifting/manual handling guidance and risk controls. (See pp. 30–31 and pp. 15–16 in the Safety L2 Student 24354 booklet)",
+          "type": "long",
+          "maxPoints": 3,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "heavy\\s*load|manual\\s*handling|poor\\s*lifting|awkward\\s*load|overload|twist",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "back\\s*injur|strain|sprain|muscle|hurt|injur|harm",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "bend\\s*(at\\s*)?knees|straight\\s*back|keep\\s*load\\s*close|no\\s*twist|lift\\s*with\\s*legs|two\\s*people|trolley|wheelbarrow|mechanical\\s*aid",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q6_sign_1",
+          "text": "6. Identify what the first sign means.",
+          "image": "forklift.jpg",
+          "hint": "Use the safety signage section and match the symbol to its meaning. (See the safety signs pages in the Safety L2 Student 24354 booklet p. 31)",
+          "type": "short",
+          "maxPoints": 2,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "caution|danger|beware|warning|watch\\\\s*out|look\\\\s*out",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "fork\\\\s*lift|forklift|lift\\\\s*truck|industrial\\\\s*truck|powered\\\\s*truck|mobile\\\\s*plant",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q7_sign_2",
+          "text": "7. Identify what the second sign means.",
+          "image": "asile.jpg",
+          "hint": "Use the safety signage section and match the symbol to its meaning. (See the safety signs pages in the Safety L2 Student 24354 booklet p. 31)",
+          "type": "short",
+          "maxPoints": 1,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "keep\\\\s*(the\\\\s*)?(aisle|walkway|passageway|path|route)\\\\s*clear|aisle\\\\s*clear|clear\\\\s*(the\\\\s*)?(aisle|walkway|passageway|path|route)|do\\\\s*not\\\\s*block|no\\\\s*obstructions?|keep\\\\s*clear",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "emergency|evacuat|exit|access|safe\\\\s*access|clear\\\\s*access|walk\\\\s*safely|prevent\\\\s*(trip|slip|fall)|avoid\\\\s*(trip|slip|fall)|move\\\\s*through|get\\\\s*through|people\\\\s*can\\\\s*pass",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q8_sign_3",
+          "text": "8. Identify what the third sign means.",
+          "image": "KeepClear.png",
+          "hint": "Use the safety signage section and match the symbol to its meaning. (See the safety signs pages in the Safety L2 Student 24354 booklet)",
+          "type": "short",
+          "maxPoints": 1,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "keep\\\\s*clear|stay\\\\s*clear|keep\\\\s*away|stand\\\\s*clear|do\\\\s*not\\\\s*(touch|go\\\\s*near|approach)|keep\\\\s*(hands|fingers|body)\\\\s*away|hands\\\\s*off",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "moving\\\\s*parts?|moving\\\\s*machinery|rotat(ing|e)|blade|cutter|gear|belt|pulley|shaft|spindle|machine\\\\s*parts?|mechanism",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q9_sign_4",
+          "text": "9. Identify what the fourth sign means.",
+          "image": "FireActionPlan.png",
+          "hint": "Use the safety signage section and match the symbol to its meaning. (See the safety signs pages in the Safety L2 Student 24354 booklet)",
+          "type": "short",
+          "maxPoints": 1,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "raise\\\\s*(the\\\\s*)?alarm|sound\\\\s*(the\\\\s*)?alarm|activate\\\\s*(the\\\\s*)?alarm|break\\\\s*glass|call\\\\s*out|warn\\\\s*(others|people)|notify|report\\\\s*(a\\\\s*)?fire",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "evacuat|leave\\\\s*(the\\\\s*)?building|nearest\\\\s*exit|exit\\\\s*immediately|assembly\\\\s*point|muster\\\\s*point|do\\\\s*not\\\\s*use\\\\s*(the\\\\s*)?lift|call\\\\s*111|fire\\\\s*service",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q11_a_fire",
+          "text": "11a. Describe the steps you should follow in your workplace in the event of a fire.",
+          "image": "blank.jpg",
+          "hint": "Use the emergency procedures + fire response guidance. (See pp. 39–41 in the Safety L2 Student 24354 booklet)",
+          "type": "long",
+          "maxPoints": 2,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "raise\\\\s*(the\\\\s*)?alarm|sound\\\\s*(the\\\\s*)?alarm|activate\\\\s*(the\\\\s*)?alarm|break\\\\s*glass|warn\\\\s*(others|people)|tell\\\\s*(teacher|supervisor)|shout\\\\s*fire|notify|report\\\\s*(a\\\\s*)?fire",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "evacuat|leave\\\\s*(the\\\\s*)?building|nearest\\\\s*exit|exit\\\\s*immediately|assembly\\\\s*point|muster\\\\s*point|follow\\\\s*(instructions|evacuation\\\\s*procedure)|don'?t\\\\s*run|stay\\\\s*calm|don'?t\\\\s*use\\\\s*(the\\\\s*)?lift|account\\\\s*for|roll\\\\s*call",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q11_b_earthquake",
+          "text": "11b. Describe the steps you should follow in your workplace in the event of an earthquake.",
+          "image": "blank.jpg",
+          "hint": "Use the emergency procedures section and outline the earthquake response steps. (See pp. 39–40 in the Safety L2 Student 24354 booklet)",
+          "type": "long",
+          "maxPoints": 2,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "drop\\\\s*cover\\\\s*hold|drop\\\\s*cover|cover\\\\s*hold|get\\\\s*under\\\\s*(a\\\\s*)?(desk|table|bench)|shelter|protect\\\\s*(your\\\\s*)?(head|neck)|stay\\\\s*away\\\\s*from\\\\s*(windows|glass)|brace",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "after\\\\s*(it\\\\s*)?stops|once\\\\s*(it\\\\s*)?stops|when\\\\s*(it\\\\s*)?stops|evacuat|exit\\\\s*(the\\\\s*)?building|assembly\\\\s*point|muster\\\\s*point|check\\\\s*for\\\\s*(injuries|hazards?|damage)|turn\\\\s*off\\\\s*(power|gas)|follow\\\\s*(instructions|procedure)|wait\\\\s*for\\\\s*(all\\\\s*)?clear",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q11_c_accident",
+          "text": "11c. Describe the steps you should follow in your workplace in the event of an accident.",
+          "image": "blank.jpg",
+          "hint": "Use the first aid/accident response information and reporting requirements. (See p. 38 and pp. 10–12 in the Safety L2 Student 24354 booklet)",
+          "type": "long",
+          "maxPoints": 2,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "seek\\\\s*(immediate\\\\s*)?first\\\\s*aid|get\\\\s*first\\\\s*aid|first\\\\s*aid\\\\s*treatment|treat\\\\s*(the\\\\s*)?injury|get\\\\s*help\\\\s*straight\\\\s*away",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "know\\\\s*where\\\\s*(the\\\\s*)?(first\\\\s*aid\\\\s*kit|first\\\\s*aid\\\\s*facilities|first\\\\s*aid\\\\s*room|first\\\\s*aid\\\\s*station)\\\\s*(is|are)|locat(e|ion)\\\\s*(of\\\\s*)?(first\\\\s*aid\\\\s*kit|first\\\\s*aid\\\\s*facilities)",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "who\\\\s*to\\\\s*contact|trained\\\\s*first\\\\s*aider|first\\\\s*aider|teacher|tutor|supervisor|manager|ask\\\\s*for\\\\s*first\\\\s*aid\\\\s*help|report\\\\s*(the\\\\s*)?(accident|injury|incident)|tell\\\\s*(someone|teacher|supervisor)",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "seriously\\\\s*injured|severe\\\\s*(bleeding|burns?)|electric\\\\s*shock|poison(ing)?|call\\\\s*(an\\\\s*)?(ambulance|111)|emergency\\\\s*services|dial\\\\s*111",
+              "flags": "i"
+            }
+          ]
+        },
+        {
+          "id": "ka_q11_d_chemical_spill",
+          "text": "11d. Describe the steps you should follow in your workplace in the event of a chemical spill.",
+          "image": "blank.jpg",
+          "hint": "Use chemicals guidance (spill response), PPE, and emergency response steps. (See p. 37 and pp. 39–41 in the Safety L2 Student 24354 booklet)",
+          "type": "long",
+          "maxPoints": 4,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "\"report|tell\\\\s*(teacher|supervisor|manager)|notify|raise\\\\s*(the\\\\s*)?alarm|warn\\\\s*(others|people)|call\\\\s*for\\\\s*help",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "isolate|cordon|block\\\\s*off|keep\\\\s*(people|others)\\\\s*away|evacuat(e|ion)|clear\\\\s*(the\\\\s*)?area|restrict\\\\s*access",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "PPE|personal\\\\s*protective\\\\s*equipment|gloves|goggles|eye\\\\s*protection|mask|respirat(or|ory)|apron|protective\\\\s*clothing",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "spill\\\\s*kit|absorb(ent|ent\\\\s*material)?|contain|clean\\\\s*up|neutralis(e|z)|wipe\\\\s*up|degreas(e|er)|sand|kitty\\\\s*litter",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "SDS|MSDS|safety\\\\s*data\\\\s*sheet|follow\\\\s*(instructions|procedure)|label\\\\s*instructions|ventilat(e|ion)|dispose\\\\s*(safely|properly)|hazardous\\\\s*waste|first\\\\s*aid|wash\\\\s*(skin|eyes)|seek\\\\s*(medical|first\\\\s*aid)",
               "flags": "i"
             }
           ]
