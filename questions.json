@@ -69,22 +69,23 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "hazard|danger|something|source",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "harm|injur|hurt|illness|damage",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "could|can|may|possible|potential|likely",
-              "flags": "i"
-            }
-          ]
+  {
+    "points": 1,
+    "check": "hazard|danger|risk|source\\s*of\\s*(harm|injury)|anything\\s*that|situation\\s*that|thing\\s*that",
+    "flags": "i"
+  },
+  {
+    "points": 1,
+    "check": "harm|injur|hurt|illness|damage|death",
+    "flags": "i"
+  },
+  {
+    "points": 1,
+    "check": "could|can|may|possible|potential|likely|might",
+    "flags": "i"
+  }
+]
+
         },
         {
           "id": "sr1_q3",
@@ -112,39 +113,40 @@
           "image": "blank.jpg",
           "hint": "Think: eliminate/minimise, communicate, controls, training, PPE.",
           "type": "long",
-          "maxPoints": 6,
+          "maxPoints": 5,
           "rubric": [
-            {
-              "points": 1,
-              "check": "eliminat|remove|get\\s*rid\\s*of|fix|repair|stop\\s*it\\s*happening|make\\s*safe|hazard\\s*removed",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "minimis|minimize|reduce|control|manage|mitigat|lower\\s*the\\s*risk|risk\\s*reduction|isolate|separate|barrier|guard|engineering\\s*control|safe\\s*system",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "report|record|log|register|hazard\\s*register|notify|document|write\\s*it\\s*down|fill\\s*out\\s*a\\s*form",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "communicat|inform|tell|warn|advise|brief|toolbox\\s*talk|safety\\s*meeting|sign|signage|label|mark\\s*out",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "training|instruction|teach|induction|supervision|monitor|competent|qualified|safe\\s*operating\\s*procedure|SOP",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "PPE|personal\\s*protective\\s*equipment|protective\\s*equipment|safety\\s*gear|safety\\s*equipment|protective\\s*clothing|gloves|goggles|glasses|earmuffs|ear\\s*protection|boots|steel\\s*cap",
-              "flags": "i"
-            }
-          ]
+  {
+    "points": 1,
+    "check": "eliminat|remove|get\\s*rid\\s*of|fix|repair|stop\\s*(it|this)\\s*happening|make\\s*safe|take\\s*away|replace|dispose",
+    "flags": "i"
+  },
+  {
+    "points": 1,
+    "check": "minimis|minimize|reduce|control|manage|mitigat|lower\\s*the\\s*risk|risk\\s*reduction|isolate|separate|barrier|guard|engineering\\s*control|safe\\s*system|safe\\s*procedure|put\\s*controls\\s*in\\s*place",
+    "flags": "i"
+  },
+  {
+    "points": 1,
+    "check": "record|log|register|hazard\\s*register|document|write\\s*(it\\s*)?down|report\\s*form|fill\\s*out\\s*(a\\s*)?form|notify",
+    "flags": "i"
+  },
+  {
+    "points": 1,
+    "check": "communicat|inform|tell|warn|advise|brief|toolbox\\s*talk|safety\\s*meeting|sign|signage|label|mark\\s*out|put\\s*up\\s*signs|tell\\s*everyone",
+    "flags": "i"
+  },
+  {
+    "points": 1,
+    "check": "training|instruction|teach|induction|supervision|monitor|check\\s*people|ensure\\s*competent|qualified|SOP|safe\\s*operating\\s*procedure",
+    "flags": "i"
+  },
+  {
+    "points": 1,
+    "check": "PPE|personal\\s*protective\\s*equipment|protective\\s*equipment|safety\\s*gear|protective\\s*clothing|gloves|goggles|safety\\s*glasses|eye\\s*protection|earmuffs|ear\\s*plugs|hearing\\s*protection|boots|steel\\s*cap|hi\\s*vis",
+    "flags": "i"
+  }
+]
+
         },
         {
           "id": "sr1_q5",
@@ -154,22 +156,33 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "reasonable\\s*care|own\\s*health|own\\s*safety|do\\s*not\\s*endanger\\s*others|others\\s*safety",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "follow\\s*instruction|follow\\s*procedure|comply\\s*with\\s*rules|safe\\s*systems|site\\s*rules",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "PPE|personal\\s*protective\\s*equipment|protective\\s*equipment|safety\\s*gear|wear\\s*PPE|use\\s*PPE|report\\s*hazard|report\\s*incident|near\\s*miss|tell\\s*teacher|tell\\s*supervisor",
-              "flags": "i"
-            }
-          ]
+  {
+    "points": 1,
+    "check": "reasonable\\s*care|take\\s*care|look\\s*after\\s*(yourself|others)|own\\s*(health|safety)|don'?t\\s*be\\s*reckless",
+    "flags": "i"
+  },
+  {
+    "points": 1,
+    "check": "follow\\s*(instructions|rules|procedures)|listen\\s*to\\s*(teacher|supervisor)|do\\s*what\\s*you'?re\\s*told|comply|use\\s*tools\\s*properly|use\\s*machine\\s*safely",
+    "flags": "i"
+  },
+  {
+    "points": 1,
+    "check": "PPE|personal\\s*protective\\s*equipment|protective\\s*equipment|safety\\s*gear|wear\\s*(PPE|gloves|boots|goggles|glasses|earmuffs|ear\\s*plugs)",
+    "flags": "i"
+  },
+  {
+    "points": 1,
+    "check": "report\\s*(hazards?|risks?|incidents?|injuries?|near\\s*miss(es)?)|tell\\s*(teacher|supervisor)|speak\\s*up|let\\s*someone\\s*know",
+    "flags": "i"
+  },
+  {
+    "points": 1,
+    "check": "keep\\s*(area|workshop|workspace)\\s*(clean|tidy)|clean\\s*up|housekeeping|put\\s*tools\\s*away|no\\s*mess",
+    "flags": "i"
+  }
+]
+
         },
         {
           "id": "sr1_q6",
@@ -179,27 +192,14 @@
           "type": "long",
           "maxPoints": 4,
           "rubric": [
-            {
-              "points": 1,
-              "check": "hazard|hazards\\s*you\\s*may\\s*encounter|site\\s*hazards|risk\\s*level",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "hazard\\s*you\\s*may\\s*create|hazards\\s*you\\s*could\\s*create|risk\\s*you\\s*create",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "control\\s*measure|how\\s*to\\s*control|procedures|safe\\s*system|how\\s*to\\s*stay\\s*safe",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "emergency|evacuat|assembly\\s*point|first\\s*aid|what\\s*to\\s*do\\s*in\\s*an\\s*emergency|PPE\\s*location|where\\s*PPE\\s*is\\s*kept",
-              "flags": "i"
-            }
-          ]
+  { "points": 1, "check": "hazards?|site\\s*hazards?|risks?|hazard\\s*register|hazard\\s*log", "flags": "i" },
+  { "points": 1, "check": "controls?|control\\s*measures?|safe\\s*procedures?|safe\\s*systems?|how\\s*to\\s*work\\s*safely|SOP|rules", "flags": "i" },
+  { "points": 1, "check": "emergency|evacuat|fire\\s*exit|assembly\\s*point|muster\\s*point|earthquake|spill\\s*procedure", "flags": "i" },
+  { "points": 1, "check": "PPE|personal\\s*protective\\s*equipment|protective\\s*equipment|safety\\s*gear|what\\s*PPE\\s*to\\s*wear", "flags": "i" },
+  { "points": 1, "check": "first\\s*aid|first\\s*aider|accident\\s*report|incident\\s*report", "flags": "i" },
+  { "points": 1, "check": "induction|training|supervision|who\\s*to\\s*ask|competent", "flags": "i" }
+]
+
         },
         {
           "id": "sr1_q7",
@@ -209,17 +209,17 @@
           "type": "short",
           "maxPoints": 2,
           "rubric": [
-            {
-              "points": 1,
-              "check": "SDS|MSDS|safety\\s*data\\s*sheet|material\\s*safety\\s*data\\s*sheet",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "label|container|packaging|hazard\\s*(symbol|pictogram)|instructions|manufacturer",
-              "flags": "i"
-            }
-          ]
+  {
+    "points": 1,
+    "check": "SDS|MSDS|safety\\s*data\\s*sheet|material\\s*safety\\s*data\\s*sheet|data\\s*sheet",
+    "flags": "i"
+  },
+  {
+    "points": 1,
+    "check": "label|container|packaging|instructions|hazard\\s*(symbol|pictogram)|manufacturer|supplier",
+    "flags": "i"
+  }
+]
         },
         {
           "id": "sr1_q8_i_a",
@@ -658,34 +658,15 @@
           "image": "blank.jpg",
           "hint": "Clear path, use help, use trolley/wheelbarrow/pallet jack, reduce manual handling.",
           "type": "long",
-          "maxPoints": 5,
+          "maxPoints": 4,
           "rubric": [
-            {
-              "points": 1,
-              "check": "clear|remove|tidy|pathway|hazard|waste|debris",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "wheelbarrow|trolley|hand\\s*truck|dolly|pallet\\s*jack|forklift|lift\\s*assist",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "two\\s*people|team\\s*lift|get\\s*help|buddy|ask\\s*for\\s*help",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "multiple\\s*trips|one\\s*bag\\s*at\\s*a\\s*time|don'?t\\s*overload|safe\\s*load",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "PPE|personal\\s*protective\\s*equipment|protective\\s*equipment|safety\\s*gear|gloves|boots|hi\\s*vis|steel\\s*cap|safety\\s*footwear",
-              "flags": "i"
-            }
-          ]
+  { "points": 1, "check": "clear|remove|tidy|clean\\s*up|pathway|walkway|route|drive|hazard|waste|debris|rubbish|obstacles?", "flags": "i" },
+  { "points": 1, "check": "wheelbarrow|trolley|hand\\s*truck|dolly|pallet\\s*jack|forklift|hoist|crane|mechanical\\s*aid|lift\\s*assist", "flags": "i" },
+  { "points": 1, "check": "two\\s*people|in\\s*pairs?|pair\\s*up|buddy|team\\s*lift|get\\s*help|work\\s*together|assist", "flags": "i" },
+  { "points": 1, "check": "multiple\\s*trips|one\\s*bag\\s*at\\s*a\\s*time|don'?t\\s*overload|safe\\s*load|smaller\\s*loads", "flags": "i" },
+  { "points": 1, "check": "PPE|gloves|boots|hi\\s*vis|steel\\s*cap|safety\\s*footwear|eye\\s*protection|mask", "flags": "i" }
+]
+
         },
         {
           "id": "sr2_q2",
@@ -729,27 +710,15 @@
           "hint": "Two-person carry, on edge, communicate, keep vision clear.",
           "type": "long",
           "maxPoints": 4,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "two\\s*people|pair|team\\s*carry",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "carry\\s*on\\s*edge|hold\\s*edges|grip\\s*ends",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "communication|count\\s*in|coordinate|watch\\s*corners",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "clear\\s*vision|don'?t\\s*block\\s*view|avoid\\s*others|path\\s*clear",
-              "flags": "i"
-            }
+          
+            "rubric": [
+  { "points": 1, "check": "two\\s*people|in\\s*pairs?|pair\\s*up|buddy|team\\s*(lift|carry)|work\\s*together|with\\s*someone\\s*else|helper|assist", "flags": "i" },
+  { "points": 1, "check": "carry\\s*on\\s*edge|on\\s*(its|the)\\s*edge|upright|vertical|sideways|hold\\s*(the\\s*)?edges|grip\\s*(the\\s*)?(ends|edges)|hands\\s*on\\s*edges", "flags": "i" },
+  { "points": 1, "check": "communication|communicate|call\\s*out|talk|count\\s*in|coordinate|work\\s*as\\s*a\\s*team|watch\\s*(corners|ends)|signal|plan\\s*together", "flags": "i" },
+  { "points": 1, "check": "can\\s*see\\s*where\\s*you\\s*are\\s*going|see\\s*where\\s*you'?re\\s*going|clear\\s*(vision|view|sight)|don'?t\\s*block\\s*(view|vision|sight)|look\\s*(ahead|forward)|head\\s*up|eyes\\s*up|plan\\s*(your\\s*)?(route|path)|check\\s*(the\\s*)?(route|path)|clear\\s*(the\\s*)?(route|path|walkway)|avoid\\s*(others|people)|watch\\s*for\\s*(others|people)|path\\s*clear", "flags": "i" }
+]
+
+
           ]
         },
         {
@@ -760,59 +729,56 @@
           "type": "short",
           "maxPoints": 2,
           "rubric": [
+  {
+    "points": 1,
+    "check": "fall|falling|drop|dropped|slip\\s*off|slide\\s*off|topple|tip\\s*over|collapse|overload|overloaded|break|give\\s*way|fail|shelf\\s*fail|stack\\s*fall",
+    "flags": "i"
+  },
+  {
+    "points": 1,
+    "check": "injur|hurt|harm|crush|crushed|squash|squashed|broken\\s*bones|fracture|head\\s*(injury|injur)|concussion|bruise|cut|fatal|death",
+    "flags": "i"
+  }
+]
+
+        },
+        {
+          "id": "sr2_q5a",
+          "text": "5b. Identify the type of fire that you would use an extinguisher for, and provide an example of combustible material.\n\nType of extinguisher:\n\nFor use on:\n\nE.g. of combustible materials:",
+          "image": "blank.jpg",
+          "hint": "Choose a (different) extinguisher type. Your answer must correctly match the fire class/type AND give a suitable example material.",
+          "type": "long",
+          "maxPoints": 1,
+          "rubric": [
             {
               "points": 1,
-              "check": "fall|drop|slip\\s*off|topple|collapse|overload",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "injur|crush|broken\\s*bones|head\\s*injury|hurt",
+              "check": "((water)[\\s\\S]*(class\\s*a)[\\s\\S]*(wood|paper|cardboard|cloth|fabric|plastic)|(class\\s*a)[\\s\\S]*(water)[\\s\\S]*(wood|paper|cardboard|cloth|fabric|plastic)|(wood|paper|cardboard|cloth|fabric|plastic)[\\s\\S]*(water)[\\s\\S]*(class\\s*a)|(co2|carbon\\s*dioxide)[\\s\\S]*(class\\s*(b|e))[\\s\\S]*(petrol|diesel|oil|paint|solvent|thinner|wiring|switchboard|electrical|equipment)|(foam|afff)[\\s\\S]*(class\\s*(a|b))[\\s\\S]*(wood|paper|cardboard|petrol|diesel|oil|paint|solvent|thinner)|(powder|dry\\s*chemical|dry\\s*powder|dcp)[\\s\\S]*(class\\s*(a|b|e))[\\s\\S]*(wood|paper|cardboard|petrol|diesel|oil|paint|solvent|thinner|wiring|switchboard|electrical|equipment)|(wet\\s*chemical)[\\s\\S]*(class\\s*f)[\\s\\S]*(cooking\\s*oil|oil|fat|grease))",
               "flags": "i"
             }
           ]
         },
-        
-{
-  "id": "sr2_q5a",
-  "text": "5b. Identify the type of fire that you would use an extinguisher for, and provide an example of combustible material.\n\nType of extinguisher:\n\nFor use on:\n\nE.g. of combustible materials:",
-  "image": "blank.jpg",
-  "hint": "Choose a (different) extinguisher type. Your answer must correctly match the fire class/type AND give a suitable example material.",
-  "type": "long",
-  "maxPoints": 1,
-  "rubric": [
- {
-  "points": 1,
-  "check": "((water)[\\s\\S]*(class\\s*a)[\\s\\S]*(wood|paper|cardboard|cloth|fabric|plastic)|(class\\s*a)[\\s\\S]*(water)[\\s\\S]*(wood|paper|cardboard|cloth|fabric|plastic)|(wood|paper|cardboard|cloth|fabric|plastic)[\\s\\S]*(water)[\\s\\S]*(class\\s*a)|(co2|carbon\\s*dioxide)[\\s\\S]*(class\\s*(b|e))[\\s\\S]*(petrol|diesel|oil|paint|solvent|thinner|wiring|switchboard|electrical|equipment)|(foam|afff)[\\s\\S]*(class\\s*(a|b))[\\s\\S]*(wood|paper|cardboard|petrol|diesel|oil|paint|solvent|thinner)|(powder|dry\\s*chemical|dry\\s*powder|dcp)[\\s\\S]*(class\\s*(a|b|e))[\\s\\S]*(wood|paper|cardboard|petrol|diesel|oil|paint|solvent|thinner|wiring|switchboard|electrical|equipment)|(wet\\s*chemical)[\\s\\S]*(class\\s*f)[\\s\\S]*(cooking\\s*oil|oil|fat|grease))",
-  "flags": "i"
-}
-
-  ]
-}
-,{
-  "id": "sr2_q5b",
-  "text": "5b. Identify the type of fire that you would use an extinguisher for, and provide an example of combustible material.\n\nType of extinguisher:\n\nFor use on:\n\nE.g. of combustible materials:",
-  "image": "blank.jpg",
-  "hint": "Choose a (different) extinguisher type. Your answer must correctly match the fire class/type AND give a suitable example material.",
-  "type": "long",
-  "maxPoints": 1,
-  "rubric": [
-    {
-  "points": 1,
-  "check": "((water)[\\s\\S]*(class\\s*a)[\\s\\S]*(wood|paper|cardboard|cloth|fabric|plastic)|(class\\s*a)[\\s\\S]*(water)[\\s\\S]*(wood|paper|cardboard|cloth|fabric|plastic)|(wood|paper|cardboard|cloth|fabric|plastic)[\\s\\S]*(water)[\\s\\S]*(class\\s*a)|(co2|carbon\\s*dioxide)[\\s\\S]*(class\\s*(b|e))[\\s\\S]*(petrol|diesel|oil|paint|solvent|thinner|wiring|switchboard|electrical|equipment)|(foam|afff)[\\s\\S]*(class\\s*(a|b))[\\s\\S]*(wood|paper|cardboard|petrol|diesel|oil|paint|solvent|thinner)|(powder|dry\\s*chemical|dry\\s*powder|dcp)[\\s\\S]*(class\\s*(a|b|e))[\\s\\S]*(wood|paper|cardboard|petrol|diesel|oil|paint|solvent|thinner|wiring|switchboard|electrical|equipment)|(wet\\s*chemical)[\\s\\S]*(class\\s*f)[\\s\\S]*(cooking\\s*oil|oil|fat|grease))",
-  "flags": "i"
-}
-
-  ]
-}
-,
+        {
+          "id": "sr2_q5b",
+          "text": "5b. Identify the type of fire that you would use an extinguisher for, and provide an example of combustible material.\n\nType of extinguisher:\n\nFor use on:\n\nE.g. of combustible materials:",
+          "image": "blank.jpg",
+          "hint": "Choose a (different) extinguisher type. Your answer must correctly match the fire class/type AND give a suitable example material.",
+          "type": "long",
+          "maxPoints": 1,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "((water)[\\s\\S]*(class\\s*a)[\\s\\S]*(wood|paper|cardboard|cloth|fabric|plastic)|(class\\s*a)[\\s\\S]*(water)[\\s\\S]*(wood|paper|cardboard|cloth|fabric|plastic)|(wood|paper|cardboard|cloth|fabric|plastic)[\\s\\S]*(water)[\\s\\S]*(class\\s*a)|(co2|carbon\\s*dioxide)[\\s\\S]*(class\\s*(b|e))[\\s\\S]*(petrol|diesel|oil|paint|solvent|thinner|wiring|switchboard|electrical|equipment)|(foam|afff)[\\s\\S]*(class\\s*(a|b))[\\s\\S]*(wood|paper|cardboard|petrol|diesel|oil|paint|solvent|thinner)|(powder|dry\\s*chemical|dry\\s*powder|dcp)[\\s\\S]*(class\\s*(a|b|e))[\\s\\S]*(wood|paper|cardboard|petrol|diesel|oil|paint|solvent|thinner|wiring|switchboard|electrical|equipment)|(wet\\s*chemical)[\\s\\S]*(class\\s*f)[\\s\\S]*(cooking\\s*oil|oil|fat|grease))",
+              "flags": "i"
+            }
+          ]
+        },
         {
           "id": "sr2_q6",
           "text": "6. Describe the potential consequences of using a water type extinguisher on an electrical fire.",
           "image": "blank.jpg",
           "hint": "Water conducts electricity → shock/electrocution.",
           "type": "long",
-          "maxPoints": 3,
+          "maxPoints": 2,
           "rubric": [
             {
               "points": 1,
@@ -837,7 +803,7 @@
           "image": "blank.jpg",
           "hint": "Assembly point / muster point used in an emergency evacuation.",
           "type": "long",
-          "maxPoints": 3,
+          "maxPoints": 2,
           "rubric": [
             {
               "points": 1,
