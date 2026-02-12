@@ -387,7 +387,7 @@
           "image": "blank.jpg",
           "hint": "Identify hazards related to using a circular saw bench without training/instructions (e.g., kickback, exposed blade, hands too close, lack of guarding/push stick). (See p. 28–29 and p. 10–12)",
           "type": "long",
-          "maxPoints": 3,
+          "maxPoints": 1,
           "rubric": [
             {
               "points": 1,
@@ -818,6 +818,21 @@
           ]
         },
         {
+          "id": "sr2_q5c",
+          "text": "5c. Identify another DIFFERENT type of fire extinguisher you would use, what type of fire it is for, and give an example of a combustible material.",
+          "image": "blank.jpg",
+          "hint": "Choose a different extinguisher from 5a (e.g., Water, CO2, Foam, Powder, Wet Chemical) and match it to what it is used on + an example material. (See p. 41)",
+          "type": "long",
+          "maxPoints": 1,
+          "rubric": [
+            {
+              "points": 1,
+              "check": "((water|h2o)[\\s\\S]*(class\\s*a)[\\s\\S]*(wood|paper|cardboard|cloth|fabric|plastic)|(class\\s*a)[\\s\\S]*(water|h2o)[\\s\\S]*(wood|paper|cardboard|cloth|fabric|plastic)|(wood|paper|cardboard|cloth|fabric|plastic)[\\s\\S]*(water|h2o)[\\s\\S]*(class\\s*a)|(co2|carbon\\s*dioxide)[\\s\\S]*(class\\s*(b|e)|electrical|flammable\\s*liquid)[\\s\\S]*(petrol|diesel|oil|paint|solvent|thinner|wiring|switchboard|electrical|equipment)|(foam|afff)[\\s\\S]*(class\\s*(a|b)|flammable\\s*liquid)[\\s\\S]*(wood|paper|cardboard|petrol|diesel|oil|paint|solvent|thinner)|(powder|dry\\s*chemical|dry\\s*powder|dcp)[\\s\\S]*(class\\s*(a|b|e)|electrical|flammable\\s*liquid)[\\s\\S]*(wood|paper|cardboard|petrol|diesel|oil|paint|solvent|thinner|wiring|switchboard|electrical|equipment)|(wet\\s*chemical)[\\s\\S]*(class\\s*f|cooking)[\\s\\S]*(cooking\\s*oil|oil|fat|grease))",
+              "flags": "i"
+            }
+          ]
+        },
+        {
           "id": "sr2_q6",
           "text": "6. Describe the potential consequences of using a water type extinguisher on an electrical fire.",
           "image": "blank.jpg",
@@ -839,8 +854,8 @@
         },
         {
           "id": "sr2_q7",
-          "text": "7. What does the sign to the right represent and when would this area be used?",
-          "image": "blank.jpg",
+          "text": "7. What does the sign above represent and when would this area be used?",
+          "image": "AssemblyPoint.jpeg",
           "hint": "What is the name of this place and when do people go there? Think: emergencies/evacuation. (See p. 39–40)",
           "type": "long",
           "maxPoints": 2,
@@ -904,10 +919,10 @@
           "image": "blank.jpg",
           "hint": "Use the ladder setup diagram/ladder safety section and state the recommended setup ratio/angle. (See p. 32–33)",
           "type": "short",
-          "maxPoints": 2,
+          "maxPoints": 1,
           "rubric": [
             {
-              "points": 2,
+              "points": 1,
               "check": "4\\s*(:|to)\\s*1|four\\s*(to|:)\\s*one|75\\s*degrees|70\\s*degrees|70\\s*\\-\\s*75\\s*degrees|4\\s*m\\s*up\\s*\\w*\\s*1\\s*out|4\\s*up\\s*\\w*\\s*1\\s*out",
               "flags": "i"
             }
@@ -979,6 +994,11 @@
             {
               "points": 1,
               "check": "cardiac\\s*arrest|death|fatal|serious|life\\s*threatening",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "eardrum(s)?|ear\\\\s*drum(s)?|ruptured\\\\s*eardrum(s)?|burst\\\\s*eardrum(s)?|perforated\\\\s*eardrum(s)?|ear\\\\s*injur(y|ies)|hearing\\\\s*damage|hearing\\\\s*loss|loss\\\\s*of\\\\s*hearing|deaf(ness)?|temporary\\\\s*deaf(ness)?|permanent\\\\s*deaf(ness)?|tinnitus|ringing\\\\s*in\\\\s*(the\\\\s*)?ears",
               "flags": "i"
             }
           ]
@@ -1437,7 +1457,7 @@
         {
           "id": "ka_q6_sign_1",
           "text": "6. Identify what the first sign means.",
-          "image": "forklift.jpg",
+          "image": "CautionForklifts.png",
           "hint": "Use the safety signage section and match the symbol to its meaning. (See the safety signs pages in the Safety L2 Student 24354 booklet p. 31)",
           "type": "short",
           "maxPoints": 2,
@@ -1457,7 +1477,7 @@
         {
           "id": "ka_q7_sign_2",
           "text": "7. Identify what the second sign means.",
-          "image": "asile.jpg",
+          "image": "keepasleclear.jpg",
           "hint": "Use the safety signage section and match the symbol to its meaning. (See the safety signs pages in the Safety L2 Student 24354 booklet p. 31)",
           "type": "short",
           "maxPoints": 1,
@@ -1479,7 +1499,7 @@
           "rubric": [
             {
               "points": 1,
-              "check": "keep\\s*clear|stay\\s*clear|keep\\s*away|stand\\s*clear|do\\s*not\\s*(touch|go\\s*near|approach)|keep\\s*(hands|fingers|body)\\s*away|hands\\s*off",
+              "check": "keep\\s*(?:any\\s*)?(?:body\\s*parts?|hands?|fingers?)\\s*(?:\\/\\s*(?:hands?|fingers?|body\\s*parts?))?\\s*away",
               "flags": "i"
             }
           ]
@@ -1487,7 +1507,7 @@
         {
           "id": "ka_q9_sign_4",
           "text": "9. Identify what the fourth sign means.",
-          "image": "FireActionPlan.png",
+          "image": "fireactionplan.jpeg",
           "hint": "Use the safety signage section and match the symbol to its meaning. (See the safety signs pages in the Safety L2 Student 24354 booklet)",
           "type": "short",
           "maxPoints": 2,
