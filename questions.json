@@ -114,36 +114,36 @@
           "type": "long",
           "maxPoints": 5,
           "rubric": [
-            {
-              "points": 1,
-              "check": "eliminate|remove|get\\s*rid\\s*of|fix|repair|stop\\s*(it|this)\\s*happening|make\\s*safe|take\\s*away|replace|dispose",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "minimis|minimize|reduce|control|manage|mitigat|lower\\s*the\\s*risk|risk\\s*reduction|isolate|separate|barrier|guard|engineering\\s*control|safe\\s*system|safe\\s*procedure|put\\s*controls\\s*in\\s*place",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "record|log|register|hazard\\s*register|document|write\\s*(it\\s*)?down|report\\s*form|fill\\s*out\\s*(a\\s*)?form|notify",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "communicat|inform|tell|warn|advise|brief|toolbox\\s*talk|safety\\s*meeting|sign|signage|label|mark\\s*out|put\\s*up\\s*signs|tell\\s*everyone",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "training|instruction|teach|induction|supervision|monitor|check\\s*people|ensure\\s*competent|qualified|SOP|safe\\s*operating\\s*procedure",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "PPE|personal\\s*protective\\s*equipment|protective\\s*equipment|safety\\s*gear|protective\\s*clothing|gloves|goggles|safety\\s*glasses|eye\\s*protection|earmuffs|ear\\s*plugs|hearing\\s*protection|boots|steel\\s*cap|hi\\s*vis",
-              "flags": "i"
-            }
+           {
+"points": 1,
+"check": "eliminate|remove|get\\s*rid|fix|repair|replace|dispose|make\\s*safe|stop\\s*(the\\s*)?hazard",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "minimi[sz]e|reduce|control|manage|mitigat|isolate|separate|barrier|guard|engineering\\s*control|safe\\s*system|safe\\s*procedure|hierarchy\\s*of\\s*controls|control\\s*measure",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "record|log|register|hazard\\s*register|document|write\\s*(it\\s*)?down|report\\s*form|notify|keep\\s*records",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "communicat|inform|tell|warn|advise|brief|notify|toolbox\\s*talk|safety\\s*meeting|sign|signage|label|mark\\s*out",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "training|instruction|teach|induction|supervision|monitor|review|check\\s*(workers|staff|people)|ensure\\s*(competent|trained)|safe\\s*operating\\s*procedure|SOP",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "PPE|personal\\s*protective\\s*equipment|protective\\s*equipment|safety\\s*gear|protective\\s*clothing|gloves|goggles|safety\\s*glasses|eye\\s*protection|earmuffs|ear\\s*plugs|boots|hi\\s*vis",
+"flags": "i"
+}
           ]
         },
         {
@@ -154,31 +154,31 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "reasonable\\s*care|take\\s*care|look\\s*after\\s*(yourself|others)|own\\s*(health|safety)|don'?t\\s*be\\s*reckless",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "follow\\s*(instructions|rules|procedures)|listen\\s*to\\s*(teacher|supervisor)|do\\s*what\\s*you'?re\\s*told|comply|use\\s*tools\\s*properly|use\\s*machine\\s*safely",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "PPE|personal\\s*protective\\s*equipment|protective\\s*equipment|safety\\s*gear|wear\\s*(PPE|gloves|boots|goggles|glasses|earmuffs|ear\\s*plugs)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "report\\s*(hazards?|risks?|incidents?|injuries?|near\\s*miss(es)?)|tell\\s*(teacher|supervisor)|speak\\s*up|let\\s*someone\\s*know",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "keep\\s*(area|workshop|workspace)\\s*(clean|tidy)|clean\\s*up|housekeeping|put\\s*tools\\s*away|no\\s*mess",
-              "flags": "i"
-            }
+           {
+"points": 1,
+"check": "reasonable\\s*care|take\\s*care|look\\s*after|protect\\s*(yourself|others)|own\\s*(health|safety)|keep\\s*(yourself|others)\\s*safe",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "follow\\s*(instructions|rules|procedures)|listen\\s*to\\s*(teacher|supervisor)|comply|do\\s*what\\s*you'?re\\s*told|work\\s*safely|safe\\s*behaviour",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "PPE|personal\\s*protective\\s*equipment|safety\\s*gear|wear\\s*(PPE|gloves|boots|goggles|glasses|earmuffs)",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "report\\s*(hazards?|risks?|incidents?|injuries?|near\\s*miss)|tell\\s*(teacher|supervisor)|inform\\s*(teacher|supervisor)|speak\\s*up",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "keep\\s*(area|workshop|workspace)\\s*(clean|tidy)|clean\\s*up|housekeeping|put\\s*tools\\s*away|tidy\\s*workspace",
+"flags": "i"
+}
           ]
         },
         {
@@ -314,21 +314,21 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "no\\s*(training|instruction|induction)|never\\s*(used|used\\s*one|used\\s*this)|untrained|not\\s*(trained|shown|taught|instructed)|don'?t\\s*know\\s*how|unsure\\s*how|not\\s*competent|inexperience(d)?|first\\s*time",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "circular\\s*saw|saw\\s*bench|table\\s*saw|bench\\s*saw|rip\\s*(timber|wood)|saw\\s*blade|blade",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "kickback|wood\\s*kickback|unguarded|no\\s*guard|guard\\s*(missing|off|removed)|hands?\\s*(too\\s*)?close|fingers?\\s*(too\\s*)?close|reach\\s*near|touch\\s*the\\s*blade|no\\s*push\\s*stick|without\\s*(a\\s*)?push\\s*stick|push\\s*stick|push\\s*block|incorrect\\s*(setup|technique)|wrong\\s*(setup|technique)|lose\\s*control|slip|bind(ing)?\\s*blade|jam(med)?|flying\\s*(debris|chips|splinters)|projectile",
-              "flags": "i"
-            }
+           {
+  "points": 1,
+  "check": "no\\s*(training|instruction)|without\\s*(training|instruction)|never\\s*(used|used\\s*one|used\\s*this)|haven'?t\\s*(used|been\\s*shown)|untrained|not\\s*(trained|shown|taught)|don'?t\\s*know\\s*how|unsure\\s*how|not\\s*competent|inexperience(d)?|first\\s*time|no\\s*experience",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "circular\\s*saw|saw\\s*bench|table\\s*saw|bench\\s*saw|saw\\s*blade|blade|power\\s*saw",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "kickback|wood\\s*kickback|unguarded|no\\s*guard|guard\\s*(missing|off|removed)|hands?\\s*(too\\s*)?close|fingers?\\s*(too\\s*)?close|cut|injur|lacerat|amputat|slice|lose\\s*(a\\s*)?(finger|hand)|reach\\s*near|touch\\s*the\\s*blade|push\\s*stick|push\\s*block|incorrect\\s*(setup|technique)|lose\\s*control|slip|bind(ing)?\\s*blade|jam(med)?|flying\\s*(debris|chips|splinters)|projectile",
+  "flags": "i"
+}
           ]
         },
         {
