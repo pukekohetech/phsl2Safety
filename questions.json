@@ -366,7 +366,7 @@
           "rubric": [
             {
               "points": 1,
-              "check": "do\s*not\s*use|stop|refuse|wait|until\s*(trained|instructed)|before\s*(using|operating)|must\s*be\s*trained\s*before",
+              "check": "do\\s*not\\s*use|stop|refuse|wait|until\\s*(trained|instructed)|before\\s*(using|operating)|must\\s*be\\s*trained\\s*before",
               "flags": "i"
             },
             {
@@ -434,11 +434,11 @@
               "check": "do\\s*not\\s*use|don'?t\\s*use|stop|leave\\s*it|avoid\\s*using|remove\\s*from\\s*service|take\\s*(it\\s*)?out\\s*of\\s*service|put\\s*(it\\s*)?aside|discard",
               "flags": "i"
             },
-            {
-              "points": 1,
-              "check": "unplug|turn\s*off|switch\s*off|disconnect|isolate|tag|tag\s*out|lock\s*out|label|mark\s*(it\s*)?as\s*(broken|faulty|unsafe)|quarantine|separate",
-              "flags": "i"
-            },
+           {
+  "points": 1,
+  "check": "unplug|turn\\s*off|switch\\s*off|disconnect|isolate|tag|tag\\s*out|lock\\s*out|label|mark\\s*(it\\s*)?as\\s*(broken|faulty|unsafe)|quarantine|separate",
+  "flags": "i"
+},
             {
               "points": 1,
               "check": "report|tell|inform|supervisor|teacher|foreman|boss|hand\\s*it\\s*in|maintenance|repair|fix|replace|electrician|get\\s*it\\s*checked|test\\s*&\\s*tag",
