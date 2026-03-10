@@ -340,20 +340,20 @@
           "maxPoints": 3,
           "rubric": [
             {
-              "points": 1,
-              "check": "cut|injur(y|ies)?|slice|lacerat|bleed|amputation|lose\\s*(a\\s*)?(finger|fingers|hand)|finger\\s*loss|hand\\s*injur|sever|kickback|hit\\s*(me|you)|broken\\s*(bone|bones)|crush",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "high\\s*risk|medium\\s*risk|low\\s*risk|high|medium|low|risk\\s*level|very\\s*(dangerous|risky)|dangerous|unsafe",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "serious|severe|permanent|long\\s*term|life\\s*changing|hospital|medical|doctor|emergency|fatal|death|could\\s*die",
-              "flags": "i"
-            }
+      "points": 1,
+      "check": "cut|cuts|injur(y|ies)|slice|lacerat|bleed|amputation|amputat|lose\\s*(a\\s*)?(finger|fingers|hand|hands)|finger\\s*loss|hand\\s*loss|eye\\s*injur(y|ies)|impact\\s*injur(y|ies)|kickback|thrown\\s*back|hit\\s*by\\s*(the\\s*)?(wood|timber)|flying\\s*(wood|chips|debris|dust)",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "high\\s*risk|medium\\s*risk|low\\s*risk|risk\\s*level\\s*:?\\s*(high|medium|low)|high|medium|low|likely|unlikely|probabl(y|e)|chance\\s*of|significant(ly)?\\s*increases\\s*the\\s*chance|dangerous|unsafe|very\\s*(dangerous|risky)",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "serious|severe|major|permanent|long\\s*term|long-term|disabilit(y|ies)|hospital|medical|doctor|emergency|life\\s*changing|fatal|death|could\\s*die",
+      "flags": "i"
+    }
           ]
         },
         {
@@ -366,7 +366,7 @@
           "rubric": [
             {
               "points": 1,
-              "check": "do\\s*not\\s*use|stop|refuse|wait",
+              "check": "do\s*not\s*use|stop|refuse|wait|until\s*(trained|instructed)|before\s*(using|operating)|must\s*be\s*trained\s*before",
               "flags": "i"
             },
             {
