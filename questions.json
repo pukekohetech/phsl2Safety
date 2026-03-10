@@ -436,7 +436,7 @@
             },
             {
               "points": 1,
-              "check": "unplug|turn\\s*off|switch\\s*off|disconnect|isolate|tag\\s*out|lock\\s*out|label|mark\\s*(it\\s*)?as\\s*(broken|faulty|unsafe)|quarantine|separate",
+              "check": "unplug|turn\s*off|switch\s*off|disconnect|isolate|tag|tag\s*out|lock\s*out|label|mark\s*(it\s*)?as\s*(broken|faulty|unsafe)|quarantine|separate",
               "flags": "i"
             },
             {
