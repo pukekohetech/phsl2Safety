@@ -314,14 +314,14 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-           {
+         {
   "points": 1,
-  "check": "no\\s*(training|instruction)|without\\s*(training|instruction)|never\\s*(used|used\\s*one|used\\s*this)|haven'?t\\s*(used|been\\s*shown)|untrained|not\\s*(trained|shown|taught)|don'?t\\s*know\\s*how|unsure\\s*how|not\\s*competent|inexperience(d)?|first\\s*time|no\\s*experience",
+  "check": "no\\s*(training|instruction|induction)|without\\s*(training|instruction)|never\\s*(used|used\\s*one|used\\s*this)|haven'?t\\s*(used|been\\s*shown)|untrained|not\\s*(trained|shown|taught|instructed)|don'?t\\s*know\\s*how|unsure\\s*how|not\\s*competent|inexperience(d)?|first\\s*time|no\\s*experience",
   "flags": "i"
 },
 {
   "points": 1,
-  "check": "circular\\s*saw|saw\\s*bench|table\\s*saw|bench\\s*saw|saw\\s*blade|blade|power\\s*saw",
+  "check": "circular\\s*saw|saw\\s*bench|table\\s*saw|bench\\s*saw|power\\s*saw|saw\\s*blade|blade",
   "flags": "i"
 },
 {
@@ -339,21 +339,21 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-      "points": 1,
-      "check": "cut|cuts|injur(y|ies)|slice|lacerat|bleed|amputation|amputat|lose\\s*(a\\s*)?(finger|fingers|hand|hands)|finger\\s*loss|hand\\s*loss|eye\\s*injur(y|ies)|impact\\s*injur(y|ies)|kickback|thrown\\s*back|hit\\s*by\\s*(the\\s*)?(wood|timber)|flying\\s*(wood|chips|debris|dust)",
-      "flags": "i"
-    },
-    {
-      "points": 1,
-      "check": "high\\s*risk|medium\\s*risk|low\\s*risk|risk\\s*level\\s*:?\\s*(high|medium|low)|high|medium|low|likely|unlikely|probabl(y|e)|chance\\s*of|significant(ly)?\\s*increases\\s*the\\s*chance|dangerous|unsafe|very\\s*(dangerous|risky)",
-      "flags": "i"
-    },
-    {
-      "points": 1,
-      "check": "serious|severe|major|permanent|long\\s*term|long-term|disabilit(y|ies)|hospital|medical|doctor|emergency|life\\s*changing|fatal|death|could\\s*die",
-      "flags": "i"
-    }
+           {
+  "points": 1,
+  "check": "cut|cuts|injur(y|ies)|slice|lacerat|bleed|amputation|amputat|lose\\s*(a\\s*)?(finger|fingers|hand|hands)|finger\\s*loss|hand\\s*loss|eye\\s*injur(y|ies)|impact\\s*injur(y|ies)|kickback|hit\\s*(by|with)|flying\\s*(wood|chips|debris|dust)",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "high\\s*risk|medium\\s*risk|low\\s*risk|risk\\s*level\\s*:?\\s*(high|medium|low)|high|medium|low|likely|unlikely|probabl(y|e)|chance\\s*of|significant(ly)?\\s*increases|dangerous|unsafe|very\\s*(dangerous|risky)",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "serious|severe|major|permanent|long\\s*term|long-term|disabilit(y|ies)|hospital|medical|doctor|emergency|life\\s*changing|fatal|death",
+  "flags": "i"
+}
           ]
         },
         {
@@ -364,21 +364,21 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "do\\s*not\\s*use|stop|refuse|wait|until\\s*(trained|instructed)|before\\s*(using|operating)|must\\s*be\\s*trained\\s*before",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "training|instruction|supervision|ask\\s*for\\s*help|teacher|supervisor",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "PPE|guard|fence|push\\s*stick|procedure|SOP|safe\\s*operating",
-              "flags": "i"
-            }
+           {
+  "points": 1,
+  "check": "do\\s*not\\s*use|don'?t\\s*use|stop|refuse|wait|should\\s*not\\s*use|must\\s*not\\s*use|until\\s*(trained|instructed)|before\\s*(using|operating)",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "training|instruction|supervision|ask\\s*for\\s*help|teacher|supervisor|manager|boss|get\\s*(help|training)",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "PPE|guard|guards|fence|push\\s*stick|push\\s*block|procedure|SOP|safe\\s*operating|safe\\s*procedure",
+  "flags": "i"
+}
           ]
         },
         {
@@ -390,10 +390,10 @@
           "maxPoints": 1,
           "rubric": [
             {
-              "points": 1,
-              "check": "cracked|broken|damaged\\\\s*(body|casing|housing)|exposed\\\\s*wires?|visible\\\\s*wires?|damaged\\\\s*insulation|bare\\\\s*wires?|electrical\\\\s*hazard|faulty\\\\s*(drill|tool)|unsafe\\\\s*(drill|tool)",
-              "flags": "i"
-            }
+  "points": 1,
+  "check": "cracked|broken|damaged\\s*(body|casing|housing)|exposed\\s*wires?|visible\\s*wires?|damaged\\s*insulation|bare\\s*wires?|electrical\\s*hazard|faulty\\s*(drill|tool)|unsafe\\s*(drill|tool)",
+  "flags": "i"
+}
           ]
         },
         {
@@ -404,21 +404,21 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "electric\\s*shock|shock|electrocution|burn(s)?|short\\s*circuit|live\\s*wires?|exposed\\s*wires?|electric(al)?\\s*injury",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "high|medium|low|risk\\s*level|high\\s*risk|dangerous|very\\s*dangerous|serious\\s*risk|unsafe",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "serious|severe|major|permanent|death|fatal|hospital|medical|injury|fire|house\\s*fire|workshop\\s*fire|could\\s*die|life\\s*threatening",
-              "flags": "i"
-            }
+           {
+  "points": 1,
+  "check": "electric\\s*shock|shock|electrocution|burn(s)?|short\\s*circuit|live\\s*wires?|exposed\\s*wires?|electric(al)?\\s*injury",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "high|medium|low|risk\\s*level|high\\s*risk|dangerous|very\\s*dangerous|serious\\s*risk|unsafe",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "serious|severe|major|permanent|death|fatal|hospital|medical|injury|fire|house\\s*fire|workshop\\s*fire|life\\s*threatening",
+  "flags": "i"
+}
           ]
         },
         {
@@ -429,21 +429,21 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "do\\s*not\\s*use|don'?t\\s*use|stop|leave\\s*it|avoid\\s*using|remove\\s*from\\s*service|take\\s*(it\\s*)?out\\s*of\\s*service|put\\s*(it\\s*)?aside|discard",
-              "flags": "i"
-            },
            {
+  "points": 1,
+  "check": "do\\s*not\\s*use|don'?t\\s*use|stop|leave\\s*it|avoid\\s*using|remove\\s*from\\s*service|take\\s*(it\\s*)?out\\s*of\\s*service|put\\s*(it\\s*)?aside|discard",
+  "flags": "i"
+},
+{
   "points": 1,
   "check": "unplug|turn\\s*off|switch\\s*off|disconnect|isolate|tag|tag\\s*out|lock\\s*out|label|mark\\s*(it\\s*)?as\\s*(broken|faulty|unsafe)|quarantine|separate",
   "flags": "i"
 },
-            {
-              "points": 1,
-              "check": "report|tell|inform|supervisor|teacher|foreman|boss|hand\\s*it\\s*in|maintenance|repair|fix|replace|electrician|get\\s*it\\s*checked|test\\s*&\\s*tag",
-              "flags": "i"
-            }
+{
+  "points": 1,
+  "check": "report|tell|inform|supervisor|teacher|foreman|boss|maintenance|repair|fix|replace|electrician|get\\s*it\\s*checked|test\\s*&\\s*tag",
+  "flags": "i"
+}
           ]
         },
         {
@@ -454,16 +454,16 @@
           "type": "long",
           "maxPoints": 2,
           "rubric": [
-            {
-              "points": 1,
-              "check": "remove\\s*guard|guards?\\s*(off|removed)|no\\s*guard|unguarded|without\\s*(a\\s*)?guard|exposed\\s*(blade|cutter|tool)|unguarded\\s*(blade|cutter|machine)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "cut|injur|amputat|finger\\s*loss|hand\\s*injur|sever|slice|caught\\s*in|pull\\s*in|entangle|kickback|flying\\s*(chips|debris|timber)|projectile|splinter",
-              "flags": "i"
-            }
+           {
+  "points": 1,
+  "check": "remove\\s*guards?|removing\\s*guards?|guards?\\s*(off|removed)|no\\s*guards?|unguarded|without\\s*(a\\s*)?guard|exposed\\s*(blade|cutter|tool)|unguarded\\s*(blade|cutter|machine)",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "cut|injur|amputat|finger\\s*loss|hand\\s*injur|sever|slice|caught\\s*in|pull\\s*in|entangle|kickback|flying\\s*(chips|debris|timber)|projectile|splinter",
+  "flags": "i"
+}
           ]
         },
         {
@@ -474,21 +474,21 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "high\\s*risk|very\\s*high|extreme\\s*risk|dangerous|significant\\s*risk|likely\\s*(to\\s*)?(injure|hurt)|could\\s*(easily\\s*)?(injure|hurt)|(risk\\s*level\\s*:?\\s*)?(high|medium|low)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "cut|lacerat|injur|bleed|severe\\s*cut|deep\\s*cut|amputat|lose\\s*(a\\s*)?(finger|hand)|finger\\s*loss|hand\\s*injur|caught\\s*in|pulled\\s*in|entangle",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "serious|permanent|life\\s*changing|long\\s*term|hospital|medical|surgery|disabilit|fatal|death",
-              "flags": "i"
-            }
+           {
+  "points": 1,
+  "check": "do\\s*not\\s*remove\\s*(the\\s*)?guards?|never\\s*remove\\s*(the\\s*)?guards?|keep\\s*(the\\s*)?guards?\\s*(on|in\\s*place)|guards?\\s*(must\\s*)?(stay|remain)\\s*(on|in\\s*place)|leave\\s*(the\\s*)?guards?\\s*(on|in\\s*place)|don'?t\\s*take\\s*off\\s*(the\\s*)?guards?",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "jig|push\\s*stick|push\\s*block|clamp|hold\\s*down|feather\\s*board|sled|carrier|template|guide|fixture|secure\\s*(it|the\\s*work)",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "tell\\s*(the\\s*)?(teacher|supervisor)|report|ask\\s*for\\s*help|get\\s*(help|supervision)|follow\\s*(procedure|SOP|rules)|training|instruction|wait\\s*for\\s*approval",
+  "flags": "i"
+}
           ]
         },
         {
