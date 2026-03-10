@@ -116,7 +116,7 @@
           "rubric": [
             {
               "points": 1,
-              "check": "eliminat|remove|get\\s*rid\\s*of|fix|repair|stop\\s*(it|this)\\s*happening|make\\s*safe|take\\s*away|replace|dispose",
+              "check": "eliminate|remove|get\\s*rid\\s*of|fix|repair|stop\\s*(it|this)\\s*happening|make\\s*safe|take\\s*away|replace|dispose",
               "flags": "i"
             },
             {
