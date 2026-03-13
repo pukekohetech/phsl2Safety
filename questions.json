@@ -474,21 +474,21 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-           {
-  "points": 1,
-  "check": "do\\s*not\\s*remove\\s*(the\\s*)?guards?|never\\s*remove\\s*(the\\s*)?guards?|keep\\s*(the\\s*)?guards?\\s*(on|in\\s*place)|guards?\\s*(must\\s*)?(stay|remain)\\s*(on|in\\s*place)|leave\\s*(the\\s*)?guards?\\s*(on|in\\s*place)|don'?t\\s*take\\s*off\\s*(the\\s*)?guards?",
-  "flags": "i"
-},
-{
-  "points": 1,
-  "check": "jig|push\\s*stick|push\\s*block|clamp|hold\\s*down|feather\\s*board|sled|carrier|template|guide|fixture|secure\\s*(it|the\\s*work)",
-  "flags": "i"
-},
-{
-  "points": 1,
-  "check": "tell\\s*(the\\s*)?(teacher|supervisor)|report|ask\\s*for\\s*help|get\\s*(help|supervision)|follow\\s*(procedure|SOP|rules)|training|instruction|wait\\s*for\\s*approval",
-  "flags": "i"
-}
+          {
+      "points": 1,
+      "check": "high\\s*risk|very\\s*dangerous|extreme\\s*risk|serious\\s*risk|unsafe|dangerous|major\\s*risk",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "likely|high\\s*chance|could\\s*easily|very\\s*likely|increased\\s*risk|more\\s*likely",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "cut|severe\\s*cut|laceration|amputation|loss\\s*of\\s*fingers?|serious\\s*injury|kickback|entangle|injury|harm|flying\\s*debris",
+      "flags": "i"
+    }
           ]
         },
         {
