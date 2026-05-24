@@ -94,7 +94,7 @@ const DEBUG = false; // ← Debug logging off in production
 // ------------------------------------------------------------
 // Requirements
 // ------------------------------------------------------------
-const MIN_PCT_FOR_SUBMIT = 100; // Change to e.g. 80 if you want 80% or better
+const MIN_PCT_FOR_SUBMIT = 95; // Change to e.g. 80 if you want 80% or better
 
 function findMostRecentStorageKeyForApp(appId, currentKey) {
   try {
