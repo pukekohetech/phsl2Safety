@@ -568,23 +568,23 @@
           "hint": "Explain what you should do immediately, how you would fix it, and what you would do to prevent it happening again. (See p. 15–16)",
           "type": "long",
           "maxPoints": 3,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "do\\s*not\\s*deliver|don'?t\\s*deliver|stop|do\\s*not\\s*give|don'?t\\s*give|hold\\s*back|keep\\s*back|remove\\s*(the\\s*)?chair|take\\s*(it|them)\\s*back|return|send\\s*back|cancel\\s*delivery|delay\\s*delivery|quarantine|set\\s*aside|tag\\s*out|not\\s*safe\\s*to\\s*use",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "replace|repair|fix|remake|rebuild|refit|new\\s*leg|change\\s*(the\\s*)?leg|remove\\s*(the\\s*)?leg\\s*and\\s*replace|re\\-?make|make\\s*a\\s*new\\s*one|reinforce|strengthen",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "inspect|check|test|quality\\s*check|quality\\s*control|QC|look\\s*over|examine|measure|stress\\s*test|load\\s*test|trial\\s*sit|final\\s*check|before\\s*(delivery|sending)|process\\s*check|review\\s*(materials|timber)|check\\s*(grain|defects)|prevent\\s*(it|this)\\s*happening\\s*again",
-              "flags": "i"
-            }
-          ]
+        "rubric": [
+    {
+      "points": 1,
+      "check": "do\\s*not\\s*deliver|don'?t\\s*deliver|stop\\s*(the\\s*)?(delivery|delivery\\s*process|job|process)|halt\\s*(the\\s*)?delivery|hold\\s*(the\\s*)?(delivery|chair)\\s*back|keep\\s*(the\\s*)?(chair|product)\\s*back|remove\\s*(the\\s*)?(chair|product)\\s*from\\s*(use|service|delivery)|take\\s*(the\\s*)?(chair|product)\\s*out\\s*of\\s*service|do\\s*not\\s*give\\s*(it|the\\s*chair)\\s*to\\s*(the\\s*)?customer|don'?t\\s*give\\s*(it|the\\s*chair)\\s*to\\s*(the\\s*)?customer|set\\s*(it|the\\s*chair)\\s*aside|quarantine|return\\s*(it|the\\s*chair)|not\\s*safe\\s*to\\s*(deliver|use)",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "replace|repair|fix|remake|rebuild|refit|make\\s*a\\s*new\\s*(leg|chair)|new\\s*leg|change\\s*(the\\s*)?leg|remove\\s*(the\\s*)?leg\\s*and\\s*replace|re-?make|strengthen|reinforce|correct\\s*(the\\s*)?(defect|problem)|repair\\s*or\\s*replace|replace\\s*or\\s*repair",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "inspect|inspection|check\\s*(the\\s*)?(chair|chairs|timber|materials?|grain|product|products)|check\\s*(all|other|the\\s*other)\\s*(chairs?|products?)|test|quality\\s*check|quality\\s*control|QC|final\\s*check|final\\s*inspection|look\\s*over|examine|review\\s*(the\\s*)?(materials?|timber|process)|check\\s*for\\s*(defects?|cross[-\\s]?grain|cross[-\\s]?grained\\s*timber)|check\\s*(the\\s*)?grain|before\\s*(delivery|use|manufacture)|prevent\\s*(it|this|the\\s*problem)\\s*(from\\s*)?(happening|occurring)\\s*again|make\\s*sure\\s*(it|this)\\s*doesn'?t\\s*happen\\s*again|load\\s*test|stress\\s*test|trial\\s*(sit|test)",
+      "flags": "i"
+    }
+  ]
         },
         {
           "id": "sr1_q8_vi_a",
@@ -608,28 +608,28 @@
           "hint": "Use the “Assessing risk” section (likelihood + severity) and consider typical injury outcomes from slips/falls. (See p. 15, plus first aid examples p. 38)",
           "type": "long",
           "maxPoints": 4,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "slip|fall|trip",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "injur|broken\\s*bones|bruise|concussion|hurt|sprain|fracture",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "high|medium|low|risk\\s*level",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "serious|hospital|life\\s*changing|time\\s*off|permanent",
-              "flags": "i"
-            }
-          ]
+         "rubric": [
+    {
+      "points": 1,
+      "check": "slip|slipped|slipping|fall|fell|falling|trip|tripped|tripping|slip\\s*over|fall\\s*over|lose\\s*(their|your)?\\s*footing|lose\\s*balance",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "injur(y|ies)|hurt|harm|broken\\s*bones?|fracture(s)?|bruise(s|d)?|bruising|concussion|head\\s*(injury|injuries|trauma)|sprain(s|ed)?|strain(s|ed)?|cut(s)?|abrasion(s)?|internal\\s*injur(y|ies)|back\\s*injur(y|ies)|joint\\s*injur(y|ies)",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "high\\s*risk|medium\\s*risk|low\\s*risk|medium\\s*(to|-|or)\\s*high\\s*(level\\s*of\\s*)?risk|high\\s*(level\\s*of\\s*)?risk|medium\\s*(level\\s*of\\s*)?risk|low\\s*(level\\s*of\\s*)?risk|risk\\s*(level\\s*)?(is|=|:)?\\s*(high|medium|low)|very\\s*high\\s*risk|significant\\s*risk|serious\\s*risk|dangerous|unsafe",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "serious|severe|major|very\\s*severe|significant\\s*injury|hospital|medical\\s*treatment|doctor|ambulance|life[-\\s]?changing|long[-\\s]?term|long[-\\s]?term\\s*(injury|injuries|damage|mobility\\s*issues?)|mobility\\s*(issues?|problems?)|permanent|permanent\\s*(injury|damage|disability)|disabilit(y|ies)|fatal|fatalit(y|ies)|death|die|could\\s*die|head\\s*trauma|concussion|time\\s*off\\s*(work)?",
+      "flags": "i"
+    }
+  ]
         },
         {
           "id": "sr1_q8_vi_c",
@@ -638,28 +638,28 @@
           "hint": "Use the “Your work area” section for controls/actions to prevent slips and protect others until the hazard is removed. (See p. 28)",
           "type": "long",
           "maxPoints": 4,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "clean\\s*(up|immediately)|wipe\\s*up|absorb|degrease|spill\\s*kit",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "report|tell|inform|supervisor|teacher",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "sign|cone|barrier|cordon|isolate|block\\s*off",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "until\\s*dry|dry\\s*floor|prevent\\s*others|safe\\s*to\\s*walk",
-              "flags": "i"
-            }
-          ]
+         "rubric": [
+    {
+      "points": 1,
+      "check": "clean\\s*(it|the\\s*spill|the\\s*oil)?\\s*up\\s*(immediately|straight\\s*away|now)?|clean\\s*up\\s*(the\\s*)?(spill|oil)\\s*(immediately|straight\\s*away|now)?|wipe\\s*(it|the\\s*spill|the\\s*oil)?\\s*up|mop\\s*(it|the\\s*spill|the\\s*oil)?\\s*up|absorb|absorbent|spill\\s*kit|degrease|degreaser|remove\\s*(the\\s*)?(spill|oil)|clean\\s*(the\\s*)?(floor|area)|deal\\s*with\\s*(the\\s*)?spill\\s*(immediately|straight\\s*away)?",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "report|tell\\s*(the\\s*)?(teacher|supervisor|manager|boss|coworker|co-worker|co\\s*worker)|inform\\s*(the\\s*)?(teacher|supervisor|manager|boss|coworker|co-worker|co\\s*worker)|let\\s*(the\\s*)?(teacher|supervisor|manager|boss|others?|workers?|coworkers?|co-workers?)\\s*know|warn\\s*(the\\s*)?(teacher|supervisor|others?|workers?|coworkers?|co-workers?)|notify\\s*(the\\s*)?(teacher|supervisor|manager|others?)",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "sign(s)?|warning\\s*sign(s)?|wet\\s*floor\\s*sign|cone(s)?|barrier(s)?|fence(s)?|tape|caution\\s*tape|cordon|cordon\\s*off|block\\s*(off)?|block\\s*(the\\s*)?area|isolate|isolate\\s*(the\\s*)?area|restrict\\s*access|keep\\s*(people|others|workers)\\s*away|stop\\s*(people|others)\\s*(from\\s*)?(walking|entering)",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "until\\s*(the\\s*)?(floor|area)\\s*(is\\s*)?(dry|clean|safe)|until\\s*(the\\s*)?(spill|oil|hazard)\\s*(is\\s*)?(cleaned|removed|gone|dealt\\s*with)|until\\s*(it|the\\s*area)\\s*(is\\s*)?safe|until\\s*(there\\s*is\\s*)?no\\s*(risk|hazard)|keep\\s*(the\\s*)?(signs?|barriers?|tape|cones?)\\s*(up|in\\s*place)\\s*until|make\\s*sure\\s*(the\\s*)?(floor|area)\\s*(is\\s*)?(safe|dry|clean)|make\\s*sure\\s*(it\\s*)?(is\\s*)?(safe|not\\s*slippery)|make\\s*sure\\s*(that\\s*)?it\\s*(is\\s*)?impossible\\s*to\\s*slip|prevent\\s*(people|others|workers)\\s*(from\\s*)?(slipping|falling|walking\\s*through)|prevent\\s*(another\\s*)?(slip|fall)|safe\\s*to\\s*walk|safe\\s*to\\s*use|no\\s*longer\\s*(slippery|a\\s*hazard)|hazard\\s*(is\\s*)?(cleaned\\s*up|removed|gone)",
+      "flags": "i"
+    }
+  ]
         }
       ]
     },
