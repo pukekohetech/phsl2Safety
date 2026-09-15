@@ -1457,7 +1457,7 @@
         {
           "id": "ka_q6_sign_1",
           "text": "6. Identify what the first sign means.",
-          "image": "forklift.png",
+          "image": "forklift.jpg",
           "hint": "Use the safety signage section and match the symbol to its meaning. (See the safety signs pages in the Safety L2 Student 24354 booklet p. 31)",
           "type": "short",
           "maxPoints": 2,
@@ -1477,7 +1477,7 @@
         {
           "id": "ka_q7_sign_2",
           "text": "7. Identify what the second sign means.",
-          "image": "keepasleclear.jpg",
+          "image": "asile.jpg",
           "hint": "Use the safety signage section and match the symbol to its meaning. (See the safety signs pages in the Safety L2 Student 24354 booklet p. 31)",
           "type": "short",
           "maxPoints": 1,
@@ -1492,7 +1492,7 @@
         {
           "id": "ka_q8_sign_3",
           "text": "8. Identify what the third sign means.",
-          "image": "asile.png",
+          "image": "KeepClear.png",
           "hint": "Use the safety signage section and match the symbol to its meaning. (See the safety signs pages in the Safety L2 Student 24354 booklet)",
           "type": "short",
           "maxPoints": 1,
