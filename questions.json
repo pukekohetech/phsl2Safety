@@ -454,17 +454,17 @@
           "type": "long",
           "maxPoints": 2,
           "rubric": [
-           {
-  "points": 1,
-  "check": "remove\\s*guards?|removing\\s*guards?|guards?\\s*(off|removed)|no\\s*guards?|unguarded|without\\s*(a\\s*)?guard|exposed\\s*(blade|cutter|tool)|unguarded\\s*(blade|cutter|machine)",
-  "flags": "i"
-},
-{
-  "points": 1,
-  "check": "cut|injur|amputat|finger\\s*loss|hand\\s*injur|sever|slice|caught\\s*in|pull\\s*in|entangle|kickback|flying\\s*(chips|debris|timber)|projectile|splinter",
-  "flags": "i"
-}
-          ]
+    {
+      "points": 1,
+      "check": "remov(e|ing)\\s*(the\\s*)?(guard|gaurd)s?|take\\s*(the\\s*)?(guard|gaurd)s?\\s*off|taking\\s*(the\\s*)?(guard|gaurd)s?\\s*off|(guard|gaurd)s?\\s*(are\\s*)?(off|removed|missing)|no\\s*(guard|gaurd)s?|lack\\s*of\\s*(guard|gaurd)s?|without\\s*(a\\s*)?(guard|gaurd)s?|unguarded|expos(e|ed|ing)\\s*(the\\s*)?(rotating\\s*)?(blade|cutter|cutter\\s*head|tool)|exposed\\s*(rotating\\s*)?(blade|cutter|cutter\\s*head|tool)|contact\\s*with\\s*(the\\s*)?(rotating\\s*)?(blade|cutter|cutter\\s*head)",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "cut(s|ting)?|lacerat(e|ion|ions)|abrasion|amputat(e|ion|ions)|lose\\s*(a\\s*)?(finger|fingers|hand)|finger\\s*loss|hand\\s*injur(y|ies)|sever(ed|ing)?|slice(d|ing)?|caught\\s*(in|by)|drawn\\s*(in|into)|pull(ed)?\\s*(in|into)|entangl(e|ed|ement)|kick\\s*back|kickback|loss\\s*of\\s*control|lose\\s*control|flying\\s*(chips|debris|timber|wood|splinters?|material)|projectile|splinter|eye\\s*injur(y|ies)|bruise|fracture|bodily\\s*harm|serious\\s*injur(y|ies)",
+      "flags": "i"
+    }
+  ]
         },
         {
           "id": "sr1_q8_iv_b",
@@ -474,22 +474,22 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-          {
+    {
       "points": 1,
-      "check": "high\\s*risk|very\\s*dangerous|extreme\\s*risk|serious\\s*risk|unsafe|dangerous|major\\s*risk",
+      "check": "high\\s*risk|high\\s*level\\s*of\\s*risk|very\\s*high\\s*risk|very\\s*high\\s*level\\s*of\\s*risk|extreme\\s*risk|major\\s*risk|serious\\s*risk|serious\\s*likely\\s*risk|significant\\s*risk|risk\\s*(level\\s*)?(is|=|:)?\\s*(high|very\\s*high|extreme|major)|very\\s*dangerous|dangerous|extremely\\s*dangerous|unsafe|very\\s*unsafe",
       "flags": "i"
     },
     {
       "points": 1,
-      "check": "likely|high\\s*chance|could\\s*easily|very\\s*likely|increased\\s*risk|more\\s*likely",
+      "check": "likely|very\\s*likely|highly\\s*likely|quite\\s*likely|high\\s*chance|good\\s*chance|strong\\s*chance|could\\s*easily|can\\s*easily|more\\s*likely|increased\\s*risk|increase(s|d)?\\s*(the\\s*)?(risk|chance|likelihood)|injur(y|ies)\\s*(is|are)?\\s*likely|damage\\s*(and|or)?\\s*injur(y|ies)?\\s*(is|are)?\\s*likely|likely\\s*to\\s*(occur|happen)|serious\\s*and\\s*likely",
       "flags": "i"
     },
     {
       "points": 1,
-      "check": "cut|severe\\s*cut|laceration|amputation|loss\\s*of\\s*fingers?|serious\\s*injury|kickback|entangle|injury|harm|flying\\s*debris",
+      "check": "cut(s)?|severe\\s*cut(s)?|serious\\s*cut(s)?|lacerat(e|ion|ions)|amputat(e|ion|ions)|loss\\s*of\\s*(a\\s*)?(finger|fingers|hand)|lose\\s*(a\\s*)?(finger|fingers|hand)|finger\\s*loss|hand\\s*injur(y|ies)|kick\\s*back|kickback|loss\\s*of\\s*control|entangl(e|ed|ement)|caught\\s*(in|by)|drawn\\s*(in|into)|pull(ed)?\\s*(in|into)|flying\\s*(debris|timber|wood|chips|splinters?)|eye\\s*injur(y|ies)|face\\s*injur(y|ies)|bruise|bruising|fracture(s)?|broken\\s*bones?|permanent\\s*(injury|injuries|disability|damage)|disabilit(y|ies)|life\\s*changing|fatal|death|hospital|medical\\s*treatment|serious\\s*injur(y|ies)|severe\\s*injur(y|ies)",
       "flags": "i"
     }
-          ]
+  ]
         },
         {
           "id": "sr1_q8_iv_c",
@@ -499,22 +499,22 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "do\\s*not\\s*remove\\s*(the\\s*)?guard|never\\s*remove\\s*(the\\s*)?guard|keep\\s*(the\\s*)?guard(s)?\\s*(on|in\\s*place)|guards?\\s*(must\\s*)?(stay|remain)\\s*(on|in\\s*place)|leave\\s*(the\\s*)?guards?\\s*(on|in\\s*place)|don'?t\\s*take\\s*off\\s*(the\\s*)?guard(s)?|stop\\s*(the\\s*)?(job|work)|don'?t\\s*use\\s*(it|the\\s*moulder)\\s*without\\s*(guards?|guarding)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "jig|push\\s*stick|push\\s*block|clamp|hold\\s*down|feather\\s*board|sled|carrier|template|guide|fixture|use\\s*a\\s*jig|use\\s*push\\s*(tools?|stick|block)|clamp\\s*(it|the\\s*timber)|secure\\s*(it|the\\s*work)|extension\\s*piece|longer\\s*piece|use\\s*a\\s*backer|use\\s*another\\s*method|alternative\\s*(method|tool|process)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "tell\\s*(the\\s*)?(teacher|supervisor)|report|ask\\s*for\\s*help|get\\s*(help|supervision)|check\\s*(with|the)\\s*(teacher|supervisor)|follow\\s*(procedure|SOP|safe\\s*operating\\s*procedure|rules)|training|instruction|only\\s*use\\s*when\\s*trained|wait\\s*for\\s*approval",
-              "flags": "i"
-            }
-          ]
+    {
+      "points": 1,
+      "check": "do\\s*not\\s*remove\\s*(the\\s*)?(guard|gaurd)s?|don'?t\\s*remove\\s*(the\\s*)?(guard|gaurd)s?|never\\s*remove\\s*(the\\s*)?(guard|gaurd)s?|do\\s*not\\s*take\\s*(the\\s*)?(guard|gaurd)s?\\s*off|don'?t\\s*take\\s*(the\\s*)?(guard|gaurd)s?\\s*off|keep\\s*(the\\s*)?(guard|gaurd)s?\\s*(on|in\\s*place)|leave\\s*(the\\s*)?(guard|gaurd)s?\\s*(on|in\\s*place)|(guard|gaurd)s?\\s*must\\s*(be\\s*)?(left|kept)\\s*(on|in\\s*place)|(guard|gaurd)s?\\s*(must\\s*)?(stay|remain)\\s*(on|in\\s*place)|do\\s*not\\s*use\\s*(the\\s*)?(machine|moulder|spindle\\s*moulder)\\s*without\\s*(the\\s*)?(guard|gaurd)s?|don'?t\\s*use\\s*(the\\s*)?(machine|moulder|spindle\\s*moulder)\\s*without\\s*(the\\s*)?(guard|gaurd)s?|stop\\s*(the\\s*)?(job|work|machine)",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "jig(s)?|push\\s*stick(s)?|push\\s*block(s)?|push\\s*tool(s)?|pushtool(s)?|clamp(s|ed|ing)?|hold\\s*down|hold[-\\s]?down|feather\\s*board|featherboard|sled|carrier|template|guide|fixture|secure\\s*(the\\s*)?(timber|work|workpiece)|support\\s*(the\\s*)?(timber|work|workpiece)|extension\\s*piece|longer\\s*piece|backer|safe\\s*method|safer\\s*method|alternative\\s*(method|tool|process|machine)|another\\s*(safe\\s*)?(method|tool|process|machine)|approved\\s*(method|jig|fixture|tool)",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "tell\\s*(the\\s*)?(teacher|supervisor)|inform\\s*(the\\s*)?(teacher|supervisor)|report\\s*(the\\s*)?(problem|issue|hazard)?|ask\\s*(the\\s*)?(teacher|supervisor)?\\s*for\\s*(help|advice|supervision|instruction)|ask\\s*for\\s*(help|advice|supervision|instruction)|get\\s*(help|advice|supervision|instruction)|discuss\\s*(it|the\\s*problem|the\\s*issue|the\\s*job)?\\s*(with\\s*)?(the\\s*)?(teacher|supervisor)|check\\s*(with|the)\\s*(the\\s*)?(teacher|supervisor)|follow\\s*(the\\s*)?(procedure|SOP|safe\\s*operating\\s*procedure|rules|instructions)|training|instruction|only\\s*use\\s*(it|the\\s*machine)?\\s*when\\s*trained|wait\\s*for\\s*(approval|help|supervision)",
+      "flags": "i"
+    }
+  ]
         },
         {
           "id": "sr1_q8_v_a",
