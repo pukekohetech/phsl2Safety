@@ -1496,10 +1496,10 @@
           "hint": "Use the safety signage section and match the symbol to its meaning. (See the safety signs pages in the Safety L2 Student 24354 booklet)",
           "type": "short",
           "maxPoints": 1,
-          "rubric": [
+         "rubric": [
             {
               "points": 1,
-              "check": "keep\\s*(?:any\\s*)?(?:body\\s*parts?|hands?|fingers?)\\s*(?:\\/\\s*(?:hands?|fingers?|body\\s*parts?))?\\s*away",
+              "check": "\\b(?:keep|keeping)\\s+(?:(?:your|my|the|all|any)\\s+)?(?:hands?|fingers?|body\\s+parts?)\\s+(?:(?:well|safely)\\s+)?(?:away|clear)\\b|\\b(?:hands?|fingers?|clothing|body\\s+parts?)\\b[\\s\\S]{0,85}\\b(?:caught|trapped|crushed|entangl\\w*|drawn\\s+in|pulled\\s+in)\\b[\\s\\S]{0,70}\\b(?:gears?|moving\\s+(?:machinery|parts?)|machinery|rollers?|cogs?)\\b|\\b(?:danger|warning|risk)\\b[\\s\\S]{0,70}\\b(?:pinch|nip|trap|entanglement|caught\\s+in)\\b[\\s\\S]{0,70}\\b(?:gears?|moving|machinery)\\b",
               "flags": "i"
             }
           ]
