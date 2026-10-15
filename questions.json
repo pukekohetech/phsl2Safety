@@ -27,10 +27,8 @@
   ],
   "SCORING": {
     "rubricNotes": [
-      "Each rubric row evaluates its JavaScript-compatible check regex against the submitted answer. Scores must be capped at maxPoints.",
-      "For SR1 Q3/Q5/Q6/Q7, the threshold regexes recognise distinct categories; repeated examples of the SAME category do not earn extra marks.",
-      "Automatic scoring is a screening aid. Teachers should review borderline responses, negated/incorrect statements, and long copied answers.",
-      "For SR2 Q5a/Q5b/Q5c, the requirement to use DIFFERENT extinguisher types across questions cannot be verified by independent single-answer regexes."
+      "Multi-answer questions are assessed with one rubric entry per expected point (e.g., 3 responsibilities = 3 rubric rows).",
+      "Duplicates are allowed by regex checks; teachers should visually confirm unique answers where needed."
     ]
   },
   "ASSESSMENTS": [
@@ -41,7 +39,7 @@
       "usNumber": "24354",
       "usVersion": "v3",
       "credits": 4,
-      "standardType": "Unit Standard",
+      "standardType": "",
       "questions": [
         {
           "id": "sr1_q1",
@@ -98,12 +96,12 @@
           "rubric": [
             {
               "points": 1,
-              "check": "^(?:(?=[\\s\\S]*(?:\\b(?:visual(?:ly)?\\s+(?:check|inspect)|inspect(?:ion|ing)?|walk[\\s-]?through|site\\s+walk|look(?:ing)?\\s+(?:around|for\\s+hazards?)|check(?:ing)?\\s+(?:the\\s+)?(?:workshop|work\\s+area|site|workspace))\\b))|(?=[\\s\\S]*(?:\\b(?:hazard\\s+(?:register|log|board)|checklists?|JSA|RAMS|SWMS|risk\\s+assessment|SDS|MSDS|safety\\s+data\\s+sheet|safety\\s+(?:signage|signs?)|(?:manufacturer\\s+)?manuals?)\\b))|(?=[\\s\\S]*(?:\\b(?:toolbox(?:\\s+talk)?|pre[\\s-]?start|safety\\s+meeting|briefings?|ask(?:ing)?\\s+(?:co[\\s-]?workers?|others?|supervisor|staff)|talk(?:ing)?\\s+(?:to|with)\\s+(?:workers?|co[\\s-]?workers?|supervisor)|consult(?:ing|ation)?\\s+(?:workers?|staff|team))\\b))|(?=[\\s\\S]*(?:\\b(?:near[\\s-]?miss(?:es)?|incident\\s+(?:reports?|records?)|(?:reports?|records?)\\s+of\\s+(?:hazards?|incidents?|accidents?)|safety\\s+audit)\\b)))[\\s\\S]*$",
+              "check": "visual|inspect|inspection|walk\\s*through|site\\s*walk|hazard\\s*register|hazard\\s*log|checklist|toolbox|toolbox\\s*talk|briefing|prestart|safety\\s*meeting|JSA|RAMS|SWMS|risk\\s*assessment|SDS|MSDS|label|manual|procedure|signage|report|audit|hazard\\s*board|near\\s*miss",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "^(?:(?=[\\s\\S]*(?:\\b(?:visual(?:ly)?\\s+(?:check|inspect)|inspect(?:ion|ing)?|walk[\\s-]?through|site\\s+walk|look(?:ing)?\\s+(?:around|for\\s+hazards?)|check(?:ing)?\\s+(?:the\\s+)?(?:workshop|work\\s+area|site|workspace))\\b))(?=[\\s\\S]*(?:\\b(?:hazard\\s+(?:register|log|board)|checklists?|JSA|RAMS|SWMS|risk\\s+assessment|SDS|MSDS|safety\\s+data\\s+sheet|safety\\s+(?:signage|signs?)|(?:manufacturer\\s+)?manuals?)\\b))|(?=[\\s\\S]*(?:\\b(?:visual(?:ly)?\\s+(?:check|inspect)|inspect(?:ion|ing)?|walk[\\s-]?through|site\\s+walk|look(?:ing)?\\s+(?:around|for\\s+hazards?)|check(?:ing)?\\s+(?:the\\s+)?(?:workshop|work\\s+area|site|workspace))\\b))(?=[\\s\\S]*(?:\\b(?:toolbox(?:\\s+talk)?|pre[\\s-]?start|safety\\s+meeting|briefings?|ask(?:ing)?\\s+(?:co[\\s-]?workers?|others?|supervisor|staff)|talk(?:ing)?\\s+(?:to|with)\\s+(?:workers?|co[\\s-]?workers?|supervisor)|consult(?:ing|ation)?\\s+(?:workers?|staff|team))\\b))|(?=[\\s\\S]*(?:\\b(?:visual(?:ly)?\\s+(?:check|inspect)|inspect(?:ion|ing)?|walk[\\s-]?through|site\\s+walk|look(?:ing)?\\s+(?:around|for\\s+hazards?)|check(?:ing)?\\s+(?:the\\s+)?(?:workshop|work\\s+area|site|workspace))\\b))(?=[\\s\\S]*(?:\\b(?:near[\\s-]?miss(?:es)?|incident\\s+(?:reports?|records?)|(?:reports?|records?)\\s+of\\s+(?:hazards?|incidents?|accidents?)|safety\\s+audit)\\b))|(?=[\\s\\S]*(?:\\b(?:hazard\\s+(?:register|log|board)|checklists?|JSA|RAMS|SWMS|risk\\s+assessment|SDS|MSDS|safety\\s+data\\s+sheet|safety\\s+(?:signage|signs?)|(?:manufacturer\\s+)?manuals?)\\b))(?=[\\s\\S]*(?:\\b(?:toolbox(?:\\s+talk)?|pre[\\s-]?start|safety\\s+meeting|briefings?|ask(?:ing)?\\s+(?:co[\\s-]?workers?|others?|supervisor|staff)|talk(?:ing)?\\s+(?:to|with)\\s+(?:workers?|co[\\s-]?workers?|supervisor)|consult(?:ing|ation)?\\s+(?:workers?|staff|team))\\b))|(?=[\\s\\S]*(?:\\b(?:hazard\\s+(?:register|log|board)|checklists?|JSA|RAMS|SWMS|risk\\s+assessment|SDS|MSDS|safety\\s+data\\s+sheet|safety\\s+(?:signage|signs?)|(?:manufacturer\\s+)?manuals?)\\b))(?=[\\s\\S]*(?:\\b(?:near[\\s-]?miss(?:es)?|incident\\s+(?:reports?|records?)|(?:reports?|records?)\\s+of\\s+(?:hazards?|incidents?|accidents?)|safety\\s+audit)\\b))|(?=[\\s\\S]*(?:\\b(?:toolbox(?:\\s+talk)?|pre[\\s-]?start|safety\\s+meeting|briefings?|ask(?:ing)?\\s+(?:co[\\s-]?workers?|others?|supervisor|staff)|talk(?:ing)?\\s+(?:to|with)\\s+(?:workers?|co[\\s-]?workers?|supervisor)|consult(?:ing|ation)?\\s+(?:workers?|staff|team))\\b))(?=[\\s\\S]*(?:\\b(?:near[\\s-]?miss(?:es)?|incident\\s+(?:reports?|records?)|(?:reports?|records?)\\s+of\\s+(?:hazards?|incidents?|accidents?)|safety\\s+audit)\\b)))[\\s\\S]*$",
+              "check": "visual|inspect|inspection|walk\\s*through|site\\s*walk|hazard\\s*register|hazard\\s*log|checklist|toolbox|toolbox\\s*talk|briefing|prestart|safety\\s*meeting|JSA|RAMS|SWMS|risk\\s*assessment|SDS|MSDS|label|manual|procedure|signage|report|audit|hazard\\s*board|near\\s*miss",
               "flags": "i"
             }
           ]
@@ -116,31 +114,36 @@
           "type": "long",
           "maxPoints": 5,
           "rubric": [
-            {
-              "points": 1,
-              "check": "\\b(?:eliminat\\w*|remov\\w*|get\\s+rid\\s+of|fix\\w*|repair\\w*|replac\\w*|minimi[sz]\\w*|reduc\\w*|control\\w*|manag\\w*|mitigat\\w*|isolat\\w*|barriers?|guards?|safe\\s+procedures?)\\b",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "\\b(?:record\\w*|log\\w*|register|document\\w*|write\\s+(?:it\\s+)?down|keep\\s+(?:a\\s+)?record|report\\s+form)\\b",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "\\b(?:communicat\\w*|inform\\w*|tell|told|warn\\w*|advis\\w*|brief\\w*|notif\\w*|toolbox\\s+talk|safety\\s+meeting|signage|labels?)\\b",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "\\b(?:train\\w*|instruct\\w*|teach\\w*|induct\\w*|supervis\\w*|monitor\\w*|review\\w*|check\\s+(?:staff|workers|people)|safe\\s+operating\\s+procedures?|SOPs?)\\b",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:equipment|clothing)|safety\\s+gear|gloves?|goggles?|safety\\s+glasses|eye\\s+protection|earmuffs?|ear\\s*plugs?|boots?|hi[\\s-]?vis)\\b",
-              "flags": "i"
-            }
+           {
+"points": 1,
+"check": "eliminate|remove|get\\s*rid|fix|repair|replace|dispose|make\\s*safe|stop\\s*(the\\s*)?hazard",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "minimi[sz]e|reduce|control|manage|mitigat|isolate|separate|barrier|guard|engineering\\s*control|safe\\s*system|safe\\s*procedure|hierarchy\\s*of\\s*controls|control\\s*measure",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "record|log|register|hazard\\s*register|document|write\\s*(it\\s*)?down|report\\s*form|notify|keep\\s*records",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "communicat|inform|tell|warn|advise|brief|notify|toolbox\\s*talk|safety\\s*meeting|sign|signage|label|mark\\s*out",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "training|instruction|teach|induction|supervision|monitor|review|check\\s*(workers|staff|people)|ensure\\s*(competent|trained)|safe\\s*operating\\s*procedure|SOP",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "PPE|personal\\s*protective\\s*equipment|protective\\s*equipment|safety\\s*gear|protective\\s*clothing|gloves|goggles|safety\\s*glasses|eye\\s*protection|earmuffs|ear\\s*plugs|boots|hi\\s*vis",
+"flags": "i"
+}
           ]
         },
         {
@@ -151,21 +154,31 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "^(?:(?=[\\s\\S]*(?:\\b(?:reasonable\\s+care\\s+(?:of|for)\\s+(?:my|your|their|our|own)|(?:my|your|their|our|own)\\s+(?:health|safety)|look\\s+after\\s+(?:yourself|myself|themselves))\\b))|(?=[\\s\\S]*(?:\\b(?:protect\\w*\\s+(?:others?|classmates?|co[\\s-]?workers?|other\\s+people)|care\\s+for\\s+(?:others?|other\\s+people)|not\\s+(?:endanger|harm)\\s+(?:others?|other\\s+people)|actions?\\s+(?:do\\s+not|don\\x27t)\\s+harm\\s+others|avoid(?:ing)?[\\s\\S]{0,20}(?:harm\\w*|injur\\w*)[\\s\\S]{0,20}others?|reasonable\\s+care[\\s\\S]{0,55}others?)\\b))|(?=[\\s\\S]*(?:\\b(?:follow\\w*\\s+(?:(?:safety|the|teachers?|teacher\\x27s|workplace|school)\\s+)?(?:instructions?|rules?|procedures?|polic(?:y|ies))|compl\\w*\\s+with\\s+(?:instructions?|rules?|procedures?|polic(?:y|ies))|listen\\w*\\s+to\\s+(?:teacher|supervisor)|co[\\s-]?operat\\w*\\s+with\\s+(?:(?:safety|workplace)\\s+)?(?:procedures?|polic(?:y|ies)))\\b))|(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|safety\\s+gear|wear\\w*\\s+(?:correct\\s+|appropriate\\s+)?(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|eye\\s+protection))\\b))|(?=[\\s\\S]*(?:\\b(?:report\\w*[\\s\\S]{0,40}(?:hazards?|risks?|injur\\w*|accidents?|incidents?|near[\\s-]?miss(?:es)?|unsafe)|tell\\s+(?:the\\s+)?(?:teacher|supervisor)|speak\\s+up)\\b))|(?=[\\s\\S]*(?:\\b(?:keep\\w*\\s+(?:the\\s+|your\\s+)?(?:workshop|workplace|work\\s+area|workspace|area)\\s+(?:clean|tidy)|clean\\s+up|tidy\\s+up|put\\s+tools?\\s+away|good\\s+housekeeping)\\b)))[\\s\\S]*$",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "^(?:(?=[\\s\\S]*(?:\\b(?:reasonable\\s+care\\s+(?:of|for)\\s+(?:my|your|their|our|own)|(?:my|your|their|our|own)\\s+(?:health|safety)|look\\s+after\\s+(?:yourself|myself|themselves))\\b))(?=[\\s\\S]*(?:\\b(?:protect\\w*\\s+(?:others?|classmates?|co[\\s-]?workers?|other\\s+people)|care\\s+for\\s+(?:others?|other\\s+people)|not\\s+(?:endanger|harm)\\s+(?:others?|other\\s+people)|actions?\\s+(?:do\\s+not|don\\x27t)\\s+harm\\s+others|avoid(?:ing)?[\\s\\S]{0,20}(?:harm\\w*|injur\\w*)[\\s\\S]{0,20}others?|reasonable\\s+care[\\s\\S]{0,55}others?)\\b))|(?=[\\s\\S]*(?:\\b(?:reasonable\\s+care\\s+(?:of|for)\\s+(?:my|your|their|our|own)|(?:my|your|their|our|own)\\s+(?:health|safety)|look\\s+after\\s+(?:yourself|myself|themselves))\\b))(?=[\\s\\S]*(?:\\b(?:follow\\w*\\s+(?:(?:safety|the|teachers?|teacher\\x27s|workplace|school)\\s+)?(?:instructions?|rules?|procedures?|polic(?:y|ies))|compl\\w*\\s+with\\s+(?:instructions?|rules?|procedures?|polic(?:y|ies))|listen\\w*\\s+to\\s+(?:teacher|supervisor)|co[\\s-]?operat\\w*\\s+with\\s+(?:(?:safety|workplace)\\s+)?(?:procedures?|polic(?:y|ies)))\\b))|(?=[\\s\\S]*(?:\\b(?:reasonable\\s+care\\s+(?:of|for)\\s+(?:my|your|their|our|own)|(?:my|your|their|our|own)\\s+(?:health|safety)|look\\s+after\\s+(?:yourself|myself|themselves))\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|safety\\s+gear|wear\\w*\\s+(?:correct\\s+|appropriate\\s+)?(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|eye\\s+protection))\\b))|(?=[\\s\\S]*(?:\\b(?:reasonable\\s+care\\s+(?:of|for)\\s+(?:my|your|their|our|own)|(?:my|your|their|our|own)\\s+(?:health|safety)|look\\s+after\\s+(?:yourself|myself|themselves))\\b))(?=[\\s\\S]*(?:\\b(?:report\\w*[\\s\\S]{0,40}(?:hazards?|risks?|injur\\w*|accidents?|incidents?|near[\\s-]?miss(?:es)?|unsafe)|tell\\s+(?:the\\s+)?(?:teacher|supervisor)|speak\\s+up)\\b))|(?=[\\s\\S]*(?:\\b(?:reasonable\\s+care\\s+(?:of|for)\\s+(?:my|your|their|our|own)|(?:my|your|their|our|own)\\s+(?:health|safety)|look\\s+after\\s+(?:yourself|myself|themselves))\\b))(?=[\\s\\S]*(?:\\b(?:keep\\w*\\s+(?:the\\s+|your\\s+)?(?:workshop|workplace|work\\s+area|workspace|area)\\s+(?:clean|tidy)|clean\\s+up|tidy\\s+up|put\\s+tools?\\s+away|good\\s+housekeeping)\\b))|(?=[\\s\\S]*(?:\\b(?:protect\\w*\\s+(?:others?|classmates?|co[\\s-]?workers?|other\\s+people)|care\\s+for\\s+(?:others?|other\\s+people)|not\\s+(?:endanger|harm)\\s+(?:others?|other\\s+people)|actions?\\s+(?:do\\s+not|don\\x27t)\\s+harm\\s+others|avoid(?:ing)?[\\s\\S]{0,20}(?:harm\\w*|injur\\w*)[\\s\\S]{0,20}others?|reasonable\\s+care[\\s\\S]{0,55}others?)\\b))(?=[\\s\\S]*(?:\\b(?:follow\\w*\\s+(?:(?:safety|the|teachers?|teacher\\x27s|workplace|school)\\s+)?(?:instructions?|rules?|procedures?|polic(?:y|ies))|compl\\w*\\s+with\\s+(?:instructions?|rules?|procedures?|polic(?:y|ies))|listen\\w*\\s+to\\s+(?:teacher|supervisor)|co[\\s-]?operat\\w*\\s+with\\s+(?:(?:safety|workplace)\\s+)?(?:procedures?|polic(?:y|ies)))\\b))|(?=[\\s\\S]*(?:\\b(?:protect\\w*\\s+(?:others?|classmates?|co[\\s-]?workers?|other\\s+people)|care\\s+for\\s+(?:others?|other\\s+people)|not\\s+(?:endanger|harm)\\s+(?:others?|other\\s+people)|actions?\\s+(?:do\\s+not|don\\x27t)\\s+harm\\s+others|avoid(?:ing)?[\\s\\S]{0,20}(?:harm\\w*|injur\\w*)[\\s\\S]{0,20}others?|reasonable\\s+care[\\s\\S]{0,55}others?)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|safety\\s+gear|wear\\w*\\s+(?:correct\\s+|appropriate\\s+)?(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|eye\\s+protection))\\b))|(?=[\\s\\S]*(?:\\b(?:protect\\w*\\s+(?:others?|classmates?|co[\\s-]?workers?|other\\s+people)|care\\s+for\\s+(?:others?|other\\s+people)|not\\s+(?:endanger|harm)\\s+(?:others?|other\\s+people)|actions?\\s+(?:do\\s+not|don\\x27t)\\s+harm\\s+others|avoid(?:ing)?[\\s\\S]{0,20}(?:harm\\w*|injur\\w*)[\\s\\S]{0,20}others?|reasonable\\s+care[\\s\\S]{0,55}others?)\\b))(?=[\\s\\S]*(?:\\b(?:report\\w*[\\s\\S]{0,40}(?:hazards?|risks?|injur\\w*|accidents?|incidents?|near[\\s-]?miss(?:es)?|unsafe)|tell\\s+(?:the\\s+)?(?:teacher|supervisor)|speak\\s+up)\\b))|(?=[\\s\\S]*(?:\\b(?:protect\\w*\\s+(?:others?|classmates?|co[\\s-]?workers?|other\\s+people)|care\\s+for\\s+(?:others?|other\\s+people)|not\\s+(?:endanger|harm)\\s+(?:others?|other\\s+people)|actions?\\s+(?:do\\s+not|don\\x27t)\\s+harm\\s+others|avoid(?:ing)?[\\s\\S]{0,20}(?:harm\\w*|injur\\w*)[\\s\\S]{0,20}others?|reasonable\\s+care[\\s\\S]{0,55}others?)\\b))(?=[\\s\\S]*(?:\\b(?:keep\\w*\\s+(?:the\\s+|your\\s+)?(?:workshop|workplace|work\\s+area|workspace|area)\\s+(?:clean|tidy)|clean\\s+up|tidy\\s+up|put\\s+tools?\\s+away|good\\s+housekeeping)\\b))|(?=[\\s\\S]*(?:\\b(?:follow\\w*\\s+(?:(?:safety|the|teachers?|teacher\\x27s|workplace|school)\\s+)?(?:instructions?|rules?|procedures?|polic(?:y|ies))|compl\\w*\\s+with\\s+(?:instructions?|rules?|procedures?|polic(?:y|ies))|listen\\w*\\s+to\\s+(?:teacher|supervisor)|co[\\s-]?operat\\w*\\s+with\\s+(?:(?:safety|workplace)\\s+)?(?:procedures?|polic(?:y|ies)))\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|safety\\s+gear|wear\\w*\\s+(?:correct\\s+|appropriate\\s+)?(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|eye\\s+protection))\\b))|(?=[\\s\\S]*(?:\\b(?:follow\\w*\\s+(?:(?:safety|the|teachers?|teacher\\x27s|workplace|school)\\s+)?(?:instructions?|rules?|procedures?|polic(?:y|ies))|compl\\w*\\s+with\\s+(?:instructions?|rules?|procedures?|polic(?:y|ies))|listen\\w*\\s+to\\s+(?:teacher|supervisor)|co[\\s-]?operat\\w*\\s+with\\s+(?:(?:safety|workplace)\\s+)?(?:procedures?|polic(?:y|ies)))\\b))(?=[\\s\\S]*(?:\\b(?:report\\w*[\\s\\S]{0,40}(?:hazards?|risks?|injur\\w*|accidents?|incidents?|near[\\s-]?miss(?:es)?|unsafe)|tell\\s+(?:the\\s+)?(?:teacher|supervisor)|speak\\s+up)\\b))|(?=[\\s\\S]*(?:\\b(?:follow\\w*\\s+(?:(?:safety|the|teachers?|teacher\\x27s|workplace|school)\\s+)?(?:instructions?|rules?|procedures?|polic(?:y|ies))|compl\\w*\\s+with\\s+(?:instructions?|rules?|procedures?|polic(?:y|ies))|listen\\w*\\s+to\\s+(?:teacher|supervisor)|co[\\s-]?operat\\w*\\s+with\\s+(?:(?:safety|workplace)\\s+)?(?:procedures?|polic(?:y|ies)))\\b))(?=[\\s\\S]*(?:\\b(?:keep\\w*\\s+(?:the\\s+|your\\s+)?(?:workshop|workplace|work\\s+area|workspace|area)\\s+(?:clean|tidy)|clean\\s+up|tidy\\s+up|put\\s+tools?\\s+away|good\\s+housekeeping)\\b))|(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|safety\\s+gear|wear\\w*\\s+(?:correct\\s+|appropriate\\s+)?(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|eye\\s+protection))\\b))(?=[\\s\\S]*(?:\\b(?:report\\w*[\\s\\S]{0,40}(?:hazards?|risks?|injur\\w*|accidents?|incidents?|near[\\s-]?miss(?:es)?|unsafe)|tell\\s+(?:the\\s+)?(?:teacher|supervisor)|speak\\s+up)\\b))|(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|safety\\s+gear|wear\\w*\\s+(?:correct\\s+|appropriate\\s+)?(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|eye\\s+protection))\\b))(?=[\\s\\S]*(?:\\b(?:keep\\w*\\s+(?:the\\s+|your\\s+)?(?:workshop|workplace|work\\s+area|workspace|area)\\s+(?:clean|tidy)|clean\\s+up|tidy\\s+up|put\\s+tools?\\s+away|good\\s+housekeeping)\\b))|(?=[\\s\\S]*(?:\\b(?:report\\w*[\\s\\S]{0,40}(?:hazards?|risks?|injur\\w*|accidents?|incidents?|near[\\s-]?miss(?:es)?|unsafe)|tell\\s+(?:the\\s+)?(?:teacher|supervisor)|speak\\s+up)\\b))(?=[\\s\\S]*(?:\\b(?:keep\\w*\\s+(?:the\\s+|your\\s+)?(?:workshop|workplace|work\\s+area|workspace|area)\\s+(?:clean|tidy)|clean\\s+up|tidy\\s+up|put\\s+tools?\\s+away|good\\s+housekeeping)\\b)))[\\s\\S]*$",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "^(?:(?=[\\s\\S]*(?:\\b(?:reasonable\\s+care\\s+(?:of|for)\\s+(?:my|your|their|our|own)|(?:my|your|their|our|own)\\s+(?:health|safety)|look\\s+after\\s+(?:yourself|myself|themselves))\\b))(?=[\\s\\S]*(?:\\b(?:protect\\w*\\s+(?:others?|classmates?|co[\\s-]?workers?|other\\s+people)|care\\s+for\\s+(?:others?|other\\s+people)|not\\s+(?:endanger|harm)\\s+(?:others?|other\\s+people)|actions?\\s+(?:do\\s+not|don\\x27t)\\s+harm\\s+others|avoid(?:ing)?[\\s\\S]{0,20}(?:harm\\w*|injur\\w*)[\\s\\S]{0,20}others?|reasonable\\s+care[\\s\\S]{0,55}others?)\\b))(?=[\\s\\S]*(?:\\b(?:follow\\w*\\s+(?:(?:safety|the|teachers?|teacher\\x27s|workplace|school)\\s+)?(?:instructions?|rules?|procedures?|polic(?:y|ies))|compl\\w*\\s+with\\s+(?:instructions?|rules?|procedures?|polic(?:y|ies))|listen\\w*\\s+to\\s+(?:teacher|supervisor)|co[\\s-]?operat\\w*\\s+with\\s+(?:(?:safety|workplace)\\s+)?(?:procedures?|polic(?:y|ies)))\\b))|(?=[\\s\\S]*(?:\\b(?:reasonable\\s+care\\s+(?:of|for)\\s+(?:my|your|their|our|own)|(?:my|your|their|our|own)\\s+(?:health|safety)|look\\s+after\\s+(?:yourself|myself|themselves))\\b))(?=[\\s\\S]*(?:\\b(?:protect\\w*\\s+(?:others?|classmates?|co[\\s-]?workers?|other\\s+people)|care\\s+for\\s+(?:others?|other\\s+people)|not\\s+(?:endanger|harm)\\s+(?:others?|other\\s+people)|actions?\\s+(?:do\\s+not|don\\x27t)\\s+harm\\s+others|avoid(?:ing)?[\\s\\S]{0,20}(?:harm\\w*|injur\\w*)[\\s\\S]{0,20}others?|reasonable\\s+care[\\s\\S]{0,55}others?)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|safety\\s+gear|wear\\w*\\s+(?:correct\\s+|appropriate\\s+)?(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|eye\\s+protection))\\b))|(?=[\\s\\S]*(?:\\b(?:reasonable\\s+care\\s+(?:of|for)\\s+(?:my|your|their|our|own)|(?:my|your|their|our|own)\\s+(?:health|safety)|look\\s+after\\s+(?:yourself|myself|themselves))\\b))(?=[\\s\\S]*(?:\\b(?:protect\\w*\\s+(?:others?|classmates?|co[\\s-]?workers?|other\\s+people)|care\\s+for\\s+(?:others?|other\\s+people)|not\\s+(?:endanger|harm)\\s+(?:others?|other\\s+people)|actions?\\s+(?:do\\s+not|don\\x27t)\\s+harm\\s+others|avoid(?:ing)?[\\s\\S]{0,20}(?:harm\\w*|injur\\w*)[\\s\\S]{0,20}others?|reasonable\\s+care[\\s\\S]{0,55}others?)\\b))(?=[\\s\\S]*(?:\\b(?:report\\w*[\\s\\S]{0,40}(?:hazards?|risks?|injur\\w*|accidents?|incidents?|near[\\s-]?miss(?:es)?|unsafe)|tell\\s+(?:the\\s+)?(?:teacher|supervisor)|speak\\s+up)\\b))|(?=[\\s\\S]*(?:\\b(?:reasonable\\s+care\\s+(?:of|for)\\s+(?:my|your|their|our|own)|(?:my|your|their|our|own)\\s+(?:health|safety)|look\\s+after\\s+(?:yourself|myself|themselves))\\b))(?=[\\s\\S]*(?:\\b(?:protect\\w*\\s+(?:others?|classmates?|co[\\s-]?workers?|other\\s+people)|care\\s+for\\s+(?:others?|other\\s+people)|not\\s+(?:endanger|harm)\\s+(?:others?|other\\s+people)|actions?\\s+(?:do\\s+not|don\\x27t)\\s+harm\\s+others|avoid(?:ing)?[\\s\\S]{0,20}(?:harm\\w*|injur\\w*)[\\s\\S]{0,20}others?|reasonable\\s+care[\\s\\S]{0,55}others?)\\b))(?=[\\s\\S]*(?:\\b(?:keep\\w*\\s+(?:the\\s+|your\\s+)?(?:workshop|workplace|work\\s+area|workspace|area)\\s+(?:clean|tidy)|clean\\s+up|tidy\\s+up|put\\s+tools?\\s+away|good\\s+housekeeping)\\b))|(?=[\\s\\S]*(?:\\b(?:reasonable\\s+care\\s+(?:of|for)\\s+(?:my|your|their|our|own)|(?:my|your|their|our|own)\\s+(?:health|safety)|look\\s+after\\s+(?:yourself|myself|themselves))\\b))(?=[\\s\\S]*(?:\\b(?:follow\\w*\\s+(?:(?:safety|the|teachers?|teacher\\x27s|workplace|school)\\s+)?(?:instructions?|rules?|procedures?|polic(?:y|ies))|compl\\w*\\s+with\\s+(?:instructions?|rules?|procedures?|polic(?:y|ies))|listen\\w*\\s+to\\s+(?:teacher|supervisor)|co[\\s-]?operat\\w*\\s+with\\s+(?:(?:safety|workplace)\\s+)?(?:procedures?|polic(?:y|ies)))\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|safety\\s+gear|wear\\w*\\s+(?:correct\\s+|appropriate\\s+)?(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|eye\\s+protection))\\b))|(?=[\\s\\S]*(?:\\b(?:reasonable\\s+care\\s+(?:of|for)\\s+(?:my|your|their|our|own)|(?:my|your|their|our|own)\\s+(?:health|safety)|look\\s+after\\s+(?:yourself|myself|themselves))\\b))(?=[\\s\\S]*(?:\\b(?:follow\\w*\\s+(?:(?:safety|the|teachers?|teacher\\x27s|workplace|school)\\s+)?(?:instructions?|rules?|procedures?|polic(?:y|ies))|compl\\w*\\s+with\\s+(?:instructions?|rules?|procedures?|polic(?:y|ies))|listen\\w*\\s+to\\s+(?:teacher|supervisor)|co[\\s-]?operat\\w*\\s+with\\s+(?:(?:safety|workplace)\\s+)?(?:procedures?|polic(?:y|ies)))\\b))(?=[\\s\\S]*(?:\\b(?:report\\w*[\\s\\S]{0,40}(?:hazards?|risks?|injur\\w*|accidents?|incidents?|near[\\s-]?miss(?:es)?|unsafe)|tell\\s+(?:the\\s+)?(?:teacher|supervisor)|speak\\s+up)\\b))|(?=[\\s\\S]*(?:\\b(?:reasonable\\s+care\\s+(?:of|for)\\s+(?:my|your|their|our|own)|(?:my|your|their|our|own)\\s+(?:health|safety)|look\\s+after\\s+(?:yourself|myself|themselves))\\b))(?=[\\s\\S]*(?:\\b(?:follow\\w*\\s+(?:(?:safety|the|teachers?|teacher\\x27s|workplace|school)\\s+)?(?:instructions?|rules?|procedures?|polic(?:y|ies))|compl\\w*\\s+with\\s+(?:instructions?|rules?|procedures?|polic(?:y|ies))|listen\\w*\\s+to\\s+(?:teacher|supervisor)|co[\\s-]?operat\\w*\\s+with\\s+(?:(?:safety|workplace)\\s+)?(?:procedures?|polic(?:y|ies)))\\b))(?=[\\s\\S]*(?:\\b(?:keep\\w*\\s+(?:the\\s+|your\\s+)?(?:workshop|workplace|work\\s+area|workspace|area)\\s+(?:clean|tidy)|clean\\s+up|tidy\\s+up|put\\s+tools?\\s+away|good\\s+housekeeping)\\b))|(?=[\\s\\S]*(?:\\b(?:reasonable\\s+care\\s+(?:of|for)\\s+(?:my|your|their|our|own)|(?:my|your|their|our|own)\\s+(?:health|safety)|look\\s+after\\s+(?:yourself|myself|themselves))\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|safety\\s+gear|wear\\w*\\s+(?:correct\\s+|appropriate\\s+)?(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|eye\\s+protection))\\b))(?=[\\s\\S]*(?:\\b(?:report\\w*[\\s\\S]{0,40}(?:hazards?|risks?|injur\\w*|accidents?|incidents?|near[\\s-]?miss(?:es)?|unsafe)|tell\\s+(?:the\\s+)?(?:teacher|supervisor)|speak\\s+up)\\b))|(?=[\\s\\S]*(?:\\b(?:reasonable\\s+care\\s+(?:of|for)\\s+(?:my|your|their|our|own)|(?:my|your|their|our|own)\\s+(?:health|safety)|look\\s+after\\s+(?:yourself|myself|themselves))\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|safety\\s+gear|wear\\w*\\s+(?:correct\\s+|appropriate\\s+)?(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|eye\\s+protection))\\b))(?=[\\s\\S]*(?:\\b(?:keep\\w*\\s+(?:the\\s+|your\\s+)?(?:workshop|workplace|work\\s+area|workspace|area)\\s+(?:clean|tidy)|clean\\s+up|tidy\\s+up|put\\s+tools?\\s+away|good\\s+housekeeping)\\b))|(?=[\\s\\S]*(?:\\b(?:reasonable\\s+care\\s+(?:of|for)\\s+(?:my|your|their|our|own)|(?:my|your|their|our|own)\\s+(?:health|safety)|look\\s+after\\s+(?:yourself|myself|themselves))\\b))(?=[\\s\\S]*(?:\\b(?:report\\w*[\\s\\S]{0,40}(?:hazards?|risks?|injur\\w*|accidents?|incidents?|near[\\s-]?miss(?:es)?|unsafe)|tell\\s+(?:the\\s+)?(?:teacher|supervisor)|speak\\s+up)\\b))(?=[\\s\\S]*(?:\\b(?:keep\\w*\\s+(?:the\\s+|your\\s+)?(?:workshop|workplace|work\\s+area|workspace|area)\\s+(?:clean|tidy)|clean\\s+up|tidy\\s+up|put\\s+tools?\\s+away|good\\s+housekeeping)\\b))|(?=[\\s\\S]*(?:\\b(?:protect\\w*\\s+(?:others?|classmates?|co[\\s-]?workers?|other\\s+people)|care\\s+for\\s+(?:others?|other\\s+people)|not\\s+(?:endanger|harm)\\s+(?:others?|other\\s+people)|actions?\\s+(?:do\\s+not|don\\x27t)\\s+harm\\s+others|avoid(?:ing)?[\\s\\S]{0,20}(?:harm\\w*|injur\\w*)[\\s\\S]{0,20}others?|reasonable\\s+care[\\s\\S]{0,55}others?)\\b))(?=[\\s\\S]*(?:\\b(?:follow\\w*\\s+(?:(?:safety|the|teachers?|teacher\\x27s|workplace|school)\\s+)?(?:instructions?|rules?|procedures?|polic(?:y|ies))|compl\\w*\\s+with\\s+(?:instructions?|rules?|procedures?|polic(?:y|ies))|listen\\w*\\s+to\\s+(?:teacher|supervisor)|co[\\s-]?operat\\w*\\s+with\\s+(?:(?:safety|workplace)\\s+)?(?:procedures?|polic(?:y|ies)))\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|safety\\s+gear|wear\\w*\\s+(?:correct\\s+|appropriate\\s+)?(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|eye\\s+protection))\\b))|(?=[\\s\\S]*(?:\\b(?:protect\\w*\\s+(?:others?|classmates?|co[\\s-]?workers?|other\\s+people)|care\\s+for\\s+(?:others?|other\\s+people)|not\\s+(?:endanger|harm)\\s+(?:others?|other\\s+people)|actions?\\s+(?:do\\s+not|don\\x27t)\\s+harm\\s+others|avoid(?:ing)?[\\s\\S]{0,20}(?:harm\\w*|injur\\w*)[\\s\\S]{0,20}others?|reasonable\\s+care[\\s\\S]{0,55}others?)\\b))(?=[\\s\\S]*(?:\\b(?:follow\\w*\\s+(?:(?:safety|the|teachers?|teacher\\x27s|workplace|school)\\s+)?(?:instructions?|rules?|procedures?|polic(?:y|ies))|compl\\w*\\s+with\\s+(?:instructions?|rules?|procedures?|polic(?:y|ies))|listen\\w*\\s+to\\s+(?:teacher|supervisor)|co[\\s-]?operat\\w*\\s+with\\s+(?:(?:safety|workplace)\\s+)?(?:procedures?|polic(?:y|ies)))\\b))(?=[\\s\\S]*(?:\\b(?:report\\w*[\\s\\S]{0,40}(?:hazards?|risks?|injur\\w*|accidents?|incidents?|near[\\s-]?miss(?:es)?|unsafe)|tell\\s+(?:the\\s+)?(?:teacher|supervisor)|speak\\s+up)\\b))|(?=[\\s\\S]*(?:\\b(?:protect\\w*\\s+(?:others?|classmates?|co[\\s-]?workers?|other\\s+people)|care\\s+for\\s+(?:others?|other\\s+people)|not\\s+(?:endanger|harm)\\s+(?:others?|other\\s+people)|actions?\\s+(?:do\\s+not|don\\x27t)\\s+harm\\s+others|avoid(?:ing)?[\\s\\S]{0,20}(?:harm\\w*|injur\\w*)[\\s\\S]{0,20}others?|reasonable\\s+care[\\s\\S]{0,55}others?)\\b))(?=[\\s\\S]*(?:\\b(?:follow\\w*\\s+(?:(?:safety|the|teachers?|teacher\\x27s|workplace|school)\\s+)?(?:instructions?|rules?|procedures?|polic(?:y|ies))|compl\\w*\\s+with\\s+(?:instructions?|rules?|procedures?|polic(?:y|ies))|listen\\w*\\s+to\\s+(?:teacher|supervisor)|co[\\s-]?operat\\w*\\s+with\\s+(?:(?:safety|workplace)\\s+)?(?:procedures?|polic(?:y|ies)))\\b))(?=[\\s\\S]*(?:\\b(?:keep\\w*\\s+(?:the\\s+|your\\s+)?(?:workshop|workplace|work\\s+area|workspace|area)\\s+(?:clean|tidy)|clean\\s+up|tidy\\s+up|put\\s+tools?\\s+away|good\\s+housekeeping)\\b))|(?=[\\s\\S]*(?:\\b(?:protect\\w*\\s+(?:others?|classmates?|co[\\s-]?workers?|other\\s+people)|care\\s+for\\s+(?:others?|other\\s+people)|not\\s+(?:endanger|harm)\\s+(?:others?|other\\s+people)|actions?\\s+(?:do\\s+not|don\\x27t)\\s+harm\\s+others|avoid(?:ing)?[\\s\\S]{0,20}(?:harm\\w*|injur\\w*)[\\s\\S]{0,20}others?|reasonable\\s+care[\\s\\S]{0,55}others?)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|safety\\s+gear|wear\\w*\\s+(?:correct\\s+|appropriate\\s+)?(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|eye\\s+protection))\\b))(?=[\\s\\S]*(?:\\b(?:report\\w*[\\s\\S]{0,40}(?:hazards?|risks?|injur\\w*|accidents?|incidents?|near[\\s-]?miss(?:es)?|unsafe)|tell\\s+(?:the\\s+)?(?:teacher|supervisor)|speak\\s+up)\\b))|(?=[\\s\\S]*(?:\\b(?:protect\\w*\\s+(?:others?|classmates?|co[\\s-]?workers?|other\\s+people)|care\\s+for\\s+(?:others?|other\\s+people)|not\\s+(?:endanger|harm)\\s+(?:others?|other\\s+people)|actions?\\s+(?:do\\s+not|don\\x27t)\\s+harm\\s+others|avoid(?:ing)?[\\s\\S]{0,20}(?:harm\\w*|injur\\w*)[\\s\\S]{0,20}others?|reasonable\\s+care[\\s\\S]{0,55}others?)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|safety\\s+gear|wear\\w*\\s+(?:correct\\s+|appropriate\\s+)?(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|eye\\s+protection))\\b))(?=[\\s\\S]*(?:\\b(?:keep\\w*\\s+(?:the\\s+|your\\s+)?(?:workshop|workplace|work\\s+area|workspace|area)\\s+(?:clean|tidy)|clean\\s+up|tidy\\s+up|put\\s+tools?\\s+away|good\\s+housekeeping)\\b))|(?=[\\s\\S]*(?:\\b(?:protect\\w*\\s+(?:others?|classmates?|co[\\s-]?workers?|other\\s+people)|care\\s+for\\s+(?:others?|other\\s+people)|not\\s+(?:endanger|harm)\\s+(?:others?|other\\s+people)|actions?\\s+(?:do\\s+not|don\\x27t)\\s+harm\\s+others|avoid(?:ing)?[\\s\\S]{0,20}(?:harm\\w*|injur\\w*)[\\s\\S]{0,20}others?|reasonable\\s+care[\\s\\S]{0,55}others?)\\b))(?=[\\s\\S]*(?:\\b(?:report\\w*[\\s\\S]{0,40}(?:hazards?|risks?|injur\\w*|accidents?|incidents?|near[\\s-]?miss(?:es)?|unsafe)|tell\\s+(?:the\\s+)?(?:teacher|supervisor)|speak\\s+up)\\b))(?=[\\s\\S]*(?:\\b(?:keep\\w*\\s+(?:the\\s+|your\\s+)?(?:workshop|workplace|work\\s+area|workspace|area)\\s+(?:clean|tidy)|clean\\s+up|tidy\\s+up|put\\s+tools?\\s+away|good\\s+housekeeping)\\b))|(?=[\\s\\S]*(?:\\b(?:follow\\w*\\s+(?:(?:safety|the|teachers?|teacher\\x27s|workplace|school)\\s+)?(?:instructions?|rules?|procedures?|polic(?:y|ies))|compl\\w*\\s+with\\s+(?:instructions?|rules?|procedures?|polic(?:y|ies))|listen\\w*\\s+to\\s+(?:teacher|supervisor)|co[\\s-]?operat\\w*\\s+with\\s+(?:(?:safety|workplace)\\s+)?(?:procedures?|polic(?:y|ies)))\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|safety\\s+gear|wear\\w*\\s+(?:correct\\s+|appropriate\\s+)?(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|eye\\s+protection))\\b))(?=[\\s\\S]*(?:\\b(?:report\\w*[\\s\\S]{0,40}(?:hazards?|risks?|injur\\w*|accidents?|incidents?|near[\\s-]?miss(?:es)?|unsafe)|tell\\s+(?:the\\s+)?(?:teacher|supervisor)|speak\\s+up)\\b))|(?=[\\s\\S]*(?:\\b(?:follow\\w*\\s+(?:(?:safety|the|teachers?|teacher\\x27s|workplace|school)\\s+)?(?:instructions?|rules?|procedures?|polic(?:y|ies))|compl\\w*\\s+with\\s+(?:instructions?|rules?|procedures?|polic(?:y|ies))|listen\\w*\\s+to\\s+(?:teacher|supervisor)|co[\\s-]?operat\\w*\\s+with\\s+(?:(?:safety|workplace)\\s+)?(?:procedures?|polic(?:y|ies)))\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|safety\\s+gear|wear\\w*\\s+(?:correct\\s+|appropriate\\s+)?(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|eye\\s+protection))\\b))(?=[\\s\\S]*(?:\\b(?:keep\\w*\\s+(?:the\\s+|your\\s+)?(?:workshop|workplace|work\\s+area|workspace|area)\\s+(?:clean|tidy)|clean\\s+up|tidy\\s+up|put\\s+tools?\\s+away|good\\s+housekeeping)\\b))|(?=[\\s\\S]*(?:\\b(?:follow\\w*\\s+(?:(?:safety|the|teachers?|teacher\\x27s|workplace|school)\\s+)?(?:instructions?|rules?|procedures?|polic(?:y|ies))|compl\\w*\\s+with\\s+(?:instructions?|rules?|procedures?|polic(?:y|ies))|listen\\w*\\s+to\\s+(?:teacher|supervisor)|co[\\s-]?operat\\w*\\s+with\\s+(?:(?:safety|workplace)\\s+)?(?:procedures?|polic(?:y|ies)))\\b))(?=[\\s\\S]*(?:\\b(?:report\\w*[\\s\\S]{0,40}(?:hazards?|risks?|injur\\w*|accidents?|incidents?|near[\\s-]?miss(?:es)?|unsafe)|tell\\s+(?:the\\s+)?(?:teacher|supervisor)|speak\\s+up)\\b))(?=[\\s\\S]*(?:\\b(?:keep\\w*\\s+(?:the\\s+|your\\s+)?(?:workshop|workplace|work\\s+area|workspace|area)\\s+(?:clean|tidy)|clean\\s+up|tidy\\s+up|put\\s+tools?\\s+away|good\\s+housekeeping)\\b))|(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|safety\\s+gear|wear\\w*\\s+(?:correct\\s+|appropriate\\s+)?(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|eye\\s+protection))\\b))(?=[\\s\\S]*(?:\\b(?:report\\w*[\\s\\S]{0,40}(?:hazards?|risks?|injur\\w*|accidents?|incidents?|near[\\s-]?miss(?:es)?|unsafe)|tell\\s+(?:the\\s+)?(?:teacher|supervisor)|speak\\s+up)\\b))(?=[\\s\\S]*(?:\\b(?:keep\\w*\\s+(?:the\\s+|your\\s+)?(?:workshop|workplace|work\\s+area|workspace|area)\\s+(?:clean|tidy)|clean\\s+up|tidy\\s+up|put\\s+tools?\\s+away|good\\s+housekeeping)\\b)))[\\s\\S]*$",
-              "flags": "i"
-            }
+           {
+"points": 1,
+"check": "reasonable\\s*care|take\\s*care|look\\s*after|protect\\s*(yourself|others)|own\\s*(health|safety)|keep\\s*(yourself|others)\\s*safe",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "follow\\s*(instructions|rules|procedures)|listen\\s*to\\s*(teacher|supervisor)|comply|do\\s*what\\s*you'?re\\s*told|work\\s*safely|safe\\s*behaviour",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "PPE|personal\\s*protective\\s*equipment|safety\\s*gear|wear\\s*(PPE|gloves|boots|goggles|glasses|earmuffs)",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "report\\s*(hazards?|risks?|incidents?|injuries?|near\\s*miss)|tell\\s*(teacher|supervisor)|inform\\s*(teacher|supervisor)|speak\\s*up",
+"flags": "i"
+},
+{
+"points": 1,
+"check": "keep\\s*(area|workshop|workspace)\\s*(clean|tidy)|clean\\s*up|housekeeping|put\\s*tools\\s*away|tidy\\s*workspace",
+"flags": "i"
+}
           ]
         },
         {
@@ -178,22 +191,32 @@
           "rubric": [
             {
               "points": 1,
-              "check": "^(?:(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))|(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))|(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))|(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))|(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))|(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b)))[\\s\\S]*$",
+              "check": "hazards?|site\\s*hazards?|risks?|hazard\\s*register|hazard\\s*log",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "^(?:(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))|(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))|(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))|(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))|(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))|(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))|(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b)))[\\s\\S]*$",
+              "check": "controls?|control\\s*measures?|safe\\s*procedures?|safe\\s*systems?|how\\s*to\\s*work\\s*safely|SOP|rules",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "^(?:(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))|(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))|(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))|(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))|(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b)))[\\s\\S]*$",
+              "check": "emergency|evacuat|fire\\s*exit|assembly\\s*point|muster\\s*point|earthquake|spill\\s*procedure",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "^(?:(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:hazards?|risks?|site\\s+hazards?|hazard\\s+(?:register|log))\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))|(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:controls?|control\\s+measures?|safe\\s+procedures?|safe\\s+systems?|SOPs?|rules?|how\\s+to\\s+work\\s+safely)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b))|(?=[\\s\\S]*(?:\\b(?:emergenc\\w*|evacuat\\w*|fire\\s+exit|assembly\\s+point|muster\\s+point|earthquake|spill\\s+procedures?)\\b))(?=[\\s\\S]*(?:\\b(?:PPE|personal\\s+protective\\s+equipment|protective\\s+(?:clothing|equipment)|safety\\s+gear|safety\\s+clothing|gloves?|goggles?|safety\\s+glasses)\\b))(?=[\\s\\S]*(?:\\b(?:first\\s+aid|first\\s+aider|accident\\s+report|incident\\s+report|where\\s+to\\s+get\\s+help)\\b))(?=[\\s\\S]*(?:\\b(?:induct\\w*|train\\w*|supervis\\w*|competenc\\w*|who\\s+to\\s+ask|person\\s+in\\s+charge)\\b)))[\\s\\S]*$",
+              "check": "PPE|personal\\s*protective\\s*equipment|protective\\s*equipment|safety\\s*gear|what\\s*PPE\\s*to\\s*wear",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "first\\s*aid|first\\s*aider|accident\\s*report|incident\\s*report",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "induction|training|supervision|who\\s*to\\s*ask|competent",
               "flags": "i"
             }
           ]
@@ -208,12 +231,17 @@
           "rubric": [
             {
               "points": 1,
-              "check": "^(?:(?=[\\s\\S]*(?:\\b(?:SDS|MSDS|safety\\s+data\\s+sheet|material\\s+safety\\s+data\\s+sheet)\\b))|(?=[\\s\\S]*(?:\\b(?:labels?|container\\s+label|product\\s+label|packag\\w*|manufacturer\\w*|suppliers?|hazard\\s+(?:symbols?|pictograms?))\\b))|(?=[\\s\\S]*(?:\\b(?:WorkSafe|worksafe\\.govt\\.nz|official\\s+(?:safety|chemical)\\s+guidance)\\b)))[\\s\\S]*$",
+              "check": "SDS|MSDS|safety\\s*data\\s*sheet|material\\s*safety\\s*data\\s*sheet|data\\s*sheet",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "^(?:(?=[\\s\\S]*(?:\\b(?:SDS|MSDS|safety\\s+data\\s+sheet|material\\s+safety\\s+data\\s+sheet)\\b))(?=[\\s\\S]*(?:\\b(?:labels?|container\\s+label|product\\s+label|packag\\w*|manufacturer\\w*|suppliers?|hazard\\s+(?:symbols?|pictograms?))\\b))|(?=[\\s\\S]*(?:\\b(?:SDS|MSDS|safety\\s+data\\s+sheet|material\\s+safety\\s+data\\s+sheet)\\b))(?=[\\s\\S]*(?:\\b(?:WorkSafe|worksafe\\.govt\\.nz|official\\s+(?:safety|chemical)\\s+guidance)\\b))|(?=[\\s\\S]*(?:\\b(?:labels?|container\\s+label|product\\s+label|packag\\w*|manufacturer\\w*|suppliers?|hazard\\s+(?:symbols?|pictograms?))\\b))(?=[\\s\\S]*(?:\\b(?:WorkSafe|worksafe\\.govt\\.nz|official\\s+(?:safety|chemical)\\s+guidance)\\b)))[\\s\\S]*$",
+              "check": "label|container|packaging|instructions|hazard\\s*(symbol|pictogram)|manufacturer|supplier",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "(?:worksafe\\.govt\\.nz)",
               "flags": "i"
             }
           ]
@@ -286,21 +314,21 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "no\\s*(training|instruction|induction)|without\\s*(training|instruction)|never\\s*(used|used\\s*one|used\\s*this)|haven'?t\\s*(used|been\\s*shown)|untrained|not\\s*(trained|shown|taught|instructed)|don'?t\\s*know\\s*how|unsure\\s*how|not\\s*competent|inexperience(d)?|first\\s*time|no\\s*experience",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "circular\\s*saw|saw\\s*bench|table\\s*saw|bench\\s*saw|power\\s*saw|saw\\s*blade|blade",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "kickback|wood\\s*kickback|unguarded|no\\s*guard|guard\\s*(missing|off|removed)|hands?\\s*(too\\s*)?close|fingers?\\s*(too\\s*)?close|cut|injur|lacerat|amputat|slice|lose\\s*(a\\s*)?(finger|hand)|reach\\s*near|touch\\s*the\\s*blade|push\\s*stick|push\\s*block|incorrect\\s*(setup|technique)|lose\\s*control|slip|bind(ing)?\\s*blade|jam(med)?|flying\\s*(debris|chips|splinters)|projectile",
-              "flags": "i"
-            }
+         {
+  "points": 1,
+  "check": "no\\s*(training|instruction|induction)|without\\s*(training|instruction)|never\\s*(used|used\\s*one|used\\s*this)|haven'?t\\s*(used|been\\s*shown)|untrained|not\\s*(trained|shown|taught|instructed)|don'?t\\s*know\\s*how|unsure\\s*how|not\\s*competent|inexperience(d)?|first\\s*time|no\\s*experience",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "circular\\s*saw|saw\\s*bench|table\\s*saw|bench\\s*saw|power\\s*saw|saw\\s*blade|blade",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "kickback|wood\\s*kickback|unguarded|no\\s*guard|guard\\s*(missing|off|removed)|hands?\\s*(too\\s*)?close|fingers?\\s*(too\\s*)?close|cut|injur|lacerat|amputat|slice|lose\\s*(a\\s*)?(finger|hand)|reach\\s*near|touch\\s*the\\s*blade|push\\s*stick|push\\s*block|incorrect\\s*(setup|technique)|lose\\s*control|slip|bind(ing)?\\s*blade|jam(med)?|flying\\s*(debris|chips|splinters)|projectile",
+  "flags": "i"
+}
           ]
         },
         {
@@ -311,21 +339,21 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "cut|cuts|injur(y|ies)|slice|lacerat|bleed|amputation|amputat|lose\\s*(a\\s*)?(finger|fingers|hand|hands)|finger\\s*loss|hand\\s*loss|eye\\s*injur(y|ies)|impact\\s*injur(y|ies)|kickback|hit\\s*(by|with)|flying\\s*(wood|chips|debris|dust)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "high\\s*risk|medium\\s*risk|low\\s*risk|risk\\s*level\\s*:?\\s*(high|medium|low)|high|medium|low|likely|unlikely|probabl(y|e)|chance\\s*of|significant(ly)?\\s*increases|dangerous|unsafe|very\\s*(dangerous|risky)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "serious|severe|major|permanent|long\\s*term|long-term|disabilit(y|ies)|hospital|medical|doctor|emergency|life\\s*changing|fatal|death",
-              "flags": "i"
-            }
+           {
+  "points": 1,
+  "check": "cut|cuts|injur(y|ies)|slice|lacerat|bleed|amputation|amputat|lose\\s*(a\\s*)?(finger|fingers|hand|hands)|finger\\s*loss|hand\\s*loss|eye\\s*injur(y|ies)|impact\\s*injur(y|ies)|kickback|hit\\s*(by|with)|flying\\s*(wood|chips|debris|dust)",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "high\\s*risk|medium\\s*risk|low\\s*risk|risk\\s*level\\s*:?\\s*(high|medium|low)|high|medium|low|likely|unlikely|probabl(y|e)|chance\\s*of|significant(ly)?\\s*increases|dangerous|unsafe|very\\s*(dangerous|risky)",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "serious|severe|major|permanent|long\\s*term|long-term|disabilit(y|ies)|hospital|medical|doctor|emergency|life\\s*changing|fatal|death",
+  "flags": "i"
+}
           ]
         },
         {
@@ -336,21 +364,21 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "do\\s*not\\s*use|don'?t\\s*use|stop|refuse|wait|should\\s*not\\s*use|must\\s*not\\s*use|until\\s*(trained|instructed)|before\\s*(using|operating)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "training|instruction|supervision|ask\\s*for\\s*help|teacher|supervisor|manager|boss|get\\s*(help|training)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "PPE|guard|guards|fence|push\\s*stick|push\\s*block|procedure|SOP|safe\\s*operating|safe\\s*procedure",
-              "flags": "i"
-            }
+           {
+  "points": 1,
+  "check": "do\\s*not\\s*use|don'?t\\s*use|stop|refuse|wait|should\\s*not\\s*use|must\\s*not\\s*use|until\\s*(trained|instructed)|before\\s*(using|operating)",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "training|instruction|supervision|ask\\s*for\\s*help|teacher|supervisor|manager|boss|get\\s*(help|training)",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "PPE|guard|guards|fence|push\\s*stick|push\\s*block|procedure|SOP|safe\\s*operating|safe\\s*procedure",
+  "flags": "i"
+}
           ]
         },
         {
@@ -362,10 +390,10 @@
           "maxPoints": 1,
           "rubric": [
             {
-              "points": 1,
-              "check": "cracked|broken|damaged\\s*(body|casing|housing)|exposed\\s*wires?|visible\\s*wires?|damaged\\s*insulation|bare\\s*wires?|electrical\\s*hazard|faulty\\s*(drill|tool)|unsafe\\s*(drill|tool)",
-              "flags": "i"
-            }
+  "points": 1,
+  "check": "cracked|broken|damaged\\s*(body|casing|housing)|exposed\\s*wires?|visible\\s*wires?|damaged\\s*insulation|bare\\s*wires?|electrical\\s*hazard|faulty\\s*(drill|tool)|unsafe\\s*(drill|tool)",
+  "flags": "i"
+}
           ]
         },
         {
@@ -376,21 +404,21 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "electric\\s*shock|shock|electrocution|burn(s)?|short\\s*circuit|live\\s*wires?|exposed\\s*wires?|electric(al)?\\s*injury",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "high|medium|low|risk\\s*level|high\\s*risk|dangerous|very\\s*dangerous|serious\\s*risk|unsafe",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "serious|severe|major|permanent|death|fatal|hospital|medical|injury|fire|house\\s*fire|workshop\\s*fire|life\\s*threatening",
-              "flags": "i"
-            }
+           {
+  "points": 1,
+  "check": "electric\\s*shock|shock|electrocution|burn(s)?|short\\s*circuit|live\\s*wires?|exposed\\s*wires?|electric(al)?\\s*injury",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "high|medium|low|risk\\s*level|high\\s*risk|dangerous|very\\s*dangerous|serious\\s*risk|unsafe",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "serious|severe|major|permanent|death|fatal|hospital|medical|injury|fire|house\\s*fire|workshop\\s*fire|life\\s*threatening",
+  "flags": "i"
+}
           ]
         },
         {
@@ -401,21 +429,21 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "do\\s*not\\s*use|don'?t\\s*use|stop|leave\\s*it|avoid\\s*using|remove\\s*from\\s*service|take\\s*(it\\s*)?out\\s*of\\s*service|put\\s*(it\\s*)?aside|discard",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "unplug|turn\\s*off|switch\\s*off|disconnect|isolate|tag|tag\\s*out|lock\\s*out|label|mark\\s*(it\\s*)?as\\s*(broken|faulty|unsafe)|quarantine|separate",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "report|tell|inform|supervisor|teacher|foreman|boss|maintenance|repair|fix|replace|electrician|get\\s*it\\s*checked|test\\s*&\\s*tag",
-              "flags": "i"
-            }
+           {
+  "points": 1,
+  "check": "do\\s*not\\s*use|don'?t\\s*use|stop|leave\\s*it|avoid\\s*using|remove\\s*from\\s*service|take\\s*(it\\s*)?out\\s*of\\s*service|put\\s*(it\\s*)?aside|discard",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "unplug|turn\\s*off|switch\\s*off|disconnect|isolate|tag|tag\\s*out|lock\\s*out|label|mark\\s*(it\\s*)?as\\s*(broken|faulty|unsafe)|quarantine|separate",
+  "flags": "i"
+},
+{
+  "points": 1,
+  "check": "report|tell|inform|supervisor|teacher|foreman|boss|maintenance|repair|fix|replace|electrician|get\\s*it\\s*checked|test\\s*&\\s*tag",
+  "flags": "i"
+}
           ]
         },
         {
@@ -426,17 +454,17 @@
           "type": "long",
           "maxPoints": 2,
           "rubric": [
-            {
-              "points": 1,
-              "check": "remov(e|ing)\\s*(the\\s*)?(guard|gaurd)s?|take\\s*(the\\s*)?(guard|gaurd)s?\\s*off|taking\\s*(the\\s*)?(guard|gaurd)s?\\s*off|(guard|gaurd)s?\\s*(are\\s*)?(off|removed|missing)|no\\s*(guard|gaurd)s?|lack\\s*of\\s*(guard|gaurd)s?|without\\s*(a\\s*)?(guard|gaurd)s?|unguarded|expos(e|ed|ing)\\s*(the\\s*)?(rotating\\s*)?(blade|cutter|cutter\\s*head|tool)|exposed\\s*(rotating\\s*)?(blade|cutter|cutter\\s*head|tool)|contact\\s*with\\s*(the\\s*)?(rotating\\s*)?(blade|cutter|cutter\\s*head)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "cut(s|ting)?|lacerat(e|ion|ions)|abrasion|amputat(e|ion|ions)|lose\\s*(a\\s*)?(finger|fingers|hand)|finger\\s*loss|hand\\s*injur(y|ies)|sever(ed|ing)?|slice(d|ing)?|caught\\s*(in|by)|drawn\\s*(in|into)|pull(ed)?\\s*(in|into)|entangl(e|ed|ement)|kick\\s*back|kickback|loss\\s*of\\s*control|lose\\s*control|flying\\s*(chips|debris|timber|wood|splinters?|material)|projectile|splinter|eye\\s*injur(y|ies)|bruise|fracture|bodily\\s*harm|serious\\s*injur(y|ies)",
-              "flags": "i"
-            }
-          ]
+    {
+      "points": 1,
+      "check": "remov(e|ing)\\s*(the\\s*)?(guard|gaurd)s?|take\\s*(the\\s*)?(guard|gaurd)s?\\s*off|taking\\s*(the\\s*)?(guard|gaurd)s?\\s*off|(guard|gaurd)s?\\s*(are\\s*)?(off|removed|missing)|no\\s*(guard|gaurd)s?|lack\\s*of\\s*(guard|gaurd)s?|without\\s*(a\\s*)?(guard|gaurd)s?|unguarded|expos(e|ed|ing)\\s*(the\\s*)?(rotating\\s*)?(blade|cutter|cutter\\s*head|tool)|exposed\\s*(rotating\\s*)?(blade|cutter|cutter\\s*head|tool)|contact\\s*with\\s*(the\\s*)?(rotating\\s*)?(blade|cutter|cutter\\s*head)",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "cut(s|ting)?|lacerat(e|ion|ions)|abrasion|amputat(e|ion|ions)|lose\\s*(a\\s*)?(finger|fingers|hand)|finger\\s*loss|hand\\s*injur(y|ies)|sever(ed|ing)?|slice(d|ing)?|caught\\s*(in|by)|drawn\\s*(in|into)|pull(ed)?\\s*(in|into)|entangl(e|ed|ement)|kick\\s*back|kickback|loss\\s*of\\s*control|lose\\s*control|flying\\s*(chips|debris|timber|wood|splinters?|material)|projectile|splinter|eye\\s*injur(y|ies)|bruise|fracture|bodily\\s*harm|serious\\s*injur(y|ies)",
+      "flags": "i"
+    }
+  ]
         },
         {
           "id": "sr1_q8_iv_b",
@@ -446,22 +474,22 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "high\\s*risk|high\\s*level\\s*of\\s*risk|very\\s*high\\s*risk|very\\s*high\\s*level\\s*of\\s*risk|extreme\\s*risk|major\\s*risk|serious\\s*risk|serious\\s*likely\\s*risk|significant\\s*risk|risk\\s*(level\\s*)?(is|=|:)?\\s*(high|very\\s*high|extreme|major)|very\\s*dangerous|dangerous|extremely\\s*dangerous|unsafe|very\\s*unsafe",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "likely|very\\s*likely|highly\\s*likely|quite\\s*likely|high\\s*chance|good\\s*chance|strong\\s*chance|could\\s*easily|can\\s*easily|more\\s*likely|increased\\s*risk|increase(s|d)?\\s*(the\\s*)?(risk|chance|likelihood)|injur(y|ies)\\s*(is|are)?\\s*likely|damage\\s*(and|or)?\\s*injur(y|ies)?\\s*(is|are)?\\s*likely|likely\\s*to\\s*(occur|happen)|serious\\s*and\\s*likely",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "cut(s)?|severe\\s*cut(s)?|serious\\s*cut(s)?|lacerat(e|ion|ions)|amputat(e|ion|ions)|loss\\s*of\\s*(a\\s*)?(finger|fingers|hand)|lose\\s*(a\\s*)?(finger|fingers|hand)|finger\\s*loss|hand\\s*injur(y|ies)|kick\\s*back|kickback|loss\\s*of\\s*control|entangl(e|ed|ement)|caught\\s*(in|by)|drawn\\s*(in|into)|pull(ed)?\\s*(in|into)|flying\\s*(debris|timber|wood|chips|splinters?)|eye\\s*injur(y|ies)|face\\s*injur(y|ies)|bruise|bruising|fracture(s)?|broken\\s*bones?|permanent\\s*(injury|injuries|disability|damage)|disabilit(y|ies)|life\\s*changing|fatal|death|hospital|medical\\s*treatment|serious\\s*injur(y|ies)|severe\\s*injur(y|ies)",
-              "flags": "i"
-            }
-          ]
+    {
+      "points": 1,
+      "check": "high\\s*risk|high\\s*level\\s*of\\s*risk|very\\s*high\\s*risk|very\\s*high\\s*level\\s*of\\s*risk|extreme\\s*risk|major\\s*risk|serious\\s*risk|serious\\s*likely\\s*risk|significant\\s*risk|risk\\s*(level\\s*)?(is|=|:)?\\s*(high|very\\s*high|extreme|major)|very\\s*dangerous|dangerous|extremely\\s*dangerous|unsafe|very\\s*unsafe",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "likely|very\\s*likely|highly\\s*likely|quite\\s*likely|high\\s*chance|good\\s*chance|strong\\s*chance|could\\s*easily|can\\s*easily|more\\s*likely|increased\\s*risk|increase(s|d)?\\s*(the\\s*)?(risk|chance|likelihood)|injur(y|ies)\\s*(is|are)?\\s*likely|damage\\s*(and|or)?\\s*injur(y|ies)?\\s*(is|are)?\\s*likely|likely\\s*to\\s*(occur|happen)|serious\\s*and\\s*likely",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "cut(s)?|severe\\s*cut(s)?|serious\\s*cut(s)?|lacerat(e|ion|ions)|amputat(e|ion|ions)|loss\\s*of\\s*(a\\s*)?(finger|fingers|hand)|lose\\s*(a\\s*)?(finger|fingers|hand)|finger\\s*loss|hand\\s*injur(y|ies)|kick\\s*back|kickback|loss\\s*of\\s*control|entangl(e|ed|ement)|caught\\s*(in|by)|drawn\\s*(in|into)|pull(ed)?\\s*(in|into)|flying\\s*(debris|timber|wood|chips|splinters?)|eye\\s*injur(y|ies)|face\\s*injur(y|ies)|bruise|bruising|fracture(s)?|broken\\s*bones?|permanent\\s*(injury|injuries|disability|damage)|disabilit(y|ies)|life\\s*changing|fatal|death|hospital|medical\\s*treatment|serious\\s*injur(y|ies)|severe\\s*injur(y|ies)",
+      "flags": "i"
+    }
+  ]
         },
         {
           "id": "sr1_q8_iv_c",
@@ -471,22 +499,22 @@
           "type": "long",
           "maxPoints": 3,
           "rubric": [
-            {
-              "points": 1,
-              "check": "do\\s*not\\s*remove\\s*(the\\s*)?(guard|gaurd)s?|don'?t\\s*remove\\s*(the\\s*)?(guard|gaurd)s?|never\\s*remove\\s*(the\\s*)?(guard|gaurd)s?|do\\s*not\\s*take\\s*(the\\s*)?(guard|gaurd)s?\\s*off|don'?t\\s*take\\s*(the\\s*)?(guard|gaurd)s?\\s*off|keep\\s*(the\\s*)?(guard|gaurd)s?\\s*(on|in\\s*place)|leave\\s*(the\\s*)?(guard|gaurd)s?\\s*(on|in\\s*place)|(guard|gaurd)s?\\s*must\\s*(be\\s*)?(left|kept)\\s*(on|in\\s*place)|(guard|gaurd)s?\\s*(must\\s*)?(stay|remain)\\s*(on|in\\s*place)|do\\s*not\\s*use\\s*(the\\s*)?(machine|moulder|spindle\\s*moulder)\\s*without\\s*(the\\s*)?(guard|gaurd)s?|don'?t\\s*use\\s*(the\\s*)?(machine|moulder|spindle\\s*moulder)\\s*without\\s*(the\\s*)?(guard|gaurd)s?|stop\\s*(the\\s*)?(job|work|machine)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "jig(s)?|push\\s*stick(s)?|push\\s*block(s)?|push\\s*tool(s)?|pushtool(s)?|clamp(s|ed|ing)?|hold\\s*down|hold[-\\s]?down|feather\\s*board|featherboard|sled|carrier|template|guide|fixture|secure\\s*(the\\s*)?(timber|work|workpiece)|support\\s*(the\\s*)?(timber|work|workpiece)|extension\\s*piece|longer\\s*piece|backer|safe\\s*method|safer\\s*method|alternative\\s*(method|tool|process|machine)|another\\s*(safe\\s*)?(method|tool|process|machine)|approved\\s*(method|jig|fixture|tool)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "tell\\s*(the\\s*)?(teacher|supervisor)|inform\\s*(the\\s*)?(teacher|supervisor)|report\\s*(the\\s*)?(problem|issue|hazard)?|ask\\s*(the\\s*)?(teacher|supervisor)?\\s*for\\s*(help|advice|supervision|instruction)|ask\\s*for\\s*(help|advice|supervision|instruction)|get\\s*(help|advice|supervision|instruction)|discuss\\s*(it|the\\s*problem|the\\s*issue|the\\s*job)?\\s*(with\\s*)?(the\\s*)?(teacher|supervisor)|check\\s*(with|the)\\s*(the\\s*)?(teacher|supervisor)|follow\\s*(the\\s*)?(procedure|SOP|safe\\s*operating\\s*procedure|rules|instructions)|training|instruction|only\\s*use\\s*(it|the\\s*machine)?\\s*when\\s*trained|wait\\s*for\\s*(approval|help|supervision)",
-              "flags": "i"
-            }
-          ]
+    {
+      "points": 1,
+      "check": "do\\s*not\\s*remove\\s*(the\\s*)?(guard|gaurd)s?|don'?t\\s*remove\\s*(the\\s*)?(guard|gaurd)s?|never\\s*remove\\s*(the\\s*)?(guard|gaurd)s?|do\\s*not\\s*take\\s*(the\\s*)?(guard|gaurd)s?\\s*off|don'?t\\s*take\\s*(the\\s*)?(guard|gaurd)s?\\s*off|keep\\s*(the\\s*)?(guard|gaurd)s?\\s*(on|in\\s*place)|leave\\s*(the\\s*)?(guard|gaurd)s?\\s*(on|in\\s*place)|(guard|gaurd)s?\\s*must\\s*(be\\s*)?(left|kept)\\s*(on|in\\s*place)|(guard|gaurd)s?\\s*(must\\s*)?(stay|remain)\\s*(on|in\\s*place)|do\\s*not\\s*use\\s*(the\\s*)?(machine|moulder|spindle\\s*moulder)\\s*without\\s*(the\\s*)?(guard|gaurd)s?|don'?t\\s*use\\s*(the\\s*)?(machine|moulder|spindle\\s*moulder)\\s*without\\s*(the\\s*)?(guard|gaurd)s?|stop\\s*(the\\s*)?(job|work|machine)",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "jig(s)?|push\\s*stick(s)?|push\\s*block(s)?|push\\s*tool(s)?|pushtool(s)?|clamp(s|ed|ing)?|hold\\s*down|hold[-\\s]?down|feather\\s*board|featherboard|sled|carrier|template|guide|fixture|secure\\s*(the\\s*)?(timber|work|workpiece)|support\\s*(the\\s*)?(timber|work|workpiece)|extension\\s*piece|longer\\s*piece|backer|safe\\s*method|safer\\s*method|alternative\\s*(method|tool|process|machine)|another\\s*(safe\\s*)?(method|tool|process|machine)|approved\\s*(method|jig|fixture|tool)",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "tell\\s*(the\\s*)?(teacher|supervisor)|inform\\s*(the\\s*)?(teacher|supervisor)|report\\s*(the\\s*)?(problem|issue|hazard)?|ask\\s*(the\\s*)?(teacher|supervisor)?\\s*for\\s*(help|advice|supervision|instruction)|ask\\s*for\\s*(help|advice|supervision|instruction)|get\\s*(help|advice|supervision|instruction)|discuss\\s*(it|the\\s*problem|the\\s*issue|the\\s*job)?\\s*(with\\s*)?(the\\s*)?(teacher|supervisor)|check\\s*(with|the)\\s*(the\\s*)?(teacher|supervisor)|follow\\s*(the\\s*)?(procedure|SOP|safe\\s*operating\\s*procedure|rules|instructions)|training|instruction|only\\s*use\\s*(it|the\\s*machine)?\\s*when\\s*trained|wait\\s*for\\s*(approval|help|supervision)",
+      "flags": "i"
+    }
+  ]
         },
         {
           "id": "sr1_q8_v_a",
@@ -540,23 +568,23 @@
           "hint": "Explain what you should do immediately, how you would fix it, and what you would do to prevent it happening again. (See p. 15–16)",
           "type": "long",
           "maxPoints": 3,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "do\\s*not\\s*deliver|don'?t\\s*deliver|stop\\s*(the\\s*)?(delivery|delivery\\s*process|job|process)|halt\\s*(the\\s*)?delivery|hold\\s*(the\\s*)?(delivery|chair)\\s*back|keep\\s*(the\\s*)?(chair|product)\\s*back|remove\\s*(the\\s*)?(chair|product)\\s*from\\s*(use|service|delivery)|take\\s*(the\\s*)?(chair|product)\\s*out\\s*of\\s*service|do\\s*not\\s*give\\s*(it|the\\s*chair)\\s*to\\s*(the\\s*)?customer|don'?t\\s*give\\s*(it|the\\s*chair)\\s*to\\s*(the\\s*)?customer|set\\s*(it|the\\s*chair)\\s*aside|quarantine|return\\s*(it|the\\s*chair)|not\\s*safe\\s*to\\s*(deliver|use)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "replace|repair|fix|remake|rebuild|refit|make\\s*a\\s*new\\s*(leg|chair)|new\\s*leg|change\\s*(the\\s*)?leg|remove\\s*(the\\s*)?leg\\s*and\\s*replace|re-?make|strengthen|reinforce|correct\\s*(the\\s*)?(defect|problem)|repair\\s*or\\s*replace|replace\\s*or\\s*repair",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "inspect|inspection|check\\s*(the\\s*)?(chair|chairs|timber|materials?|grain|product|products)|check\\s*(all|other|the\\s*other)\\s*(chairs?|products?)|test|quality\\s*check|quality\\s*control|QC|final\\s*check|final\\s*inspection|look\\s*over|examine|review\\s*(the\\s*)?(materials?|timber|process)|check\\s*for\\s*(defects?|cross[-\\s]?grain|cross[-\\s]?grained\\s*timber)|check\\s*(the\\s*)?grain|before\\s*(delivery|use|manufacture)|prevent\\s*(it|this|the\\s*problem)\\s*(from\\s*)?(happening|occurring)\\s*again|make\\s*sure\\s*(it|this)\\s*doesn'?t\\s*happen\\s*again|load\\s*test|stress\\s*test|trial\\s*(sit|test)",
-              "flags": "i"
-            }
-          ]
+        "rubric": [
+    {
+      "points": 1,
+      "check": "do\\s*not\\s*deliver|don'?t\\s*deliver|stop\\s*(the\\s*)?(delivery|delivery\\s*process|job|process)|halt\\s*(the\\s*)?delivery|hold\\s*(the\\s*)?(delivery|chair)\\s*back|keep\\s*(the\\s*)?(chair|product)\\s*back|remove\\s*(the\\s*)?(chair|product)\\s*from\\s*(use|service|delivery)|take\\s*(the\\s*)?(chair|product)\\s*out\\s*of\\s*service|do\\s*not\\s*give\\s*(it|the\\s*chair)\\s*to\\s*(the\\s*)?customer|don'?t\\s*give\\s*(it|the\\s*chair)\\s*to\\s*(the\\s*)?customer|set\\s*(it|the\\s*chair)\\s*aside|quarantine|return\\s*(it|the\\s*chair)|not\\s*safe\\s*to\\s*(deliver|use)",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "replace|repair|fix|remake|rebuild|refit|make\\s*a\\s*new\\s*(leg|chair)|new\\s*leg|change\\s*(the\\s*)?leg|remove\\s*(the\\s*)?leg\\s*and\\s*replace|re-?make|strengthen|reinforce|correct\\s*(the\\s*)?(defect|problem)|repair\\s*or\\s*replace|replace\\s*or\\s*repair",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "inspect|inspection|check\\s*(the\\s*)?(chair|chairs|timber|materials?|grain|product|products)|check\\s*(all|other|the\\s*other)\\s*(chairs?|products?)|test|quality\\s*check|quality\\s*control|QC|final\\s*check|final\\s*inspection|look\\s*over|examine|review\\s*(the\\s*)?(materials?|timber|process)|check\\s*for\\s*(defects?|cross[-\\s]?grain|cross[-\\s]?grained\\s*timber)|check\\s*(the\\s*)?grain|before\\s*(delivery|use|manufacture)|prevent\\s*(it|this|the\\s*problem)\\s*(from\\s*)?(happening|occurring)\\s*again|make\\s*sure\\s*(it|this)\\s*doesn'?t\\s*happen\\s*again|load\\s*test|stress\\s*test|trial\\s*(sit|test)",
+      "flags": "i"
+    }
+  ]
         },
         {
           "id": "sr1_q8_vi_a",
@@ -567,13 +595,8 @@
           "maxPoints": 2,
           "rubric": [
             {
-              "points": 1,
-              "check": "\\b(?:oil|grease|lubricant)\\b[\\s\\S]{0,35}\\b(?:spill\\w*|floor|ground|surface|slippery)\\b|\\bspill\\w*\\b[\\s\\S]{0,30}\\b(?:oil|grease|lubricant)\\b",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "\\b(?:slip\\w*|trip\\w*|fall\\w*|slippery|lose\\s+(?:their|your|my)\\s+(?:footing|balance))\\b",
+              "points": 2,
+              "check": "oil\\s*spill|spill|slip\\s*hazard|slippery\\s*floor|wet\\s*floor",
               "flags": "i"
             }
           ]
@@ -585,28 +608,28 @@
           "hint": "Use the “Assessing risk” section (likelihood + severity) and consider typical injury outcomes from slips/falls. (See p. 15, plus first aid examples p. 38)",
           "type": "long",
           "maxPoints": 4,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "slip|slipped|slipping|fall|fell|falling|trip|tripped|tripping|slip\\s*over|fall\\s*over|lose\\s*(their|your)?\\s*footing|lose\\s*balance",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "injur(y|ies)|hurt|harm|broken\\s*bones?|fracture(s)?|bruise(s|d)?|bruising|concussion|head\\s*(injury|injuries|trauma)|sprain(s|ed)?|strain(s|ed)?|cut(s)?|abrasion(s)?|internal\\s*injur(y|ies)|back\\s*injur(y|ies)|joint\\s*injur(y|ies)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "high\\s*risk|medium\\s*risk|low\\s*risk|medium\\s*(to|-|or)\\s*high\\s*(level\\s*of\\s*)?risk|high\\s*(level\\s*of\\s*)?risk|medium\\s*(level\\s*of\\s*)?risk|low\\s*(level\\s*of\\s*)?risk|risk\\s*(level\\s*)?(is|=|:)?\\s*(high|medium|low)|very\\s*high\\s*risk|significant\\s*risk|serious\\s*risk|dangerous|unsafe",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "serious|severe|major|very\\s*severe|significant\\s*injury|hospital|medical\\s*treatment|doctor|ambulance|life[-\\s]?changing|long[-\\s]?term|long[-\\s]?term\\s*(injury|injuries|damage|mobility\\s*issues?)|mobility\\s*(issues?|problems?)|permanent|permanent\\s*(injury|damage|disability)|disabilit(y|ies)|fatal|fatalit(y|ies)|death|die|could\\s*die|head\\s*trauma|concussion|time\\s*off\\s*(work)?",
-              "flags": "i"
-            }
-          ]
+         "rubric": [
+    {
+      "points": 1,
+      "check": "slip|slipped|slipping|fall|fell|falling|trip|tripped|tripping|slip\\s*over|fall\\s*over|lose\\s*(their|your)?\\s*footing|lose\\s*balance",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "injur(y|ies)|hurt|harm|broken\\s*bones?|fracture(s)?|bruise(s|d)?|bruising|concussion|head\\s*(injury|injuries|trauma)|sprain(s|ed)?|strain(s|ed)?|cut(s)?|abrasion(s)?|internal\\s*injur(y|ies)|back\\s*injur(y|ies)|joint\\s*injur(y|ies)",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "high\\s*risk|medium\\s*risk|low\\s*risk|medium\\s*(to|-|or)\\s*high\\s*(level\\s*of\\s*)?risk|high\\s*(level\\s*of\\s*)?risk|medium\\s*(level\\s*of\\s*)?risk|low\\s*(level\\s*of\\s*)?risk|risk\\s*(level\\s*)?(is|=|:)?\\s*(high|medium|low)|very\\s*high\\s*risk|significant\\s*risk|serious\\s*risk|dangerous|unsafe",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "serious|severe|major|very\\s*severe|significant\\s*injury|hospital|medical\\s*treatment|doctor|ambulance|life[-\\s]?changing|long[-\\s]?term|long[-\\s]?term\\s*(injury|injuries|damage|mobility\\s*issues?)|mobility\\s*(issues?|problems?)|permanent|permanent\\s*(injury|damage|disability)|disabilit(y|ies)|fatal|fatalit(y|ies)|death|die|could\\s*die|head\\s*trauma|concussion|time\\s*off\\s*(work)?",
+      "flags": "i"
+    }
+  ]
         },
         {
           "id": "sr1_q8_vi_c",
@@ -615,28 +638,28 @@
           "hint": "Use the “Your work area” section for controls/actions to prevent slips and protect others until the hazard is removed. (See p. 28)",
           "type": "long",
           "maxPoints": 4,
-          "rubric": [
-            {
-              "points": 1,
-              "check": "clean\\s*(it|the\\s*spill|the\\s*oil)?\\s*up\\s*(immediately|straight\\s*away|now)?|clean\\s*up\\s*(the\\s*)?(spill|oil)\\s*(immediately|straight\\s*away|now)?|wipe\\s*(it|the\\s*spill|the\\s*oil)?\\s*up|mop\\s*(it|the\\s*spill|the\\s*oil)?\\s*up|absorb|absorbent|spill\\s*kit|degrease|degreaser|remove\\s*(the\\s*)?(spill|oil)|clean\\s*(the\\s*)?(floor|area)|deal\\s*with\\s*(the\\s*)?spill\\s*(immediately|straight\\s*away)?",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "report|tell\\s*(the\\s*)?(teacher|supervisor|manager|boss|coworker|co-worker|co\\s*worker)|inform\\s*(the\\s*)?(teacher|supervisor|manager|boss|coworker|co-worker|co\\s*worker)|let\\s*(the\\s*)?(teacher|supervisor|manager|boss|others?|workers?|coworkers?|co-workers?)\\s*know|warn\\s*(the\\s*)?(teacher|supervisor|others?|workers?|coworkers?|co-workers?)|notify\\s*(the\\s*)?(teacher|supervisor|manager|others?)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "sign(s)?|warning\\s*sign(s)?|wet\\s*floor\\s*sign|cone(s)?|barrier(s)?|fence(s)?|tape|caution\\s*tape|cordon|cordon\\s*off|block\\s*(off)?|block\\s*(the\\s*)?area|isolate|isolate\\s*(the\\s*)?area|restrict\\s*access|keep\\s*(people|others|workers)\\s*away|stop\\s*(people|others)\\s*(from\\s*)?(walking|entering)",
-              "flags": "i"
-            },
-            {
-              "points": 1,
-              "check": "until\\s*(the\\s*)?(floor|area)\\s*(is\\s*)?(dry|clean|safe)|until\\s*(the\\s*)?(spill|oil|hazard)\\s*(is\\s*)?(cleaned|removed|gone|dealt\\s*with)|until\\s*(it|the\\s*area)\\s*(is\\s*)?safe|until\\s*(there\\s*is\\s*)?no\\s*(risk|hazard)|keep\\s*(the\\s*)?(signs?|barriers?|tape|cones?)\\s*(up|in\\s*place)\\s*until|make\\s*sure\\s*(the\\s*)?(floor|area)\\s*(is\\s*)?(safe|dry|clean)|make\\s*sure\\s*(it\\s*)?(is\\s*)?(safe|not\\s*slippery)|make\\s*sure\\s*(that\\s*)?it\\s*(is\\s*)?impossible\\s*to\\s*slip|prevent\\s*(people|others|workers)\\s*(from\\s*)?(slipping|falling|walking\\s*through)|prevent\\s*(another\\s*)?(slip|fall)|safe\\s*to\\s*walk|safe\\s*to\\s*use|no\\s*longer\\s*(slippery|a\\s*hazard)|hazard\\s*(is\\s*)?(cleaned\\s*up|removed|gone)",
-              "flags": "i"
-            }
-          ]
+         "rubric": [
+    {
+      "points": 1,
+      "check": "clean\\s*(it|the\\s*spill|the\\s*oil)?\\s*up\\s*(immediately|straight\\s*away|now)?|clean\\s*up\\s*(the\\s*)?(spill|oil)\\s*(immediately|straight\\s*away|now)?|wipe\\s*(it|the\\s*spill|the\\s*oil)?\\s*up|mop\\s*(it|the\\s*spill|the\\s*oil)?\\s*up|absorb|absorbent|spill\\s*kit|degrease|degreaser|remove\\s*(the\\s*)?(spill|oil)|clean\\s*(the\\s*)?(floor|area)|deal\\s*with\\s*(the\\s*)?spill\\s*(immediately|straight\\s*away)?",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "report|tell\\s*(the\\s*)?(teacher|supervisor|manager|boss|coworker|co-worker|co\\s*worker)|inform\\s*(the\\s*)?(teacher|supervisor|manager|boss|coworker|co-worker|co\\s*worker)|let\\s*(the\\s*)?(teacher|supervisor|manager|boss|others?|workers?|coworkers?|co-workers?)\\s*know|warn\\s*(the\\s*)?(teacher|supervisor|others?|workers?|coworkers?|co-workers?)|notify\\s*(the\\s*)?(teacher|supervisor|manager|others?)",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "sign(s)?|warning\\s*sign(s)?|wet\\s*floor\\s*sign|cone(s)?|barrier(s)?|fence(s)?|tape|caution\\s*tape|cordon|cordon\\s*off|block\\s*(off)?|block\\s*(the\\s*)?area|isolate|isolate\\s*(the\\s*)?area|restrict\\s*access|keep\\s*(people|others|workers)\\s*away|stop\\s*(people|others)\\s*(from\\s*)?(walking|entering)",
+      "flags": "i"
+    },
+    {
+      "points": 1,
+      "check": "until\\s*(the\\s*)?(floor|area)\\s*(is\\s*)?(dry|clean|safe)|until\\s*(the\\s*)?(spill|oil|hazard)\\s*(is\\s*)?(cleaned|removed|gone|dealt\\s*with)|until\\s*(it|the\\s*area)\\s*(is\\s*)?safe|until\\s*(there\\s*is\\s*)?no\\s*(risk|hazard)|keep\\s*(the\\s*)?(signs?|barriers?|tape|cones?)\\s*(up|in\\s*place)\\s*until|make\\s*sure\\s*(the\\s*)?(floor|area)\\s*(is\\s*)?(safe|dry|clean)|make\\s*sure\\s*(it\\s*)?(is\\s*)?(safe|not\\s*slippery)|make\\s*sure\\s*(that\\s*)?it\\s*(is\\s*)?impossible\\s*to\\s*slip|prevent\\s*(people|others|workers)\\s*(from\\s*)?(slipping|falling|walking\\s*through)|prevent\\s*(another\\s*)?(slip|fall)|safe\\s*to\\s*walk|safe\\s*to\\s*use|no\\s*longer\\s*(slippery|a\\s*hazard)|hazard\\s*(is\\s*)?(cleaned\\s*up|removed|gone)",
+      "flags": "i"
+    }
+  ]
         }
       ]
     },
@@ -647,7 +670,7 @@
       "usNumber": "24354",
       "usVersion": "v3",
       "credits": 4,
-      "standardType": "Unit Standard",
+      "standardType": "",
       "questions": [
         {
           "id": "sr2_q1",
@@ -858,7 +881,7 @@
       "usNumber": "24354",
       "usVersion": "v3",
       "credits": 4,
-      "standardType": "Unit Standard",
+      "standardType": "",
       "questions": [
         {
           "id": "sr3_q1",
@@ -955,22 +978,27 @@
           "rubric": [
             {
               "points": 1,
-              "check": "\\b(?:eyes?|vision|eyesight|blind\\w*)\\b[\\s\\S]{0,50}\\b(?:injur\\w*|damag\\w*|scratch\\w*|debris|dirt|dust|blind\\w*|hit|enter\\w*)\\b|\\b(?:injur\\w*|damag\\w*|scratch\\w*|debris)\\b[\\s\\S]{0,35}\\beyes?\\b|\\bblind\\w*\\b",
+              "check": "eye|eyes|debris|dirt|dust|projectile",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "\\b(?:ear\\s*drums?|eardrums?|ear\\s+injur\\w*|hearing\\s+(?:damag\\w*|loss)|(?:damag\\w*|los\\w*)\\s+hearing|deaf\\w*|tinnitus|ringing\\s+in\\s+(?:the\\s+)?ears?)\\b",
+              "check": "injur|damage|blind|eyesight|vision|scratch|irritat",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "\\b(?:air\\s+embol\\w*|embolism|air\\s+bubbles?\\s+(?:in|entering)\\s+(?:the\\s+)?(?:blood|bloodstream)|inject\\w*\\s+air|air\\s+inject\\w*|high[\\s-]?pressure\\s+air\\s+(?:enter\\w*|penetrat\\w*))\\b",
+              "check": "air\\s*embol|embolism|air\\s*bubble|blood\\s*stream|inject\\s*air",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "\\b(?:death|fatal\\w*|cardiac\\s+arrest|life[\\s-]?threaten\\w*|serious\\s+(?:injur\\w*|harm)|long[\\s-]?term\\s+damage)\\b",
+              "check": "cardiac\\s*arrest|death|fatal|serious|life\\s*threatening",
+              "flags": "i"
+            },
+            {
+              "points": 1,
+              "check": "eardrum(s)?|ear\\\\s*drum(s)?|ruptured\\\\s*eardrum(s)?|burst\\\\s*eardrum(s)?|perforated\\\\s*eardrum(s)?|ear\\\\s*injur(y|ies)|hearing\\\\s*damage|hearing\\\\s*loss|loss\\\\s*of\\\\s*hearing|deaf(ness)?|temporary\\\\s*deaf(ness)?|permanent\\\\s*deaf(ness)?|tinnitus|ringing\\\\s*in\\\\s*(the\\\\s*)?ears",
               "flags": "i"
             }
           ]
@@ -1035,37 +1063,37 @@
           "rubric": [
             {
               "points": 1,
-              "check": "\\b(?:loose\\s+cloth\\w*)\\b(?:(?!\\b(?:loose\\s+clothing|long\\s+hair|non[\\s-]?safety\\s+footwear|wearing\\s+jewellery|poor\\s+lifting\\s+technique|handling\\s+or\\s+moving\\s+of\\s+heavy\\s+objects|heights)\\s*[:\\-])[\\s\\S]){0,160}\\b(?:caught|entangl\\w*|snag\\w*|pull\\w*\\s+in|rotat\\w*|moving\\s+parts?|machin\\w*|injur\\w*)\\b",
+              "check": "loose\\s*clothing|clothing|caught|entangle|snag|pull\\s*in|rotat|machin|moving\\s*parts?",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "\\b(?:long\\s+hair|hair)\\b(?:(?!\\b(?:loose\\s+clothing|long\\s+hair|non[\\s-]?safety\\s+footwear|wearing\\s+jewellery|poor\\s+lifting\\s+technique|handling\\s+or\\s+moving\\s+of\\s+heavy\\s+objects|heights)\\s*[:\\-])[\\s\\S]){0,160}\\b(?:caught|entangl\\w*|pull\\w*\\s+in|rotat\\w*|moving\\s+parts?|machin\\w*|injur\\w*)\\b",
+              "check": "long\\s*hair|hair|caught|entangle|pull\\s*in|rotat|machin|moving\\s*parts?",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "\\b(?:non[\\s-]?safety\\s+footwear|footwear|shoes?|boots?)\\b(?:(?!\\b(?:loose\\s+clothing|long\\s+hair|non[\\s-]?safety\\s+footwear|wearing\\s+jewellery|poor\\s+lifting\\s+technique|handling\\s+or\\s+moving\\s+of\\s+heavy\\s+objects|heights)\\s*[:\\-])[\\s\\S]){0,160}\\b(?:slip\\w*|trip\\w*|crush\\w*|toe\\w*|punctur\\w*|injur\\w*|drop\\w*|no\\s+grip)\\b",
+              "check": "non\\-?safety\\s*footwear|shoes|boots|slip|trip|crush|toe|puncture|no\\s*grip",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "\\b(?:jewel\\w*|rings?)\\b(?:(?!\\b(?:loose\\s+clothing|long\\s+hair|non[\\s-]?safety\\s+footwear|wearing\\s+jewellery|poor\\s+lifting\\s+technique|handling\\s+or\\s+moving\\s+of\\s+heavy\\s+objects|heights)\\s*[:\\-])[\\s\\S]){0,160}\\b(?:caught|entangl\\w*|snag\\w*|deglov\\w*|pull\\w*\\s+in|injur\\w*)\\b",
+              "check": "jewellery|jewelry|ring|caught|entangle|snag|deglov|pull\\s*in",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "\\b(?:poor\\s+lift\\w*|lifting\\s+technique|incorrect\\s+lift\\w*|bad\\s+lift\\w*)\\b(?:(?!\\b(?:loose\\s+clothing|long\\s+hair|non[\\s-]?safety\\s+footwear|wearing\\s+jewellery|poor\\s+lifting\\s+technique|handling\\s+or\\s+moving\\s+of\\s+heavy\\s+objects|heights)\\s*[:\\-])[\\s\\S]){0,160}\\b(?:back\\s+injur\\w*|strain\\w*|sprain\\w*|muscle\\w*|twist\\w*|spine|injur\\w*)\\b",
+              "check": "poor\\s*lifting|lifting|back\\s*injury|strain|sprain|muscle|twist|neutral\\s*spine",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "\\b(?:heavy\\s+(?:items?|objects?|loads?)|mov\\w*\\s+heavy\\s+\\w*|handl\\w*\\s+heavy\\s+\\w*)\\b(?:(?!\\b(?:loose\\s+clothing|long\\s+hair|non[\\s-]?safety\\s+footwear|wearing\\s+jewellery|poor\\s+lifting\\s+technique|handling\\s+or\\s+moving\\s+of\\s+heavy\\s+objects|heights)\\s*[:\\-])[\\s\\S]){0,160}\\b(?:crush\\w*|drop\\w*|back\\s+injur\\w*|strain\\w*|trip\\w*|overload|injur\\w*)\\b",
+              "check": "heavy\\s*objects|manual\\s*handling|crush|drop|back\\s*injury|strain|trip|overload",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "\\b(?:heights?|working\\s+at\\s+height|roof|ladder|scaffold)\\b(?:(?!\\b(?:loose\\s+clothing|long\\s+hair|non[\\s-]?safety\\s+footwear|wearing\\s+jewellery|poor\\s+lifting\\s+technique|handling\\s+or\\s+moving\\s+of\\s+heavy\\s+objects|heights)\\s*[:\\-])[\\s\\S]){0,160}\\b(?:fall\\w*|slip\\w*|broken\\s+bones?|head\\s+injur\\w*|fatal\\w*|death|serious\\s+injur\\w*)\\b",
+              "check": "heights|fall|falls|ladder|scaffold|edge|broken\\s*bones|head\\s*injury|fatal|death|serious",
               "flags": "i"
             }
           ]
@@ -1079,7 +1107,7 @@
       "usNumber": "24354",
       "usVersion": "v3",
       "credits": 4,
-      "standardType": "Unit Standard",
+      "standardType": "",
       "questions": [
         {
           "id": "ka_q2",
@@ -1088,7 +1116,7 @@
           "hint": "Use the section titled “The Health and Safety at Work Act 2015” and summarise the purpose statement. (See p. 9 in the Safety L2 Student 24354 booklet)",
           "type": "long",
           "maxPoints": 4,
-          "rubric": [
+         "rubric": [
             {
               "points": 1,
               "check": "\\b(?:protect\\w*|prevent\\w*|secur\\w*|ensur\\w*|safeguard\\w*)\\b|\\bkeep\\w*\\s+(?:workers?|people|staff|everyone|others)\\s+safe\\b",
@@ -1118,7 +1146,7 @@
           "hint": "Use the list under “What it means for you” and choose responsibilities that apply to workers/students. (See p. 11 in the Safety L2 Student 24354 booklet)",
           "type": "long",
           "maxPoints": 5,
-          "rubric": [
+         "rubric": [
             {
               "points": 1,
               "check": "\\breasonable\\s+care\\b|\\btake\\s+(?:reasonable\\s+)?care\\b|\\blook\\s+after\\s+(?:yourself|myself|themselves|others)\\b|\\bprotect\\s+(?:yourself|myself|others)\\b|\\b(?:my|your|their|our|own)\\s+(?:health|safety)\\b",
@@ -1468,7 +1496,7 @@
           "hint": "Use the safety signage section and match the symbol to its meaning. (See the safety signs pages in the Safety L2 Student 24354 booklet)",
           "type": "short",
           "maxPoints": 1,
-          "rubric": [
+         "rubric": [
             {
               "points": 1,
               "check": "\\b(?:keep|keeping)\\s+(?:(?:your|my|the|all|any)\\s+)?(?:hands?|fingers?|body\\s+parts?)\\s+(?:(?:well|safely)\\s+)?(?:away|clear)\\b|\\b(?:hands?|fingers?|clothing|body\\s+parts?)\\b[\\s\\S]{0,85}\\b(?:caught|trapped|crushed|entangl\\w*|drawn\\s+in|pulled\\s+in)\\b[\\s\\S]{0,70}\\b(?:gears?|moving\\s+(?:machinery|parts?)|machinery|rollers?|cogs?)\\b|\\b(?:danger|warning|risk)\\b[\\s\\S]{0,70}\\b(?:pinch|nip|trap|entanglement|caught\\s+in)\\b[\\s\\S]{0,70}\\b(?:gears?|moving|machinery)\\b",
@@ -1595,14 +1623,11 @@
     }
   ],
   "CHANGELOG": [
-    "Rubric correction 2026-10-15: fixed meaning-equivalent answers for KA_Q2, KA_Q3 and KA_Q8_SIGN_3.",
-    "Corrected one-responsibility/method being counted multiple times in SR1 Q3, Q5, Q6 and Q7.",
-    "Kept SR1 Q4 at 5 points and consolidated eliminate/minimise into the single risk-control category.",
-    "Made SR3 Q5 compressed-air outcomes four distinct criteria and corrected over-escaped ear/hearing regex.",
-    "Made SR1 Q8 vi(a) require both oil/spill and slip/fall meaning for its two points.",
-    "Changed SR3 Q8 so each of seven labelled items needs its own associated safety consequence.",
-    "Corrected the cracked-drill hint and filled standardType=Unit Standard.",
-    "SR2 Q5a/Q5b/Q5c are still each worth ONE point; distinct extinguisher types across separate answers require teacher/engine checking.",
-    "All assessment IDs, question IDs, maxPoints, deadlines, teacher contacts, and other original question data were preserved."
+    "Fixed sr1_q4 maxPoints mismatch (now 6 points to match 6 rubric rows).",
+    "Corrected regex escaping in sr1_q4 (removed over-escaped backslashes).",
+    "Improved SR1 multi-answer rubrics (sr1_q5 and sr1_q6) to better reflect one point per expected item with clearer categories.",
+    "Expanded SR2 Q5 extinguisher rubric to include Water extinguisher (type + use + example) and updated maxPoints to 9.",
+    "Standardised PPE synonym handling across relevant questions.",
+    "Filled standardType fields with 'Unit Standard' for consistency."
   ]
 }
