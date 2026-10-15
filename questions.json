@@ -1116,25 +1116,25 @@
           "hint": "Use the section titled “The Health and Safety at Work Act 2015” and summarise the purpose statement. (See p. 9 in the Safety L2 Student 24354 booklet)",
           "type": "long",
           "maxPoints": 4,
-          "rubric": [
+         "rubric": [
             {
               "points": 1,
-              "check": "secure|ensure|protect",
+              "check": "\\b(?:protect\\w*|prevent\\w*|secur\\w*|ensur\\w*|safeguard\\w*)\\b|\\bkeep\\w*\\s+(?:workers?|people|staff|everyone|others)\\s+safe\\b",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "health\\s*and\\s*safety|health\\s*&\\s*safety|HSWA|Health\\s*(and|&)\\s*Safety\\s*at\\s*Work",
+              "check": "\\bhealth\\s*(?:and|&)\\s*safety\\b|\\bHSWA\\b|\\bhealth\\s+and\\s+safety\\s+at\\s+work\\b",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "workers?|workplace|people|everyone|persons?",
+              "check": "\\b(?:workers?|workplaces?|people|persons?|everyone|employees?|staff)\\b",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "go\\s*home\\s*safely|end\\s*of\\s*each\\s*day|safe\\s*return|safe\\s*at\\s*the\\s*end\\s*of\\s*the\\s*day",
+              "check": "\\b(?:eliminat\\w*|minimi[sz]\\w*|reduc\\w*|mitigat\\w*|manag\\w*)\\b[\\s\\S]{0,50}\\b(?:risks?|hazards?|harm|injur\\w*)\\b|\\b(?:go|goes|going|return|returns)\\s+home\\b[\\s\\S]{0,45}\\b(?:safe|safely|healthy|unharmed)\\b|\\b(?:safe|safely|healthy)\\b[\\s\\S]{0,30}\\b(?:at\\s+the\\s+end\\s+of|every|each)\\s+(?:work\\s*)?day\\b",
               "flags": "i"
             }
           ]
