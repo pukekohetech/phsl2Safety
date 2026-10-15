@@ -1146,30 +1146,30 @@
           "hint": "Use the list under “What it means for you” and choose responsibilities that apply to workers/students. (See p. 11 in the Safety L2 Student 24354 booklet)",
           "type": "long",
           "maxPoints": 5,
-          "rubric": [
+         "rubric": [
             {
               "points": 1,
-              "check": "reasonable\\s*care|take\\s*care|look\\s*after\\s*(yourself|others)|own\\s*(health|safety)",
+              "check": "\\breasonable\\s+care\\b|\\btake\\s+(?:reasonable\\s+)?care\\b|\\blook\\s+after\\s+(?:yourself|myself|themselves|others)\\b|\\bprotect\\s+(?:yourself|myself|others)\\b|\\b(?:my|your|their|our|own)\\s+(?:health|safety)\\b",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "follow\\s*(rules|procedures|instructions)|comply|listen\\s*to\\s*(teacher|supervisor)|do\\s*what\\s*you'?re\\s*told",
+              "check": "\\b(?:follow\\w*|obey\\w*|comply\\s+with|co[\\s-]?operate\\s+with|listen\\s+to|adhere\\s+to)\\b[\\s\\S]{0,55}\\b(?:instructions?|rules?|procedures?|polic(?:y|ies)|safety\\s+requirements?|directions?)\\b|\\bdo\\s+what\\s+(?:you(?:\\x27re|\\s+are)|I(?:\\x27m|\\s+am))\\s+told\\b",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "PPE|personal\\s*protective\\s*equipment|protective\\s*equipment|safety\\s*gear|wear\\s*(PPE|gloves|boots|goggles|glasses|earmuffs|ear\\s*plugs)",
+              "check": "\\bPPE\\b|personal\\s+protective\\s+equipment|\\bprotective\\s+equipment\\b|\\bsafety\\s+gear\\b|\\bwear\\w*\\b[\\s\\S]{0,25}\\b(?:gloves?|boots?|goggles?|safety\\s+glasses|earmuffs?|ear\\s*plugs?|eye\\s+protection)\\b",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "report\\s*(hazard|risk|incident|injury|near\\s*miss)|tell\\s*(teacher|supervisor)|speak\\s*up|notify",
+              "check": "\\b(?:report\\w*|tell|told|notif\\w*|inform\\w*|advis\\w*|rais\\w*)\\b[\\s\\S]{0,70}\\b(?:hazards?|risks?|unsafe|danger\\w*|near[\\s-]?miss(?:es)?|incidents?|accidents?|injur\\w*|concerns?|problems?|issues?)\\b|\\bspeak\\s+up\\b",
               "flags": "i"
             },
             {
               "points": 1,
-              "check": "eliminat|minimis|reduce\\s*risk|control|manage\\s*(hazards?|risks?)",
+              "check": "\\b(?:eliminat\\w*|minimi[sz]\\w*|reduc\\w*|control\\w*|manag\\w*|mitigat\\w*|prevent\\w*)\\b[\\s\\S]{0,45}\\b(?:hazards?|risks?|accidents?|injur\\w*|harm)\\b|\\b(?:keep|keeping)\\b[\\s\\S]{0,35}\\b(?:workshop|workplace|work\\s+area|workspace)\\b[\\s\\S]{0,35}\\b(?:clean|tidy|safe)\\b",
               "flags": "i"
             }
           ]
